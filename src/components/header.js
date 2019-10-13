@@ -1,42 +1,76 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import PropTypes from 'prop-types';
+import React from 'react';
+import styled from 'styled-components';
+import { theme } from './designSystem/theme';
+import StyledLink from './designSystem/StyledLink';
+
+const StyledHeader = styled.header`
+  background-color: ${theme.dark};
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  right: 0;
+  transition: top 0.2s ease-in-out;
+`;
+
+const Logo = styled.p`
+  font-size: 1.8rem;
+  font-family: "Butler";
+  font-weight: 500;
+  line-height: 100%;
+  color: ${theme.accent};
+`;
+
+const NavigationLinks = styled.div`
+  * {
+    display: inline-block;
+    font-family: "IBM Plex Mono";
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-left: 32px;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 1px;
+      background-color: ${theme.accent};
+      transition: width 0.4s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+`;
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+  <StyledHeader>
+    <Logo>
+      <StyledLink to="/">{siteTitle}</StyledLink>
+    </Logo>
+    <NavigationLinks>
+      <StyledLink to="/">Work</StyledLink>
+      <StyledLink to="/">Projects</StyledLink>
+      <StyledLink to="/">Contact</StyledLink>
+    </NavigationLinks>
+  </StyledHeader>
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
-  siteTitle: ``,
-}
+  siteTitle: '',
+};
 
-export default Header
+export default Header;

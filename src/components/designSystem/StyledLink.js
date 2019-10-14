@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-import { theme } from './theme';
+import React from "react"
+import { Link } from "gatsby"
+import styled from "styled-components"
+import { theme } from "./theme"
 
 const StyledLink = styled(props => <Link {...props} />)`
   &,
@@ -12,6 +12,6 @@ const StyledLink = styled(props => <Link {...props} />)`
     text-decoration: none;
     color: ${theme.accent};
   }
-`;
+`
 
-export default StyledLink;
+export default StyledLink

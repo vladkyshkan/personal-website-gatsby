@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from "react"
 import styled from "styled-components"
 import { theme } from "./designSystem/theme"
@@ -12,33 +13,57 @@ const StyledFooter = styled.footer`
   h2 {
     color: ${theme.accent};
   }
+
+  p {
+    color: ${theme.white};
+    opacity: 0.5;
+  }
 `
 
 const ExternalLinks = styled.div`
-  margin-top: 24px;
+  margin: 24px 0 80px 0;
   color: ${theme.accent};
 `
+
+const SocialMediaLinks = [
+  {
+    name: "Mail",
+    link: "mailto:vladkyshkan@gmail.com",
+  },
+  {
+    name: "Facebook",
+    link: "https://www.facebook.com/vlad.kyshkan",
+  },
+  {
+    name: "Twitter",
+    link: "https://twitter.com/vladkyshkan",
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/vlad-kyshkan/",
+  },
+  {
+    name: "Dribbble",
+    link: "https://dribbble.com/vladkyshkan",
+  },
+  {
+    name: "Github",
+    link: "https://github.com/vladkyshkan",
+  },
+]
 
 const Footer = () => (
   <StyledFooter>
     <H2>Contact</H2>
     <ExternalLinks>
-      <ExternalLink>Mail</ExternalLink>
-      <ExternalLink>Facebook</ExternalLink>
-      <ExternalLink>Twitter</ExternalLink>
-      <ExternalLink>LinkedIn</ExternalLink>
-      <ExternalLink>Dribbble</ExternalLink>
-      <ExternalLink>Github</ExternalLink>
+      {SocialMediaLinks.map(link => (
+        <ExternalLink href={link.link} target="_blank">
+          {link.name}
+        </ExternalLink>
+      ))}
     </ExternalLinks>
+    <P>© {new Date().getFullYear()} Vlad Kyshkan</P>
   </StyledFooter>
 )
 
 export default Footer
-
-{
-  /* <footer>
-©
-{new Date().getFullYear()}
-, Built with
-</footer> */
-}

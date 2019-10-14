@@ -11,6 +11,15 @@ const ExternalLink = styled.a`
   text-transform: uppercase;
   margin-right: 32px;
 
+  &,
+  &:hover,
+  &:active,
+  &:visited,
+  &:focus {
+    text-decoration: none;
+    color: ${theme.accent};
+  }
+
   &:after {
     content: "";
     display: block;

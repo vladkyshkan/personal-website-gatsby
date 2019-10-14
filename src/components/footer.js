@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react"
 import styled from "styled-components"
 import { theme } from "./designSystem/theme"
-import H2 from './designSystem/H2';
-import P from './designSystem/P';
-import ExternalLink from './designSystem/ExternalLink';
+import H2 from "./designSystem/H2"
+import P from "./designSystem/P"
+import ExternalLink from "./designSystem/ExternalLink"
 
 const StyledFooter = styled.footer`
   background-color: ${theme.dark};
@@ -30,14 +30,15 @@ const Footer = () => (
       <ExternalLink>Dribbble</ExternalLink>
       <ExternalLink>Github</ExternalLink>
     </ExternalLinks>
-
   </StyledFooter>
 )
 
 export default Footer
 
-{/* <footer>
+{
+  /* <footer>
 ©
 {new Date().getFullYear()}
 , Built with
-</footer> */}
+</footer> */
+}

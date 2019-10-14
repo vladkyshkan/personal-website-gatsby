@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { theme } from './theme';
+import styled from "styled-components"
+import { theme } from "./theme"
 
 const ExternalLink = styled.a`
   display: inline-block;
@@ -9,7 +9,7 @@ const ExternalLink = styled.a`
   line-height: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin: 0 12px;
+  margin-right: 32px;
 
   &:after {
     content: "";

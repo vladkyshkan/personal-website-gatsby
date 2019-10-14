@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import { theme } from './theme';
-import figures from '../../images/figures.svg';
+import styled from "styled-components"
+import { theme } from "./designSystem/theme"
+import figures from "../data/images/figures.svg"
 
-const HeroScreen = styled.div`
+const About = styled.div`
   padding: 0 5%;
   height: 100vh;
   background-color: black;
@@ -15,7 +15,7 @@ const HeroScreen = styled.div`
 
   h1 {
     color: ${theme.accent};
-    margin-top: 160px;
+    margin-top: 104px;
   }
 
   p {
@@ -31,10 +31,10 @@ const HeroScreen = styled.div`
     position: absolute;
     left: 1px;
     right: 1px;
-    bottom: 80px;
-    border: 1px solid ${theme.accent};
+    bottom: 64px;
+    border-bottom: 1px solid ${theme.accent};
     opacity: 0.5;
   }
-`;
+`
 
-export default HeroScreen;
+export default About

@@ -1,8 +1,8 @@
-import { createGlobalStyle } from 'styled-components';
-import ButlerLight from '../../fonts/ButlerLight.otf';
-import ButlerMedium from '../../fonts/ButlerMedium.otf';
-import IBMPlexMonoRegular from '../../fonts/IBMPlexMonoRegular.ttf';
-import IBMPlexMonoSemiBold from '../../fonts/IBMPlexMonoSemiBold.ttf';
+import { createGlobalStyle } from "styled-components"
+import ButlerLight from "../../fonts/ButlerLight.otf"
+import ButlerMedium from "../../fonts/ButlerMedium.otf"
+import IBMPlexMonoRegular from "../../fonts/IBMPlexMonoRegular.ttf"
+import IBMPlexMonoSemiBold from "../../fonts/IBMPlexMonoSemiBold.ttf"
 
 const GlobalStyle = createGlobalStyle`
   *, *::after, *::before {
@@ -58,6 +58,6 @@ const GlobalStyle = createGlobalStyle`
   h6 {
     margin: 0;
   }
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle

@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import styled from 'styled-components';
-import { theme } from './designSystem/theme';
-import StyledLink from './designSystem/StyledLink';
+import PropTypes from "prop-types"
+import React from "react"
+import styled from "styled-components"
+import { theme } from "./designSystem/theme"
+import StyledLink from "./designSystem/StyledLink"
 
 const StyledHeader = styled.header`
   background-color: ${theme.dark};
@@ -16,7 +16,7 @@ const StyledHeader = styled.header`
   left: 0;
   right: 0;
   transition: top 0.2s ease-in-out;
-`;
+`
 
 const Logo = styled.p`
   font-size: 1.8rem;
@@ -24,7 +24,7 @@ const Logo = styled.p`
   font-weight: 500;
   line-height: 100%;
   color: ${theme.accent};
-`;
+`
 
 const NavigationLinks = styled.div`
   * {
@@ -50,7 +50,7 @@ const NavigationLinks = styled.div`
       width: 100%;
     }
   }
-`;
+`
 
 const Header = ({ siteTitle }) => (
   <StyledHeader>
@@ -63,14 +63,14 @@ const Header = ({ siteTitle }) => (
       <StyledLink to="/">Contact</StyledLink>
     </NavigationLinks>
   </StyledHeader>
-);
+)
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-};
+}
 
 Header.defaultProps = {
-  siteTitle: '',
-};
+  siteTitle: "",
+}
 
-export default Header;
+export default Header

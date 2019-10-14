@@ -1,0 +1,54 @@
+[
+  {
+    "title": "MD Fashion",
+    "slug": "md-fashion",
+    "image": "./images/project-md_fashion.jpg",
+    "description": "Apparel marketplace redesign and Android application",
+    "details": {
+      "client": "MD Fashion",
+      "year": "2019",
+      "company": "Omnicore"
+    },
+    "color": "#EAE2D8",
+    "light": true
+  },
+  {
+    "title": "Nova Poshta",
+    "slug": "nova-poshta",
+    "image": "./images/project-nova_poshta.jpg",
+    "description": "Redesign of package creation flow through mobile application",
+    "details": {
+      "client": "Nova Poshta",
+      "year": "2019",
+      "company": "Individual"
+    },
+    "color": "#FF3726",
+    "light": false
+  },
+  {
+    "title": "Symbol",
+    "slug": "symbol",
+    "image": "./images/project-symbol.jpg",
+    "description": "E-commerce website design for the multibrand luxury apparel store",
+    "details": {
+      "client": "Symbol",
+      "year": "2019",
+      "company": "Omnicore"
+    },
+    "color": "#232323",
+    "light": false
+  },
+  {
+    "title": "Wizard",
+    "slug": "wizard",
+    "image": "./images/project-wizard.jpg",
+    "description": "Corporate website & b2b platform for the largest supplier of sanitary ware in Ukraine ",
+    "details": {
+      "client": "Wizard",
+      "year": "2018",
+      "company": "404 Digital Agency"
+    },
+    "color": "#008990",
+    "light": false
+  }
+]

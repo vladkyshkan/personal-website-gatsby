@@ -3,7 +3,9 @@ import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 import WorkPreview from "./work-preview"
 
-const WorkGridStyled = styled.div``
+const WorkGridStyled = styled.div`
+  margin-bottom: -120px;
+`
 
 const WorkGrid = () => {
   const data = useStaticQuery(graphql`
@@ -38,7 +40,7 @@ const WorkGrid = () => {
 
   return (
     <WorkGridStyled>
-      {projects.map(({ node: project }) => {
+      {projects.map(({ node: project }, index) => {
         const { title, description, slug, color, light } = project
         const { client, year, company } = project.details
         const imageData = project.image.childImageSharp.fluid
@@ -54,6 +56,8 @@ const WorkGrid = () => {
             imageData={imageData}
             color={color}
             light={light}
+            key={title}
+            index={index}
           />
         )
       })}

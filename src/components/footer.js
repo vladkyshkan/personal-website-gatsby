@@ -17,6 +17,7 @@ const StyledFooter = styled.footer`
   p {
     color: ${theme.white};
     opacity: 0.5;
+    margin: 0;
   }
 `
 
@@ -40,7 +41,7 @@ const SocialMediaLinks = [
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/vlad-kyshkan/",
+    link: "https://www.linkedin.com/in/vlad-kyshkan",
   },
   {
     name: "Dribbble",
@@ -53,11 +54,11 @@ const SocialMediaLinks = [
 ]
 
 const Footer = () => (
-  <StyledFooter>
+  <StyledFooter id="contact">
     <H2>Contact</H2>
     <ExternalLinks>
       {SocialMediaLinks.map(link => (
-        <ExternalLink href={link.link} target="_blank">
+        <ExternalLink key={link.name} href={link.link} target="_blank">
           {link.name}
         </ExternalLink>
       ))}

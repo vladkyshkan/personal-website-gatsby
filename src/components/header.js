@@ -16,6 +16,7 @@ const StyledHeader = styled.header`
   left: 0;
   right: 0;
   transition: top 0.2s ease-in-out;
+  color: ${theme.accent};
 `
 
 const Logo = styled.p`
@@ -23,7 +24,6 @@ const Logo = styled.p`
   font-family: "Butler";
   font-weight: 500;
   line-height: 100%;
-  color: ${theme.accent};
 `
 
 const NavigationLinks = styled.div`
@@ -58,9 +58,9 @@ const Header = ({ siteTitle }) => (
       <StyledLink to="/">{siteTitle}</StyledLink>
     </Logo>
     <NavigationLinks>
-      <StyledLink to="/">Work</StyledLink>
-      <StyledLink to="/">Projects</StyledLink>
-      <StyledLink to="/">Contact</StyledLink>
+      <StyledLink to="/#work">Work</StyledLink>
+      <StyledLink to="/#projects">Projects</StyledLink>
+      <StyledLink to="/#contact">Contact</StyledLink>
     </NavigationLinks>
   </StyledHeader>
 )

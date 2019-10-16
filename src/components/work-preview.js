@@ -8,6 +8,7 @@ import Button from "./designSystem/Button"
 import StyledLink from "./designSystem/StyledLink"
 import H3 from "./designSystem/H3"
 import P from "./designSystem/P"
+import IconArrow from "./designSystem/IconArrow"
 
 const WorkContainer = styled.div`
   position: relative;
@@ -33,11 +34,16 @@ const WorkDescription = styled.div`
 const WorkDescriptionWrapper = styled.div`
   padding: 0 40px;
   color: ${props => (props.light ? theme.dark : theme.white)};
+
+  h3:nth-of-type(1) {
+    opacity: 0.3;
+    margin-bottom: 40px;
+  }
 `
 
 const WorkDetails = styled.div`
   display: flex;
-  margin: 24px 0 64px 0;
+  margin: 24px 0 40px 0;
 `
 
 const WorkDetailsTitle = styled.div`
@@ -64,6 +70,7 @@ const WorkPreview = ({
   color,
   light,
   imageData,
+  index,
 }) => (
   <WorkContainer>
     <Link to={`/${slug}/`}>
@@ -73,6 +80,11 @@ const WorkPreview = ({
     </Link>
     <WorkDescription color={color}>
       <WorkDescriptionWrapper light={light}>
+        <H3>
+0
+{index + 1}
+/
+</H3>
         <H3>{description}</H3>
         <WorkDetails>
           <WorkDetailsTitle>
@@ -88,9 +100,17 @@ const WorkPreview = ({
             {company}
           </WorkDetailsTitle>
         </WorkDetails>
-        <Button>
-          <StyledLink to={`/${slug}/`}>See more</StyledLink>
-        </Button>
+        {light ? (
+          <Button light>
+            <StyledLink to={`/${slug}/`}>See more</StyledLink>
+            <IconArrow />
+          </Button>
+        ) : (
+          <Button>
+            <StyledLink to={`/${slug}/`}>See more</StyledLink>
+            <IconArrow />
+          </Button>
+        )}
       </WorkDescriptionWrapper>
     </WorkDescription>
   </WorkContainer>

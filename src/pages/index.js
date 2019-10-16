@@ -31,17 +31,17 @@ const IndexPage = () => (
       </P>
     </About>
 
-    <Section>
+    <Section id="work">
       <H2>Selected work</H2>
       <WorkGrid />
     </Section>
 
-    <Section dark>
+    <Section dark id="projects">
       <H2>Side projects</H2>
     </Section>
 
     <Section>
-      <H2>Books</H2>
+      <H2>Favorite books</H2>
     </Section>
   </Layout>
 )

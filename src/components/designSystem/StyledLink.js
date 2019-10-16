@@ -10,7 +10,7 @@ const StyledLink = styled(props => <Link {...props} />)`
   &:visited,
   &:focus {
     text-decoration: none;
-    color: ${theme.accent};
+    color: inherit;
   }
 `
 

@@ -5,7 +5,8 @@ import SEO from "../components/seo"
 import GlobalStyle from "../components/designSystem/globalStyle"
 import About from "../components/about"
 import Section from "../components/section"
-import WorkGrid from "../components/work-grid"
+import WorkGrid from "../components/workGrid"
+import BooksGrid from "../components/booksGrid"
 import H1 from "../components/designSystem/H1"
 import H2 from "../components/designSystem/H2"
 import P from "../components/designSystem/P"
@@ -42,6 +43,7 @@ const IndexPage = () => (
 
     <Section>
       <H2>Favorite books</H2>
+      <BooksGrid />
     </Section>
   </Layout>
 )

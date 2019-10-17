@@ -2,7 +2,6 @@ import styled from "styled-components"
 import { theme } from "./theme"
 
 const ExternalLink = styled.a`
-  display: inline-block;
   font-family: "IBM Plex Mono";
   font-weight: 600;
   font-size: 1.2rem;

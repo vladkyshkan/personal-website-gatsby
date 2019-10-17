@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/jsx-indent */
+/* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable react/prop-types */
 import React from "react"
 import styled from "styled-components"
@@ -21,8 +24,10 @@ const WorkCover = styled.div`
 
 const WorkDescription = styled.div`
   position: absolute;
-  right: 0px;
-  top: 40px;
+  right: ${props => (props.right ? "0px" : undefined)};
+  left: ${props => (props.right ? undefined : "0px")};
+  top: ${props => (props.right ? "40px" : undefined)};
+  bottom: ${props => (props.right ? undefined : "40px")};
   width: 448px;
   height: 480px;
   display: flex;
@@ -71,6 +76,7 @@ const WorkPreview = ({
   light,
   imageData,
   index,
+  right,
 }) => (
   <WorkContainer>
     <Link to={`/${slug}/`}>
@@ -78,13 +84,9 @@ const WorkPreview = ({
         <Image fluid={imageData} alt={title} />
       </WorkCover>
     </Link>
-    <WorkDescription color={color}>
+    <WorkDescription color={color} right={right}>
       <WorkDescriptionWrapper light={light}>
-        <H3>
-0
-{index + 1}
-/
-</H3>
+        <H3>0{index + 1}/</H3>
         <H3>{description}</H3>
         <WorkDetails>
           <WorkDetailsTitle>

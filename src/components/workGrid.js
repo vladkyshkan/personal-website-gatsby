@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
-import WorkPreview from "./work-preview"
+import WorkPreview from "./workPreview"
 
 const WorkGridStyled = styled.div`
   margin-bottom: -120px;
@@ -44,6 +44,7 @@ const WorkGrid = () => {
         const { title, description, slug, color, light } = project
         const { client, year, company } = project.details
         const imageData = project.image.childImageSharp.fluid
+        const isEven = index % 2
 
         return (
           <WorkPreview
@@ -58,6 +59,7 @@ const WorkGrid = () => {
             light={light}
             key={title}
             index={index}
+            right={isEven ? undefined : true}
           />
         )
       })}

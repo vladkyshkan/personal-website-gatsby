@@ -23,6 +23,7 @@ const StyledFooter = styled.footer`
 
 const ExternalLinks = styled.div`
   display: flex;
+  flex-wrap: wrap;
   margin: 24px 0 80px 0;
   color: ${theme.accent};
 `

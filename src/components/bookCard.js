@@ -4,7 +4,7 @@ import Image from "gatsby-image"
 import ExternalLink from "./designSystem/ExternalLink"
 
 const BookStyled = styled.div`
-  max-width: 168px;
+  max-width: 160px;
   width: 100%;
   transform: scale(1);
   transition: 0.3s;

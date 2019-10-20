@@ -4,7 +4,6 @@
 /* eslint-disable react/prop-types */
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 import Image from "gatsby-image"
 import { theme } from "./designSystem/theme"
 import Button from "./designSystem/Button"
@@ -15,11 +14,15 @@ import IconArrow from "./designSystem/IconArrow"
 
 const WorkContainer = styled.div`
   position: relative;
-  margin-bottom: 160px;
+  margin-bottom: 120px;
+  display: flex;
 `
 
 const WorkCover = styled.div`
+  display: block;
   max-width: 832px;
+  width: 100%;
+  margin-left: ${props => (props.right ? undefined : "auto")};
 `
 
 const WorkDescription = styled.div`
@@ -79,11 +82,9 @@ const WorkPreview = ({
   right,
 }) => (
   <WorkContainer>
-    <Link to={`/${slug}/`}>
-      <WorkCover>
-        <Image fluid={imageData} alt={title} />
-      </WorkCover>
-    </Link>
+    <WorkCover right={right}>
+      <Image fluid={imageData} alt={title} />
+    </WorkCover>
     <WorkDescription color={color} right={right}>
       <WorkDescriptionWrapper light={light}>
         <H3>0{index + 1}/</H3>

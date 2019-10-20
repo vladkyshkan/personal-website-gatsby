@@ -4,19 +4,10 @@ import styled from "styled-components"
 import BookCard from "./bookCard"
 
 const BooksGridStyled = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-content: flex-start;
-
-  div {
-    margin-right: 16px;
-    margin-bottom: 8px;
-
-    &:nth-child(6n) {
-      margin-right: 0;
-    }
-  }
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px 32px;
+  margin-bottom: -16px;
 `
 
 const BooksGrid = () => {

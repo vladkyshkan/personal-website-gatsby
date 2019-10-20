@@ -7,6 +7,7 @@ import About from "../components/about"
 import Section from "../components/section"
 import WorkGrid from "../components/workGrid"
 import BooksGrid from "../components/booksGrid"
+import SideProjectsGrid from "../components/sideProjectsGrid"
 import H1 from "../components/designSystem/H1"
 import H2 from "../components/designSystem/H2"
 import P from "../components/designSystem/P"
@@ -39,6 +40,7 @@ const IndexPage = () => (
 
     <Section dark id="projects">
       <H2>Side projects</H2>
+      <SideProjectsGrid />
     </Section>
 
     <Section>

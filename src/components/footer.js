@@ -26,6 +26,28 @@ const ExternalLinks = styled.div`
   flex-wrap: wrap;
   margin: 24px 0 80px 0;
   color: ${theme.accent};
+
+  a,
+  a:hover,
+  a:active,
+  a:visited,
+  a:focus {
+    text-decoration: none;
+    color: ${theme.accent};
+  }
+
+  a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: ${theme.accent};
+    transition: width 0.4s;
+  }
+
+  a:hover::after {
+    width: 100%;
+  }
 `
 
 const SocialMediaLinks = [

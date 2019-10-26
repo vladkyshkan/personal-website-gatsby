@@ -1,13 +1,13 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
-import WorkPreview from "./workPreview"
+import CasePreview from "./casePreview"
 
-const WorkGridStyled = styled.div`
+const CaseGridStyled = styled.div`
   margin-bottom: -120px;
 `
 
-const WorkGrid = () => {
+const CaseGrid = () => {
   const data = useStaticQuery(graphql`
     {
       allProjectJson {
@@ -39,7 +39,7 @@ const WorkGrid = () => {
   const projects = data.allProjectJson.edges
 
   return (
-    <WorkGridStyled>
+    <CaseGridStyled>
       {projects.map(({ node: project }, index) => {
         const { title, description, slug, color, light } = project
         const { client, year, company } = project.details
@@ -47,7 +47,7 @@ const WorkGrid = () => {
         const isEven = index % 2
 
         return (
-          <WorkPreview
+          <CasePreview
             title={title}
             description={description}
             slug={slug}
@@ -63,8 +63,8 @@ const WorkGrid = () => {
           />
         )
       })}
-    </WorkGridStyled>
+    </CaseGridStyled>
   )
 }
 
-export default WorkGrid
+export default CaseGrid

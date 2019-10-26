@@ -12,20 +12,20 @@ import H3 from "./designSystem/H3"
 import P from "./designSystem/P"
 import IconArrow from "./designSystem/IconArrow"
 
-const WorkContainer = styled.div`
+const CaseContainer = styled.div`
   position: relative;
   margin-bottom: 120px;
   display: flex;
 `
 
-const WorkCover = styled.div`
+const CaseCover = styled.div`
   display: block;
   max-width: 832px;
   width: 100%;
   margin-left: ${props => (props.right ? undefined : "auto")};
 `
 
-const WorkDescription = styled.div`
+const CaseDescription = styled.div`
   position: absolute;
   right: ${props => (props.right ? "0px" : undefined)};
   left: ${props => (props.right ? undefined : "0px")};
@@ -39,7 +39,7 @@ const WorkDescription = styled.div`
   background-color: ${props => props.color};
 `
 
-const WorkDescriptionWrapper = styled.div`
+const CaseDescriptionWrapper = styled.div`
   padding: 0 40px;
   color: ${props => (props.light ? theme.dark : theme.white)};
 
@@ -49,12 +49,12 @@ const WorkDescriptionWrapper = styled.div`
   }
 `
 
-const WorkDetails = styled.div`
+const CaseDetails = styled.div`
   display: flex;
   margin: 24px 0 40px 0;
 `
 
-const WorkDetailsTitle = styled.div`
+const CaseDetailsTitle = styled.div`
   font-size: 14px;
   line-height: 100%;
   display: flex;
@@ -68,7 +68,7 @@ const WorkDetailsTitle = styled.div`
   }
 `
 
-const WorkPreview = ({
+const CasePreview = ({
   slug,
   title,
   description,
@@ -81,42 +81,50 @@ const WorkPreview = ({
   index,
   right,
 }) => (
-  <WorkContainer>
-    <WorkCover right={right}>
+  <CaseContainer>
+    <CaseCover right={right}>
       <Image fluid={imageData} alt={title} />
-    </WorkCover>
-    <WorkDescription color={color} right={right}>
-      <WorkDescriptionWrapper light={light}>
-        <H3>0{index + 1}/</H3>
+    </CaseCover>
+    <CaseDescription color={color} right={right}>
+      <CaseDescriptionWrapper light={light}>
+        <H3>
+0
+{index + 1}
+/
+</H3>
         <H3>{description}</H3>
-        <WorkDetails>
-          <WorkDetailsTitle>
+        <CaseDetails>
+          <CaseDetailsTitle>
             <P>Client</P>
             {client}
-          </WorkDetailsTitle>
-          <WorkDetailsTitle>
+          </CaseDetailsTitle>
+          <CaseDetailsTitle>
             <P>Year</P>
             {year}
-          </WorkDetailsTitle>
-          <WorkDetailsTitle>
+          </CaseDetailsTitle>
+          <CaseDetailsTitle>
             <P>Company</P>
             {company}
-          </WorkDetailsTitle>
-        </WorkDetails>
+          </CaseDetailsTitle>
+        </CaseDetails>
         {light ? (
-          <Button light>
-            <StyledLink to={`/${slug}/`}>See more</StyledLink>
-            <IconArrow />
-          </Button>
+          <StyledLink to={`/${slug}/`}>
+            <Button light>
+              See more
+              <IconArrow />
+            </Button>
+          </StyledLink>
         ) : (
-          <Button>
-            <StyledLink to={`/${slug}/`}>See more</StyledLink>
-            <IconArrow />
-          </Button>
+          <StyledLink to={`/${slug}/`}>
+            <Button>
+              See more
+              <IconArrow />
+            </Button>
+          </StyledLink>
         )}
-      </WorkDescriptionWrapper>
-    </WorkDescription>
-  </WorkContainer>
+      </CaseDescriptionWrapper>
+    </CaseDescription>
+  </CaseContainer>
 )
 
-export default WorkPreview
+export default CasePreview

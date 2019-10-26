@@ -1,11 +1,10 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import GlobalStyle from "../components/designSystem/globalStyle"
 import About from "../components/about"
 import Section from "../components/section"
-import WorkGrid from "../components/workGrid"
+import CaseGrid from "../components/caseGrid"
 import BooksGrid from "../components/booksGrid"
 import SideProjectsGrid from "../components/sideProjectsGrid"
 import H1 from "../components/designSystem/H1"
@@ -35,7 +34,7 @@ const IndexPage = () => (
 
     <Section id="work">
       <H2>Selected work</H2>
-      <WorkGrid />
+      <CaseGrid />
     </Section>
 
     <Section dark id="projects">

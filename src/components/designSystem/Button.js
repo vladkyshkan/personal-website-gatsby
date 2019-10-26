@@ -19,10 +19,6 @@ const Button = styled.button`
     border: 1px solid ${props => (props.light ? theme.Dark : theme.White)};
   }
 
-  &:active {
-    color: inherit;
-  }
-
   &:hover svg {
     transform: translateX(24px);
     transition: 0.5s;

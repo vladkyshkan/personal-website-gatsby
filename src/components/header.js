@@ -5,17 +5,14 @@ import { theme } from "./designSystem/theme"
 import StyledLink from "./designSystem/StyledLink"
 
 const StyledHeader = styled.header`
-  background-color: ${theme.dark};
+  width: 100%;
+  height: 56px;
   padding: 0 5%;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 56px;
-  z-index: 9;
-  position: fixed;
-  left: 0;
-  right: 0;
-  transition: top 0.2s ease-in-out;
+  background-color: transparent;
   color: ${theme.accent};
 `
 

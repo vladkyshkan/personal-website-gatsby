@@ -1,13 +1,13 @@
 import styled from "styled-components"
 import { theme } from "./designSystem/theme"
-// import generative from "../data/images/generative.svg"
+import generative from "../data/images/generative.svg"
 
 const About = styled.div`
   padding: 0 5%;
   height: 100vh;
   background-color: ${theme.dark};
-  /* background-image: url(${generative}); */
-  background-position: 110% -30%;
+  background-image: url(${generative});
+  background-position: 100% 100%;
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

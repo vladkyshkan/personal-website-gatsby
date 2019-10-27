@@ -10,7 +10,7 @@ const CaseGridStyled = styled.div`
 const CaseGrid = () => {
   const data = useStaticQuery(graphql`
     {
-      allProjectJson {
+      allProjectsJson {
         edges {
           node {
             title
@@ -36,7 +36,7 @@ const CaseGrid = () => {
     }
   `)
 
-  const projects = data.allProjectJson.edges
+  const projects = data.allProjectsJson.edges
 
   return (
     <CaseGridStyled>

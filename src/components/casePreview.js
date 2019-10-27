@@ -9,8 +9,8 @@ import { theme } from "./designSystem/theme"
 import Button from "./designSystem/Button"
 import StyledLink from "./designSystem/StyledLink"
 import H3 from "./designSystem/H3"
-import P from "./designSystem/P"
 import IconArrow from "./designSystem/IconArrow"
+import CaseDetails from "./caseDetails"
 
 const CaseContainer = styled.div`
   position: relative;
@@ -49,25 +49,6 @@ const CaseDescriptionWrapper = styled.div`
   }
 `
 
-const CaseDetails = styled.div`
-  display: flex;
-  margin: 24px 0 40px 0;
-`
-
-const CaseDetailsTitle = styled.div`
-  font-size: 14px;
-  line-height: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-right: 40px;
-
-  p {
-    opacity: 0.5;
-    margin: 0 0 8px 0;
-    line-height: 100%;
-  }
-`
-
 const CasePreview = ({
   slug,
   title,
@@ -93,20 +74,7 @@ const CasePreview = ({
 /
 </H3>
         <H3>{description}</H3>
-        <CaseDetails>
-          <CaseDetailsTitle>
-            <P>Client</P>
-            {client}
-          </CaseDetailsTitle>
-          <CaseDetailsTitle>
-            <P>Year</P>
-            {year}
-          </CaseDetailsTitle>
-          <CaseDetailsTitle>
-            <P>Company</P>
-            {company}
-          </CaseDetailsTitle>
-        </CaseDetails>
+        <CaseDetails client={client} year={year} company={company} />
         {light ? (
           <StyledLink to={`/${slug}/`}>
             <Button light>

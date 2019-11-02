@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { theme } from "./designSystem/theme"
 import generative from "../data/images/generative.svg"
 
-const About = styled.div`
+const Bio = styled.div`
   padding: 0 5%;
   height: 100vh;
   background-color: ${theme.dark};
@@ -15,7 +15,7 @@ const About = styled.div`
 
   h1 {
     color: ${theme.accent};
-    margin-top: 100px;
+    margin-top: 96px;
   }
 
   p {
@@ -37,4 +37,4 @@ const About = styled.div`
   }
 `
 
-export default About
+export default Bio

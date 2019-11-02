@@ -42,7 +42,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: "IBM Plex Mono", monospace;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    scroll-behavior: smooth;
   }
 
   body {

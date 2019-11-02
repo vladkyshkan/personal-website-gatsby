@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import GlobalStyle from "../components/designSystem/globalStyle"
-import About from "../components/about"
+import Bio from "../components/bio"
 import Section from "../components/section"
 import CaseGrid from "../components/caseGrid"
 import BooksGrid from "../components/booksGrid"
@@ -16,13 +16,13 @@ const IndexPage = () => (
     <SEO title="Home" />
     <GlobalStyle />
 
-    <About>
+    <Bio>
       <H1>Digital product designer</H1>
       <P>
         Currently I work as a Head of design at Omnicore where lead team of 5
         designers. Our goal is to create the best e-commerce experience and make
         online shopping for customers easier. You can check my résumé following
-        the link.
+        the link or contact me via mail.
       </P>
       <P>
         I believe that all great things happen at the intersection of
@@ -30,7 +30,7 @@ const IndexPage = () => (
         doing design, I like to tinker with code, learn more about AI/ML, enjoy
         art & music. Based in Kyiv, Ukraine.
       </P>
-    </About>
+    </Bio>
 
     <Section id="work">
       <H2>Selected work</H2>

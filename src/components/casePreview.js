@@ -47,13 +47,16 @@ const CaseDescriptionWrapper = styled.div`
     opacity: 0.3;
     margin-bottom: 40px;
   }
+
+  button {
+    margin-top: 22px;
+  }
 `
 
 const CasePreview = ({
   slug,
   title,
   description,
-  client,
   year,
   company,
   color,
@@ -74,7 +77,7 @@ const CasePreview = ({
 /
 </H3>
         <H3>{description}</H3>
-        <CaseDetails client={client} year={year} company={company} />
+        <CaseDetails client={title} year={year} company={company} />
         {light ? (
           <StyledLink to={`/${slug}/`}>
             <Button light>

@@ -5,6 +5,7 @@ import { theme } from "./designSystem/theme"
 import H2 from "./designSystem/H2"
 import P from "./designSystem/P"
 import ExternalLink from "./designSystem/ExternalLink"
+import IconArrow from "./designSystem/IconArrow"
 
 const StyledFooter = styled.footer`
   background-color: ${theme.dark};
@@ -21,10 +22,16 @@ const StyledFooter = styled.footer`
   }
 `
 
+const FooterLinks = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0 80px 0;
+`
+
 const ExternalLinks = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin: 24px 0 80px 0;
   color: ${theme.accent};
 
   a,
@@ -47,6 +54,26 @@ const ExternalLinks = styled.div`
 
   a:hover::after {
     width: 100%;
+  }
+`
+
+const ButtonTop = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  border: 1px solid ${theme.white};
+  border-radius: 100px;
+
+  svg {
+    transform: rotate(-90deg);
+    fill: ${theme.white};
+  }
+
+  &:hover {
+    opacity: 1;
   }
 `
 
@@ -77,16 +104,27 @@ const SocialMediaLinks = [
   },
 ]
 
+const scrollToTop = () => {
+  if (window) {
+    window.scrollTo(0, 0)
+  }
+}
+
 const Footer = () => (
   <StyledFooter id="contact">
     <H2>Contact</H2>
-    <ExternalLinks>
-      {SocialMediaLinks.map(link => (
-        <ExternalLink key={link.name} href={link.link} target="_blank">
-          {link.name}
-        </ExternalLink>
-      ))}
-    </ExternalLinks>
+    <FooterLinks>
+      <ExternalLinks>
+        {SocialMediaLinks.map(link => (
+          <ExternalLink key={link.name} href={link.link} target="_blank">
+            {link.name}
+          </ExternalLink>
+        ))}
+      </ExternalLinks>
+      <ButtonTop onClick={scrollToTop}>
+        <IconArrow />
+      </ButtonTop>
+    </FooterLinks>
     <P>© {new Date().getFullYear()} Vlad Kyshkan</P>
   </StyledFooter>
 )

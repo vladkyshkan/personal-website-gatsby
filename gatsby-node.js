@@ -1,7 +1,7 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
     {
-      allProjectsJson {
+      allCasesJson {
         edges {
           node {
             slug
@@ -16,9 +16,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
-  const projects = result.data.allProjectsJson.edges
+  const cases = result.data.allCasesJson.edges
 
-  projects.forEach(({ node: { slug } }) => {
+  cases.forEach(({ node: { slug } }) => {
     actions.createPage({
       path: `/${slug}/`,
       component: require.resolve("./src/templates/case.js"),

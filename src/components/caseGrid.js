@@ -10,17 +10,14 @@ const CaseGridStyled = styled.div`
 const CaseGrid = () => {
   const data = useStaticQuery(graphql`
     {
-      allProjectsJson {
+      allCasesJson {
         edges {
           node {
             title
             slug
             description
-            details {
-              client
-              year
-              company
-            }
+            year
+            company
             color
             light
             image {
@@ -36,14 +33,13 @@ const CaseGrid = () => {
     }
   `)
 
-  const projects = data.allProjectsJson.edges
+  const cases = data.allCasesJson.edges
 
   return (
     <CaseGridStyled>
-      {projects.map(({ node: project }, index) => {
-        const { title, description, slug, color, light } = project
-        const { client, year, company } = project.details
-        const imageData = project.image.childImageSharp.fluid
+      {cases.map(({ node: cases }, index) => {
+        const { title, description, slug, year, company, color, light } = cases
+        const imageData = cases.image.childImageSharp.fluid
         const isEven = index % 2
 
         return (
@@ -51,7 +47,6 @@ const CaseGrid = () => {
             title={title}
             description={description}
             slug={slug}
-            client={client}
             year={year}
             company={company}
             imageData={imageData}

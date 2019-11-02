@@ -2,24 +2,20 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import GlobalStyle from "../components/designSystem/globalStyle"
-import Case from "../components/case"
+import CaseLayout from "../components/caseLayout"
 
 export const query = graphql`
   query($slug: String!) {
-    projectsJson(slug: { eq: $slug }) {
+    casesJson(slug: { eq: $slug }) {
       title
       description
-      details {
-        client
-        year
-        company
-      }
+      year
+      company
       color
       light
       image {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -29,20 +25,17 @@ export const query = graphql`
 `
 
 const CaseTemplate = ({ data }) => {
-  const project = data.projectsJson
-  const { title, description, color, light } = project
-  const { client, year, company } = project.details
-  const imageData = project.image.childImageSharp.fluid
+  const cases = data.casesJson
+  const { title, description, year, company, color, light } = cases
+  const imageData = cases.image.childImageSharp.fluid
 
   return (
     <Layout>
       <SEO title={title} />
-      <GlobalStyle />
 
-      <Case
+      <CaseLayout
         title={title}
         description={description}
-        client={client}
         year={year}
         company={company}
         color={color}

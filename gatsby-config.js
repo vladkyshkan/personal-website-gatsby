@@ -6,23 +6,24 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-styled-components",
-    "gatsby-plugin-react-helmet",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: `${__dirname}/src/data/images`,
-      },
-    },
     "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-react-helmet",
+    "gatsby-transformer-json",
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "project",
-        path: "./src/data",
+        name: `pages`,
+        path: `${__dirname}/src/data/`,
       },
     },
-    "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -35,6 +36,5 @@ module.exports = {
         icon: "src/data/images/favicon.png", // This path is relative to the root of the site.
       },
     },
-    "gatsby-transformer-json",
   ],
 }

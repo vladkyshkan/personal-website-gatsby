@@ -3,7 +3,7 @@
     "title": "MD Fashion",
     "slug": "md-fashion",
     "image": "./images/cases/md-fashion/md-fashion-hero.jpg",
-    "description": "Apparel marketplace redesign and Android application",
+    "description": "Apparel marketplace redesign & Android application",
     "year": "2019",
     "company": "Omnicore",
     "color": "#EAE2D8",
@@ -20,13 +20,13 @@
     "light": false
   },
   {
-    "title": "Symbol",
-    "slug": "symbol",
-    "image": "./images/cases/symbol/symbol-hero.jpg",
-    "description": "E-commerce website design for the multibrand luxury apparel store",
+    "title": "Noblesse",
+    "slug": "noblesse",
+    "image": "./images/cases/noblesse/noblesse-hero.jpg",
+    "description": "E-commerce website design for the watches &\u00A0jewelry store",
     "year": "2019",
     "company": "Omnicore",
-    "color": "#232323",
+    "color": "#1B1F25",
     "light": false
   },
   {

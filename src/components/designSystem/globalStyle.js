@@ -58,6 +58,11 @@ const GlobalStyle = createGlobalStyle`
   h6 {
     margin: 0;
   }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 `
 
 export default GlobalStyle

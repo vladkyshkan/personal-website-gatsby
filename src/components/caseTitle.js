@@ -29,12 +29,12 @@ const CaseCover = styled.div`
   max-height: 100%;
   height: 500px;
 
-  img {
+  div {
     margin-top: 40px;
   }
 `
 
-const CaseLayout = () => {
+const CaseTitle = () => {
   const data = useStaticQuery(graphql`
     {
       allCasesJson(filter: { slug: { eq: "nova-poshta" } }) {
@@ -46,13 +46,13 @@ const CaseLayout = () => {
             company
             color
             light
-            # image {
-            #   childImageSharp {
-            #     fluid(quality: 100) {
-            #       ...GatsbyImageSharpFluid
-            #     }
-            #   }
-            # }
+            image {
+              childImageSharp {
+                fluid(quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
@@ -60,22 +60,33 @@ const CaseLayout = () => {
   `)
 
   const cases = data.allCasesJson.edges
-  const { title, description, slug, year, company, color, light } = cases
-  // const imageData = cases.image.childImageSharp.fluid
 
   return (
-    <CaseStyled>
-      <CaseHeroScreen color="red" light={light}>
-        <CaseHeroScreenTitle>
-          <H2>{description}</H2>
-          <CaseDetails client={title} year={year} company={company} />
-        </CaseHeroScreenTitle>
-        <CaseCover>
-          {/* <Image fluid={imageData} alt={title} style={{ maxHeight: "100%" }} /> */}
-        </CaseCover>
-      </CaseHeroScreen>
-    </CaseStyled>
+    <div>
+      {cases.map(({ node: cases }) => {
+        const { title, description, year, company, color, light } = cases
+        const imageData = cases.image.childImageSharp.fluid
+
+        return (
+          <CaseStyled key={title}>
+            <CaseHeroScreen color={color} light={light}>
+              <CaseHeroScreenTitle>
+                <H2>{description}</H2>
+                <CaseDetails client={title} year={year} company={company} />
+              </CaseHeroScreenTitle>
+              <CaseCover>
+                <Image
+                  fluid={imageData}
+                  alt={title}
+                  style={{ maxHeight: "100%" }}
+                />
+              </CaseCover>
+            </CaseHeroScreen>
+          </CaseStyled>
+        )
+      })}
+    </div>
   )
 }
 
-export default CaseLayout
+export default CaseTitle

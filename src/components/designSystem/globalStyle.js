@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import { theme } from "./theme"
 import ButlerLight from "../../fonts/ButlerLight.otf"
 import ButlerMedium from "../../fonts/ButlerMedium.otf"
 import IBMPlexMonoRegular from "../../fonts/IBMPlexMonoRegular.ttf"
@@ -42,12 +43,14 @@ const GlobalStyle = createGlobalStyle`
     font-family: "IBM Plex Mono", monospace;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    
   }
 
   body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: ${theme.bg};
   }
 
   h1,

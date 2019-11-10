@@ -5,6 +5,7 @@ const P = styled.p`
   line-height: 180%;
   display: inline-block;
   font-weight: ${props => (props.bold ? 600 : 400)};
+  margin: 0;
 `
 
 export default P

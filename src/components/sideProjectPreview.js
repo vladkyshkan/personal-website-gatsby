@@ -18,6 +18,7 @@ const SideProjectsPreviewStyled = styled.div`
 const SideProjectsDescription = styled.div`
   h3 {
     color: ${theme.accent};
+    margin-bottom: 16px;
   }
 
   p {

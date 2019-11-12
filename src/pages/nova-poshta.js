@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unescaped-entities */
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
@@ -8,7 +10,10 @@ import SEO from "../components/seo"
 import GlobalStyle from "../components/designSystem/globalStyle"
 import H3 from "../components/designSystem/H3"
 import H4 from "../components/designSystem/H4"
+import H5 from "../components/designSystem/H5"
 import P from "../components/designSystem/P"
+import Captcha from "../components/designSystem/Captcha"
+import StyledLink from "../components/designSystem/StyledLink"
 import { theme } from "../components/designSystem/theme"
 
 const CaseContent = styled.div`
@@ -88,6 +93,35 @@ const CaseQuote = styled.div`
 const CaseBlockDark = styled(CaseBlock)`
   color: ${theme.accent};
   background-color: ${theme.dark};
+`
+
+const CaseNext = styled.div`
+  margin: 0 5%;
+  padding: 32px 12% 0 12%;
+  color: ${theme.white};
+  background-color: #1b1f25;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 1152px;
+  transition: 0.3s ease-in-out;
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  h4 {
+    margin-bottom: 32px;
+  }
+
+  &:hover {
+    transform: scale(1.04);
+    transition: 0.3s ease-in-out;
+  }
+`
+
+const CaseNextImage = styled.div`
+  width: 100%;
 `
 
 const NovaPoshta = ({ data }) => (
@@ -184,7 +218,7 @@ const NovaPoshta = ({ data }) => (
               <Image fixed={data.Image3.childImageSharp.fixed} />
             </div>
             <div>
-              <H4>Nataliia, 43 y.o., Business coach</H4>
+              <H5>Nataliia, 43 y.o., business coach</H5>
               <P bold>
                 “I’m not sure that I could create a package throught the app
                 correctly, so I shouldn't do this once again in the department.”
@@ -282,6 +316,7 @@ const NovaPoshta = ({ data }) => (
           their status.
         </P>
       </CaseBlock>
+      <Image fluid={data.Image6.childImageSharp.fluid} />
       <CaseBlock>
         <H3>Package creation</H3>
         <P>
@@ -358,6 +393,15 @@ const NovaPoshta = ({ data }) => (
         <H3>Credits</H3>
         <P>Co-designed with Yana Bilyk, Dmitriy Kovalenko and Timur Kolesnik</P>
       </CaseBlock>
+      <StyledLink>
+        <CaseNext>
+          <Captcha>Next project</Captcha>
+          <H4>E-commerce website design for the watches & jewelry store</H4>
+          <CaseNextImage>
+            <Image fluid={data.Image12.childImageSharp.fluid} />
+          </CaseNextImage>
+        </CaseNext>
+      </StyledLink>
     </CaseContent>
   </Layout>
 )
@@ -428,6 +472,15 @@ export const query = graphql`
         }
       }
     }
+    Image6: file(
+      relativePath: { eq: "images/cases/nova-poshta/nova-poshta-6.jpg" }
+    ) {
+      childImageSharp {
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     Image7: file(
       relativePath: { eq: "images/cases/nova-poshta/nova-poshta-7.jpg" }
     ) {
@@ -469,6 +522,15 @@ export const query = graphql`
     ) {
       childImageSharp {
         fluid(maxWidth: 928, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    Image12: file(
+      relativePath: { eq: "images/cases/nova-poshta/nova-poshta-next.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }

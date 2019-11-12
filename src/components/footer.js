@@ -10,6 +10,7 @@ import IconArrow from "./designSystem/IconArrow"
 const StyledFooter = styled.footer`
   background-color: ${theme.dark};
   padding: 80px 5% 40px;
+  transform: translateZ(0px);
 
   h2 {
     color: ${theme.accent};

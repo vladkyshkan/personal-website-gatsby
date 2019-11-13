@@ -1,9 +1,9 @@
 import { createGlobalStyle } from "styled-components"
 import { theme } from "./theme"
-import ButlerLight from "../../fonts/ButlerLight.otf"
-import ButlerMedium from "../../fonts/ButlerMedium.otf"
-import IBMPlexMonoRegular from "../../fonts/IBMPlexMonoRegular.ttf"
-import IBMPlexMonoSemiBold from "../../fonts/IBMPlexMonoSemiBold.ttf"
+import ButlerLight from "../../fonts/butlerlight-webfont.woff2"
+import ButlerMedium from "../../fonts/butlermedium-webfont.woff2"
+import IBMPlexMonoRegular from "../../fonts/ibmplexmonoregular-webfont.woff2"
+import IBMPlexMonoSemiBold from "../../fonts/ibmplexmonosemibold-webfont.woff2"
 
 const GlobalStyle = createGlobalStyle`
   *, *::after, *::before {
@@ -14,28 +14,28 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Butler";
     font-style: normal;
     font-weight: 300;
-    src: url(${ButlerLight}) format('otf');
+    src: url(${ButlerLight}) format('woff2');
   }
 
   @font-face {
     font-family: "Butler";
     font-style: normal;
     font-weight: 500;
-    src: url(${ButlerMedium}) format('otf');
+    src: url(${ButlerMedium}) format('woff2');
   }
 
   @font-face {
     font-family: "IBM Plex Mono";
     font-style: normal;
     font-weight: 400;
-    src: url(${IBMPlexMonoRegular}) format('ttf');
+    src: url(${IBMPlexMonoRegular}) format('woff2');
   }
 
   @font-face {
     font-family: "IBM Plex Mono";
     font-style: normal;
     font-weight: 600;
-    src: url(${IBMPlexMonoSemiBold}) format('ttf');
+    src: url(${IBMPlexMonoSemiBold}) format('woff2');
   }
 
   html {

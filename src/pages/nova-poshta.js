@@ -5,6 +5,11 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 import Image from "gatsby-image"
 import CaseTitle from "../components/caseTitle"
+import CaseContent from "../components/caseContent"
+import CaseBlock from "../components/caseBlock"
+import CaseImage from "../components/caseImage"
+import CaseQuote from "../components/caseQuote"
+import CaseNext from "../components/caseNext"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import GlobalStyle from "../components/designSystem/globalStyle"
@@ -14,111 +19,6 @@ import H5 from "../components/designSystem/H5"
 import P from "../components/designSystem/P"
 import Captcha from "../components/designSystem/Captcha"
 import StyledLink from "../components/designSystem/StyledLink"
-import { theme } from "../components/designSystem/theme"
-
-const CaseContent = styled.div`
-  margin-top: 320px;
-`
-
-const CaseBlock = styled.div`
-  padding: 120px 0;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 32px;
-  color: ${theme.dark};
-  background-color: ${props => (props.gray ? theme.gray : theme.bg)};
-
-  h3 {
-    grid-column-start: 3;
-    grid-column-end: span 2;
-  }
-
-  div,
-  p {
-    grid-column-start: 6;
-    grid-column-end: span 5;
-  }
-
-  ul {
-    font-size: 14px;
-    line-height: 25px;
-    margin: 18px 0 0 18px;
-  }
-
-  li {
-    padding-bottom: 8px;
-
-    &:last-child {
-      padding-bottom: 0;
-    }
-  }
-
-  p:nth-of-type(2) {
-    margin-top: 32px;
-  }
-`
-
-const CaseImage = styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 32px;
-  margin-top: -60px;
-  padding-bottom: 120px;
-  background-color: ${props => (props.gray ? theme.gray : theme.bg)};
-
-  div {
-    max-width: 928px;
-    grid-column-start: 3;
-    grid-column-end: span 8;
-    box-shadow: ${props =>
-      props.shadow ? "0px 6px 30px rgba(0, 0, 0, 0.1)" : null};
-  }
-`
-
-const CaseQuote = styled.div`
-  display: flex;
-  align-items: flex-start;
-  margin-top: 48px;
-
-  h4 {
-    margin-bottom: 16px;
-  }
-
-  div {
-    margin-right: 16px;
-  }
-`
-
-const CaseBlockDark = styled(CaseBlock)`
-  color: ${theme.accent};
-  background-color: ${theme.dark};
-`
-
-const CaseNext = styled.div`
-  margin: 0 5%;
-  padding: 32px 12% 0 12%;
-  color: ${theme.white};
-  background-color: #1b1f25;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  max-width: 1152px;
-  transition: 0.3s ease-in-out;
-
-  p {
-    margin-bottom: 16px;
-  }
-
-  h4 {
-    margin-bottom: 32px;
-  }
-
-  &:hover {
-    transform: scale(1.04);
-    transition: 0.3s ease-in-out;
-  }
-`
 
 const CaseNextImage = styled.div`
   width: 100%;
@@ -242,7 +142,7 @@ const NovaPoshta = ({ data }) => (
       <CaseImage gray shadow>
         <Image fluid={data.Image4.childImageSharp.fluid} />
       </CaseImage>
-      <CaseBlockDark>
+      <CaseBlock dark>
         <H3>Insights</H3>
         <div>
           <P>Key problems that our team has discovered included:</P>
@@ -258,7 +158,7 @@ const NovaPoshta = ({ data }) => (
             </li>
           </ul>
         </div>
-      </CaseBlockDark>
+      </CaseBlock>
       <CaseBlock>
         <H3>Early concepts</H3>
         <div>
@@ -379,7 +279,7 @@ const NovaPoshta = ({ data }) => (
       <CaseImage>
         <Image fluid={data.Image11.childImageSharp.fluid} />
       </CaseImage>
-      <CaseBlockDark>
+      <CaseBlock dark>
         <H3>Results</H3>
         <P>
           Results of user research were presented to Nova Poshta and included
@@ -388,7 +288,7 @@ const NovaPoshta = ({ data }) => (
           well-received by Nova Poshta management and is taken into account in
           the redesign of existing application.
         </P>
-      </CaseBlockDark>
+      </CaseBlock>
       <CaseBlock>
         <H3>Credits</H3>
         <P>Co-designed with Yana Bilyk, Dmitriy Kovalenko and Timur Kolesnik</P>

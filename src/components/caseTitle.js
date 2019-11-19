@@ -1,5 +1,4 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 import Image from "gatsby-image"
 import { theme } from "./designSystem/theme"
@@ -34,59 +33,26 @@ const CaseCover = styled.div`
   }
 `
 
-const CaseTitle = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allCasesJson(filter: { slug: { eq: "nova-poshta" } }) {
-        edges {
-          node {
-            title
-            description
-            year
-            company
-            color
-            light
-            image {
-              childImageSharp {
-                fluid(quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  const cases = data.allCasesJson.edges
-
-  return (
-    <div>
-      {cases.map(({ node: cases }) => {
-        const { title, description, year, company, color, light } = cases
-        const imageData = cases.image.childImageSharp.fluid
-
-        return (
-          <CaseStyled key={title}>
-            <CaseHeroScreen color={color} light={light}>
-              <CaseHeroScreenTitle>
-                <H2>{description}</H2>
-                <CaseDetails client={title} year={year} company={company} />
-              </CaseHeroScreenTitle>
-              <CaseCover>
-                <Image
-                  fluid={imageData}
-                  alt={title}
-                  style={{ maxHeight: "100%" }}
-                />
-              </CaseCover>
-            </CaseHeroScreen>
-          </CaseStyled>
-        )
-      })}
-    </div>
-  )
-}
+const CaseTitle = ({
+  title,
+  description,
+  year,
+  company,
+  color,
+  light,
+  imageData,
+}) => (
+  <CaseStyled key={title}>
+    <CaseHeroScreen color={color} light={light}>
+      <CaseHeroScreenTitle>
+        <H2>{description}</H2>
+        <CaseDetails client={title} year={year} company={company} />
+      </CaseHeroScreenTitle>
+      <CaseCover>
+        <Image fluid={imageData} alt={title} style={{ maxHeight: "100%" }} />
+      </CaseCover>
+    </CaseHeroScreen>
+  </CaseStyled>
+)
 
 export default CaseTitle

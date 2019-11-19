@@ -4,7 +4,7 @@ import P from "./designSystem/P"
 
 const CaseDetailsStyled = styled.div`
   display: flex;
-  margin: 24px 0 18px 0;
+  margin: 24px 0 10px 0;
 `
 
 const CaseDetailsTitle = styled.div`

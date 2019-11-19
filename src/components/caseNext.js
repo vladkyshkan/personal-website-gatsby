@@ -20,6 +20,10 @@ const CaseNext = styled.div`
     margin-bottom: 32px;
   }
 
+  div {
+    width: 100%;
+  }
+
   &:hover {
     transform: scale(1.04);
     transition: 0.3s ease-in-out;

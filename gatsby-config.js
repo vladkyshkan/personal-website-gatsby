@@ -3,6 +3,7 @@ module.exports = {
     title: "Vlad Kyshkan",
     description:
       "Digital designer, currently create the best e-commerce experience and make online shopping for customers easier and more comfortable at Omnicore",
+    author: "Vlad Kyshkan",
   },
   plugins: [
     "gatsby-plugin-styled-components",

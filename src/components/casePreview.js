@@ -49,7 +49,7 @@ const CaseDescriptionWrapper = styled.div`
   }
 
   button {
-    margin-top: 22px;
+    margin-top: 32px;
   }
 `
 
@@ -71,11 +71,7 @@ const CasePreview = ({
     </CaseCover>
     <CaseDescription color={color} right={right}>
       <CaseDescriptionWrapper light={light}>
-        <H3>
-0
-{index + 1}
-/
-</H3>
+        <H3>0{index + 1}/</H3>
         <H3>{description}</H3>
         <CaseDetails client={title} year={year} company={company} />
         {light ? (

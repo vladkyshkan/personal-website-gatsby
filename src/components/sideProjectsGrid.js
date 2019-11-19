@@ -13,7 +13,7 @@ const SideProjectsGridStyled = styled.div`
     position: absolute;
     left: 1px;
     right: 1px;
-    top: -40px;
+    top: -48px;
     border-bottom: 1px solid ${theme.accent};
     opacity: 0.5;
   }

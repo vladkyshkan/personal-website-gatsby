@@ -12,7 +12,7 @@
 //   `)
 
 //   if (result.error) {
-//     reporter.panic("There was a problem loading your projects!")
+//     reporter.panic("There was a problem loading your projects")
 //     return
 //   }
 

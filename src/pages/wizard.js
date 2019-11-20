@@ -7,7 +7,7 @@ import CaseContent from "../components/caseContent"
 import CaseBlock from "../components/caseBlock"
 import CaseImage from "../components/caseImage"
 import CaseNext from "../components/caseNext"
-import Video from "../components/Video"
+import Video from "../components/video"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import GlobalStyle from "../components/designSystem/globalStyle"
@@ -109,8 +109,11 @@ const Wizard = ({ data }) => {
               <CaseBlock>
                 <H3>Credits</H3>
                 <P>
-                  Art director: Alexander Kim <br></br>Designer: Vlad Kyshkan
-                </P>
+                  Art director: Alexander Kim 
+{' '}
+<br></br>
+Designer: Vlad Kyshkan
+</P>
               </CaseBlock>
               <StyledLink to="/md-fashion">
                 <CaseNext>

@@ -35,7 +35,8 @@ const CaseBlock = styled.div`
     }
   }
 
-  p:nth-of-type(2) {
+  p:nth-of-type(2),
+  button {
     margin-top: 32px;
   }
 `

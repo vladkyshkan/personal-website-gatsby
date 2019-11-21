@@ -1,11 +1,13 @@
 import styled from "styled-components"
 import { theme } from "./designSystem/theme"
 
-const CaseNext = styled.div`
+const CaseNext = styled.div.attrs(props => ({
+  background: props.background,
+}))`
   margin: 0 5%;
   padding: 32px 12% 0 12%;
-  color: ${theme.white};
-  background-color: #1b1f25;
+  color: ${props => (props.dark ? theme.dark : theme.white)};
+  background-color: ${props => props.background};
   display: flex;
   align-items: flex-start;
   flex-direction: column;

@@ -15,8 +15,11 @@ import H3 from "../components/designSystem/H3"
 import H4 from "../components/designSystem/H4"
 import H5 from "../components/designSystem/H5"
 import P from "../components/designSystem/P"
+import Button from "../components/designSystem/Button"
+import IconArrow from "../components/designSystem/IconArrow"
 import Captcha from "../components/designSystem/Captcha"
 import StyledLink from "../components/designSystem/StyledLink"
+import ExternalLink from "../components/designSystem/ExternalLink"
 
 const MdFashion = ({ data }) => {
   const cases = data.allCasesJson.edges
@@ -24,7 +27,7 @@ const MdFashion = ({ data }) => {
   return (
     <div>
       {cases.map(({ node: cases }) => {
-        const { title, description, year, company, color, light } = cases
+        const { title, description, year, company, color, light, url } = cases
         const imageData = cases.image.childImageSharp.fluid
 
         return (
@@ -44,17 +47,26 @@ const MdFashion = ({ data }) => {
             <CaseContent>
               <CaseBlock>
                 <H3>Overview</H3>
-                <P>
-                  MD Fashion is an authorized distributor of many fashion and
-                  lifestyle brands (Tommy Hilfiger, Under Armour, Calvin Klein,
-                  Diesel etc) in Ukraine. The company sells its production both
-                  through 140 stores as well as website and iOS application.
-                </P>
-                <P bold>
-                  Currently MD Fashion looks for new channels for attracting
-                  customers and engaging with existing ones. Our task was to
-                  create an Android mobile application to fulfill these goals.
-                </P>
+                <div>
+                  <P>
+                    MD Fashion is an authorized distributor of many fashion and
+                    lifestyle brands (Tommy Hilfiger, Under Armour, Calvin
+                    Klein, Diesel etc) in Ukraine. The company sells its
+                    production both through 140 stores as well as website and
+                    iOS application.
+                  </P>
+                  <P bold>
+                    Currently MD Fashion looks for new channels for attracting
+                    customers and engaging with existing ones. Our task was to
+                    create an Android mobile application to fulfill these goals.
+                  </P>
+                  <ExternalLink href={url} target="_blank">
+                    <Button light>
+                      View website
+                      <IconArrow />
+                    </Button>
+                  </ExternalLink>
+                </div>
               </CaseBlock>
               {/* <Image fluid={data.Image1.childImageSharp.fluid} /> */}
             </CaseContent>
@@ -76,6 +88,7 @@ export const query = graphql`
           company
           color
           light
+          url
           image {
             childImageSharp {
               fluid(quality: 100) {

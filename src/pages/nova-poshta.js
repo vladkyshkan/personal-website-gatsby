@@ -324,7 +324,7 @@ const NovaPoshta = ({ data }) => {
                 </P>
               </CaseBlock>
               <StyledLink to="/noblesse">
-                <CaseNext>
+                <CaseNext background="#1B1F25">
                   <Captcha>Next project</Captcha>
                   <H4>
                     E-commerce website design for the watches & jewelry store
@@ -367,7 +367,7 @@ export const query = graphql`
       relativePath: { eq: "images/cases/nova-poshta/nova-poshta-1.jpg" }
     ) {
       childImageSharp {
-        fluid(quality: 100) {
+        fluid(maxWidth: 1152, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -412,7 +412,7 @@ export const query = graphql`
       relativePath: { eq: "images/cases/nova-poshta/nova-poshta-6.jpg" }
     ) {
       childImageSharp {
-        fluid(quality: 100) {
+        fluid(maxWidth: 1152, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -421,7 +421,7 @@ export const query = graphql`
       relativePath: { eq: "images/cases/nova-poshta/nova-poshta-7.jpg" }
     ) {
       childImageSharp {
-        fluid(quality: 100) {
+        fluid(maxWidth: 1152, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -430,7 +430,7 @@ export const query = graphql`
       relativePath: { eq: "images/cases/nova-poshta/nova-poshta-8.jpg" }
     ) {
       childImageSharp {
-        fluid(quality: 100) {
+        fluid(maxWidth: 1152, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -439,7 +439,7 @@ export const query = graphql`
       relativePath: { eq: "images/cases/nova-poshta/nova-poshta-9.jpg" }
     ) {
       childImageSharp {
-        fluid(quality: 100) {
+        fluid(maxWidth: 1152, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -448,7 +448,7 @@ export const query = graphql`
       relativePath: { eq: "images/cases/nova-poshta/nova-poshta-10.jpg" }
     ) {
       childImageSharp {
-        fluid(quality: 100) {
+        fluid(maxWidth: 1152, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -466,7 +466,7 @@ export const query = graphql`
       relativePath: { eq: "images/cases/nova-poshta/nova-poshta-next.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }

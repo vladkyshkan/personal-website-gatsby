@@ -7,6 +7,7 @@ import CaseTitle from "../components/caseTitle"
 import CaseContent from "../components/caseContent"
 import CaseBlock from "../components/caseBlock"
 import CaseImage from "../components/caseImage"
+import CaseImageWide from "../components/caseImageWide"
 import CaseQuote from "../components/caseQuote"
 import CaseNext from "../components/caseNext"
 import Layout from "../components/layout"
@@ -61,7 +62,9 @@ const NovaPoshta = ({ data }) => {
                   Center.
                 </P>
               </CaseBlock>
-              <Image fluid={data.Image1.childImageSharp.fluid} />
+              <CaseImageWide>
+                <Image fluid={data.Image1.childImageSharp.fluid} />
+              </CaseImageWide>
               <CaseBlock>
                 <H3>Research methods</H3>
                 <div>
@@ -180,7 +183,7 @@ const NovaPoshta = ({ data }) => {
                   </ul>
                 </div>
               </CaseBlock>
-              <CaseBlock>
+              <CaseBlock gray>
                 <H3>Early concepts</H3>
                 <div>
                   <P>
@@ -223,10 +226,10 @@ const NovaPoshta = ({ data }) => {
                   </ul>
                 </div>
               </CaseBlock>
-              <CaseImage>
+              <CaseImage gray>
                 <Image fluid={data.Image5.childImageSharp.fluid} />
               </CaseImage>
-              <CaseBlock gray>
+              <CaseBlock>
                 <H3>The solution</H3>
                 <P>
                   Below you could find the solution itself. We have redesigned
@@ -238,7 +241,9 @@ const NovaPoshta = ({ data }) => {
                   could easily access them and check their status.
                 </P>
               </CaseBlock>
-              <Image fluid={data.Image6.childImageSharp.fluid} />
+              <CaseImageWide>
+                <Image fluid={data.Image6.childImageSharp.fluid} />
+              </CaseImageWide>
               <CaseBlock>
                 <H3>Package creation</H3>
                 <P>
@@ -256,7 +261,9 @@ const NovaPoshta = ({ data }) => {
                   and app will show it.
                 </P>
               </CaseBlock>
-              <Image fluid={data.Image7.childImageSharp.fluid} />
+              <CaseImageWide>
+                <Image fluid={data.Image7.childImageSharp.fluid} />
+              </CaseImageWide>
               <CaseBlock>
                 <P>
                   At the second step, the user should fill in all information
@@ -273,7 +280,9 @@ const NovaPoshta = ({ data }) => {
                   compare with package.
                 </P>
               </CaseBlock>
-              <Image fluid={data.Image8.childImageSharp.fluid} />
+              <CaseImageWide>
+                <Image fluid={data.Image8.childImageSharp.fluid} />
+              </CaseImageWide>
               <CaseBlock>
                 <P>
                   After the user has filled and reviewed details of shipment, he
@@ -282,7 +291,9 @@ const NovaPoshta = ({ data }) => {
                   department or indicate the recipient as a payer.
                 </P>
               </CaseBlock>
-              <Image fluid={data.Image9.childImageSharp.fluid} />
+              <CaseImageWide>
+                <Image fluid={data.Image9.childImageSharp.fluid} />
+              </CaseImageWide>
               <CaseBlock>
                 <P>
                   When the consignment note was successfully created, we tell
@@ -292,7 +303,9 @@ const NovaPoshta = ({ data }) => {
                   department or call courier).
                 </P>
               </CaseBlock>
-              <Image fluid={data.Image10.childImageSharp.fluid} />
+              <CaseImageWide>
+                <Image fluid={data.Image10.childImageSharp.fluid} />
+              </CaseImageWide>
               <CaseBlock>
                 <H3>User Tests</H3>
                 <P>

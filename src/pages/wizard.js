@@ -5,6 +5,7 @@ import Image from "gatsby-image"
 import CaseTitle from "../components/caseTitle"
 import CaseContent from "../components/caseContent"
 import CaseBlock from "../components/caseBlock"
+import CaseImageWide from "../components/caseImageWide"
 import CaseNext from "../components/caseNext"
 import Video from "../components/video"
 import Layout from "../components/layout"
@@ -18,8 +19,7 @@ import IconArrow from "../components/designSystem/IconArrow"
 import Captcha from "../components/designSystem/Captcha"
 import StyledLink from "../components/designSystem/StyledLink"
 import ExternalLink from "../components/designSystem/ExternalLink"
-import WizardVideo1 from "../data/images/cases/wizard/wizard-video-1.mp4"
-import WizardVideo2 from "../data/images/cases/wizard/wizard-video-2.mp4"
+import WizardVideo from "../data/images/cases/wizard/wizard-video.mp4"
 
 const Wizard = ({ data }) => {
   const cases = data.allCasesJson.edges
@@ -69,7 +69,9 @@ const Wizard = ({ data }) => {
                   </div>
                 </div>
               </CaseBlock>
-              <Image fluid={data.Image1.childImageSharp.fluid} />
+              <CaseImageWide>
+                <Image fluid={data.Image1.childImageSharp.fluid} />
+              </CaseImageWide>
               <CaseBlock>
                 <H3>Corporate website</H3>
                 <P>
@@ -78,13 +80,10 @@ const Wizard = ({ data }) => {
                   competitor's resources.
                 </P>
               </CaseBlock>
-              <Video autoPlay muted loop playsinline>
-                <source src={WizardVideo1} type="video/mp4" />
-              </Video>
-              <Image fluid={data.Image2.childImageSharp.fluid} />
-              <Video autoPlay muted loop playsinline>
-                <source src={WizardVideo2} type="video/mp4" />
-              </Video>
+              <Video src={WizardVideo} />
+              <CaseImageWide>
+                <Image fluid={data.Image2.childImageSharp.fluid} />
+              </CaseImageWide>
               <CaseBlock>
                 <H3>B2B platform</H3>
                 <P>
@@ -98,7 +97,9 @@ const Wizard = ({ data }) => {
                   system.
                 </P>
               </CaseBlock>
-              <Image fluid={data.Image3.childImageSharp.fluid} />
+              <CaseImageWide>
+                <Image fluid={data.Image3.childImageSharp.fluid} />
+              </CaseImageWide>
               <CaseBlock>
                 <P>
                   After registration partners receive access to closed
@@ -108,7 +109,9 @@ const Wizard = ({ data }) => {
                   managers.
                 </P>
               </CaseBlock>
-              <Image fluid={data.Image4.childImageSharp.fluid} />
+              <CaseImageWide>
+                <Image fluid={data.Image4.childImageSharp.fluid} />
+              </CaseImageWide>
               <CaseBlock>
                 <H3>Custom icon set</H3>
                 <P>
@@ -117,11 +120,15 @@ const Wizard = ({ data }) => {
                   quickly find neccesary section in product list.
                 </P>
               </CaseBlock>
-              <Image fluid={data.Image5.childImageSharp.fluid} />
+              <CaseImageWide>
+                <Image fluid={data.Image5.childImageSharp.fluid} />
+              </CaseImageWide>
               <CaseBlock>
                 <H3>Credits</H3>
                 <P>
-                  Art director: Alexander Kim <br></br>
+                  Art director: Alexander Kim 
+{' '}
+<br></br>
                   Designer: Vlad Kyshkan
                 </P>
               </CaseBlock>
@@ -201,7 +208,7 @@ export const query = graphql`
     }
     Image6: file(relativePath: { eq: "images/cases/wizard/wizard-next.jpg" }) {
       childImageSharp {
-        fluid(quality: 100) {
+        fluid(maxWidth: 844, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }

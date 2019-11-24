@@ -61,8 +61,17 @@ const MdFashion = ({ data }) => {
                     create an Android mobile application to fulfill these goals.
                   </P>
                   <ExternalLink href={url} target="_blank">
-                    <Button light>
+                    <Button dark>
                       View website
+                      <IconArrow />
+                    </Button>
+                  </ExternalLink>
+                  <ExternalLink
+                    href="https://play.google.com/store/apps/details?id=com.omnicore.md_fashion"
+                    target="_blank"
+                  >
+                    <Button dark>
+                      Download app
                       <IconArrow />
                     </Button>
                   </ExternalLink>

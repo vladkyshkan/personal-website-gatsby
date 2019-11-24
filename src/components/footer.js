@@ -117,7 +117,12 @@ const Footer = () => (
     <FooterLinks>
       <ExternalLinks>
         {SocialMediaLinks.map(link => (
-          <ExternalLink key={link.name} href={link.link} target="_blank">
+          <ExternalLink
+            key={link.name}
+            href={link.link}
+            target="_blank"
+            rel="noopener"
+          >
             {link.name}
           </ExternalLink>
         ))}

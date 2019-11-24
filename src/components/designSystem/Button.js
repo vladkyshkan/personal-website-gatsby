@@ -9,14 +9,14 @@ const Button = styled.button`
   letter-spacing: 1px;
   padding: 12px 70px;
   background-color: transparent;
-  color: ${props => (props.light ? theme.dark : theme.white)};
-  fill: ${props => (props.light ? theme.dark : theme.white)};
+  color: ${props => (props.dark ? theme.dark : theme.white)};
+  fill: ${props => (props.dark ? theme.dark : theme.white)};
   border: 1px solid
-    ${props => (props.light ? theme.borderDark : theme.borderWhite)};
+    ${props => (props.dark ? theme.borderDark : theme.borderWhite)};
   outline: none;
 
   &:hover {
-    border: 1px solid ${props => (props.light ? theme.Dark : theme.White)};
+    border: 1px solid ${props => (props.dark ? theme.Dark : theme.White)};
   }
 
   &:hover svg {

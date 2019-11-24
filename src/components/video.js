@@ -27,10 +27,10 @@ const ButtonVideo = styled.div`
   background-color: ${theme.white};
   box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease-in-out;
+  transform-origin: top left;
 
   &:hover {
-    width: 96px;
-    height: 96px;
+    transform: scale(1.1) translate(-50%, -50%);
     transition: 0.3s ease-in-out;
     cursor: pointer;
   }
@@ -38,7 +38,6 @@ const ButtonVideo = styled.div`
   svg {
     position: relative;
     left: 3px;
-    backface-visibility: hidden;
   }
 `
 

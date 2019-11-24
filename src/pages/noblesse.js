@@ -5,15 +5,13 @@ import Image from "gatsby-image"
 import CaseTitle from "../components/caseTitle"
 import CaseContent from "../components/caseContent"
 import CaseBlock from "../components/caseBlock"
-import CaseImage from "../components/caseImage"
-import CaseQuote from "../components/caseQuote"
+import CaseImageWide from "../components/caseImageWide"
 import CaseNext from "../components/caseNext"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import GlobalStyle from "../components/designSystem/globalStyle"
 import H3 from "../components/designSystem/H3"
 import H4 from "../components/designSystem/H4"
-import H5 from "../components/designSystem/H5"
 import P from "../components/designSystem/P"
 import Button from "../components/designSystem/Button"
 import IconArrow from "../components/designSystem/IconArrow"
@@ -50,17 +48,99 @@ const Noblesse = ({ data }) => {
                 <div>
                   <P>
                     Noblesse is the largest Ukrainian distributor of Swiss
-                    watches and jewelry.
+                    watches and jewelry and has 8 brick and mortar stores across
+                    country. Since 1999 the company has successfully operated
+                    offline and in recent years set a target to step in digital
+                    commerce.
+                  </P>
+                  <P bold>
+                    Our task was to create a custom e-commerce website with
+                    functional and distinctive design that could encourage sales
+                    and made online shopping easier.
                   </P>
                   <ExternalLink href={url} target="_blank">
-                    <Button light>
+                    <Button dark>
                       View website
                       <IconArrow />
                     </Button>
                   </ExternalLink>
                 </div>
               </CaseBlock>
-              {/* <Image fluid={data.Image1.childImageSharp.fluid} /> */}
+              <CaseImageWide>
+                <Image fluid={data.Image1.childImageSharp.fluid} />
+              </CaseImageWide>
+              <CaseBlock>
+                <H3>Product list & filtering</H3>
+                <P>
+                  Well-designed product list is a foundation of great e-commerce
+                  experience. Noblesse product list has left sidebar with
+                  categories that helps users easily understand their current
+                  scope and navigate within other product categories.
+                </P>
+                <P>
+                  When a user is hovering over product item thumbnail, she could
+                  see items details.
+                </P>
+              </CaseBlock>
+              <CaseImageWide>
+                <Image fluid={data.Image2.childImageSharp.fluid} />
+              </CaseImageWide>
+              <CaseBlock>
+                <H3>Product page</H3>
+                <P>
+                  Noblesse product page has "classic" and well-known for users
+                  layout: photo on left side and product description on right
+                  side. Here customer can find all necessary information
+                  regarding product such as collection, material,
+                </P>
+              </CaseBlock>
+              <CaseImageWide>
+                <Image fluid={data.Image3.childImageSharp.fluid} />
+              </CaseImageWide>
+              <CaseBlock>
+                <H3>Mobile experience</H3>
+                <P>
+                  One of the key objective Wizard wanted to solve was
+                  simplification of product ordering for wholesale customers and
+                  minimization of human factors during the ordering process.
+                </P>
+              </CaseBlock>
+              <CaseImageWide>
+                <Image fluid={data.Image4.childImageSharp.fluid} />
+              </CaseImageWide>
+              <CaseBlock>
+                <H3>Marketing materials</H3>
+                <P>
+                  One of the key objective Wizard wanted to solve was
+                  simplification of product ordering for wholesale customers and
+                  minimization of human factors during the ordering process.
+                </P>
+              </CaseBlock>
+              <CaseImageWide>
+                <Image fluid={data.Image5.childImageSharp.fluid} />
+              </CaseImageWide>
+              <CaseImageWide>
+                <Image fluid={data.Image6.childImageSharp.fluid} />
+              </CaseImageWide>
+              <CaseBlock>
+                <H3>Credits</H3>
+                <P>
+                  Art director and lead designer: Vlad Kyshkan <br />
+                  Designer: Serhii Dziadyk
+                </P>
+              </CaseBlock>
+              <StyledLink to="/wizard">
+                <CaseNext background="#008990">
+                  <Captcha>Next project</Captcha>
+                  <H4>
+                    Corporate website & b2b platform for the sanitary ware
+                    supplier
+                  </H4>
+                  <div>
+                    <Image fluid={data.ImageNext.childImageSharp.fluid} />
+                  </div>
+                </CaseNext>
+              </StyledLink>
             </CaseContent>
           </Layout>
         )
@@ -88,6 +168,57 @@ export const query = graphql`
               }
             }
           }
+        }
+      }
+    }
+    Image1: file(relativePath: { eq: "images/cases/noblesse/noblesse-1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1152, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    Image2: file(relativePath: { eq: "images/cases/noblesse/noblesse-2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1152, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    Image3: file(relativePath: { eq: "images/cases/noblesse/noblesse-3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1152, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    Image4: file(relativePath: { eq: "images/cases/noblesse/noblesse-4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1152, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    Image5: file(relativePath: { eq: "images/cases/noblesse/noblesse-5.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1152, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    Image6: file(relativePath: { eq: "images/cases/noblesse/noblesse-6.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1152, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ImageNext: file(
+      relativePath: { eq: "images/cases/noblesse/noblesse-next.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 844, quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

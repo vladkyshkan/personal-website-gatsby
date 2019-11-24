@@ -343,7 +343,7 @@ const NovaPoshta = ({ data }) => {
                     E-commerce website design for the watches & jewelry store
                   </H4>
                   <div>
-                    <Image fluid={data.Image12.childImageSharp.fluid} />
+                    <Image fluid={data.ImageNext.childImageSharp.fluid} />
                   </div>
                 </CaseNext>
               </StyledLink>
@@ -475,7 +475,7 @@ export const query = graphql`
         }
       }
     }
-    Image12: file(
+    ImageNext: file(
       relativePath: { eq: "images/cases/nova-poshta/nova-poshta-next.jpg" }
     ) {
       childImageSharp {

@@ -15,7 +15,7 @@ const BookStyled = styled.div`
 
 const BookCard = ({ title, url, imageData }) => (
   <BookStyled>
-    <ExternalLink href={url} target="_blank">
+    <ExternalLink href={url} target="_blank" rel="noopener">
       <Image fluid={imageData} alt={title} />
     </ExternalLink>
   </BookStyled>

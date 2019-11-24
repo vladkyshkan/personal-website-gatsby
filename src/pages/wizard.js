@@ -61,7 +61,7 @@ const Wizard = ({ data }) => {
                   </P>
                   <div>
                     <ExternalLink href={url} target="_blank">
-                      <Button light>
+                      <Button dark>
                         View website
                         <IconArrow />
                       </Button>
@@ -128,7 +128,7 @@ const Wizard = ({ data }) => {
                 <P>
                   Art director: Alexander Kim 
 {' '}
-<br></br>
+<br />
                   Designer: Vlad Kyshkan
                 </P>
               </CaseBlock>
@@ -137,7 +137,7 @@ const Wizard = ({ data }) => {
                   <Captcha>Next project</Captcha>
                   <H4>Apparel marketplace redesign & Android application</H4>
                   <div>
-                    <Image fluid={data.Image6.childImageSharp.fluid} />
+                    <Image fluid={data.ImageNext.childImageSharp.fluid} />
                   </div>
                 </CaseNext>
               </StyledLink>
@@ -206,7 +206,9 @@ export const query = graphql`
         }
       }
     }
-    Image6: file(relativePath: { eq: "images/cases/wizard/wizard-next.jpg" }) {
+    ImageNext: file(
+      relativePath: { eq: "images/cases/wizard/wizard-next.jpg" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 844, quality: 100) {
           ...GatsbyImageSharpFluid

@@ -75,6 +75,7 @@ const ButtonTop = styled.div`
 
   &:hover {
     opacity: 1;
+    cursor: pointer;
   }
 `
 
@@ -92,16 +93,12 @@ const SocialMediaLinks = [
     link: "https://twitter.com/vladkyshkan",
   },
   {
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/vlad-kyshkan",
-  },
-  {
-    name: "Dribbble",
-    link: "https://dribbble.com/vladkyshkan",
-  },
-  {
     name: "Github",
     link: "https://github.com/vladkyshkan",
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/vlad-kyshkan",
   },
 ]
 

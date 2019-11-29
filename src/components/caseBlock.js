@@ -39,6 +39,12 @@ const CaseBlock = styled.div`
   button {
     margin-top: 32px;
   }
+
+  div {
+    p + h4 {
+      margin-top: 24px;
+    }
+  }
 `
 
 export default CaseBlock

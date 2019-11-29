@@ -70,20 +70,18 @@ const Noblesse = ({ data }) => {
                 <Image fluid={data.Image1.childImageSharp.fluid} />
               </CaseImageWide>
               <CaseBlock>
-                <H3>Product list & filtering</H3>
-                <P>
-                  Well-designed product list is a foundation of great e-commerce
-                  experience. Noblesse product list has left sidebar with
-                  categories that helps users easily understand their current
-                  scope and navigate within other product categories.
-                </P>
-                <P>
-                  When a user is hovering over product item thumbnail, she could
-                  see items details.
-                </P>
+                <H3>Homepage</H3>
+                <P>...</P>
               </CaseBlock>
               <CaseImageWide>
                 <Image fluid={data.Image2.childImageSharp.fluid} />
+              </CaseImageWide>
+              <CaseBlock>
+                <H3>Product list & filtering</H3>
+                <P>...</P>
+              </CaseBlock>
+              <CaseImageWide>
+                <Image fluid={data.Image3.childImageSharp.fluid} />
               </CaseImageWide>
               <CaseBlock>
                 <H3>Product page</H3>
@@ -91,36 +89,20 @@ const Noblesse = ({ data }) => {
                   Noblesse product page has "classic" and well-known for users
                   layout: photo on left side and product description on right
                   side. Here customer can find all necessary information
-                  regarding product such as collection, material,
+                  regarding product such as collection, material, stones or
+                  other specific details.
                 </P>
-              </CaseBlock>
-              <CaseImageWide>
-                <Image fluid={data.Image3.childImageSharp.fluid} />
-              </CaseImageWide>
-              <CaseBlock>
-                <H3>Mobile experience</H3>
-                <P>
-                  One of the key objective Wizard wanted to solve was
-                  simplification of product ordering for wholesale customers and
-                  minimization of human factors during the ordering process.
-                </P>
+                <P>Find online, buy offline...</P>
               </CaseBlock>
               <CaseImageWide>
                 <Image fluid={data.Image4.childImageSharp.fluid} />
               </CaseImageWide>
               <CaseBlock>
-                <H3>Marketing materials</H3>
-                <P>
-                  One of the key objective Wizard wanted to solve was
-                  simplification of product ordering for wholesale customers and
-                  minimization of human factors during the ordering process.
-                </P>
+                <H3>Mobile experience</H3>
+                <P>...</P>
               </CaseBlock>
               <CaseImageWide>
                 <Image fluid={data.Image5.childImageSharp.fluid} />
-              </CaseImageWide>
-              <CaseImageWide>
-                <Image fluid={data.Image6.childImageSharp.fluid} />
               </CaseImageWide>
               <CaseBlock>
                 <H3>Credits</H3>
@@ -200,13 +182,6 @@ export const query = graphql`
       }
     }
     Image5: file(relativePath: { eq: "images/cases/noblesse/noblesse-5.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1152, quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    Image6: file(relativePath: { eq: "images/cases/noblesse/noblesse-6.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1152, quality: 100) {
           ...GatsbyImageSharpFluid

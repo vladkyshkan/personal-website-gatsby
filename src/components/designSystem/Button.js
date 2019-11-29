@@ -17,6 +17,7 @@ const Button = styled.button`
 
   &:hover {
     border: 1px solid ${props => (props.dark ? theme.Dark : theme.White)};
+    cursor: pointer;
   }
 
   &:hover svg {

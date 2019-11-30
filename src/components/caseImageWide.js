@@ -6,7 +6,7 @@ const CaseImageWide = styled.div`
 
   div {
     max-width: 1152px;
-    margin: 0 5%;
+    margin: 0 auto;
   }
 `
 

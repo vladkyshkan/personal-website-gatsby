@@ -4,7 +4,7 @@ import { theme } from "./designSystem/theme"
 const CaseNext = styled.div.attrs(props => ({
   background: props.background,
 }))`
-  margin: 0 5%;
+  margin: 0 auto;
   padding: 32px 12% 0 12%;
   color: ${props => (props.dark ? theme.dark : theme.white)};
   background-color: ${props => props.background};

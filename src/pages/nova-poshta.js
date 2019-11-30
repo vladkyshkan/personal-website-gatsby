@@ -19,6 +19,7 @@ import H5 from "../components/designSystem/H5"
 import P from "../components/designSystem/P"
 import Captcha from "../components/designSystem/Captcha"
 import StyledLink from "../components/designSystem/StyledLink"
+import Wrapper from "../components/designSystem/Wrapper"
 
 const NovaPoshta = ({ data }) => {
   const cases = data.allCasesJson.edges
@@ -85,31 +86,35 @@ const NovaPoshta = ({ data }) => {
               <CaseImage>
                 <Image fluid={data.Image2.childImageSharp.fluid} />
               </CaseImage>
-              <CaseBlock gray>
-                <H3>Stakeholder interview</H3>
-                <div>
-                  <P>
-                    A first step in gathering information about business and its
-                    needs. We interviewed Artem Volkhonskyi (Head of Digital
-                    Product Development), who shared with us company's long-term
-                    goals, business insights, user segments and their usage
-                    patterns. Some of them are following:
-                  </P>
-                  <ul>
-                    <li>
-                      Package size, not weight, is the most important parameter
-                      for transportation;
-                    </li>
-                    <li>
-                      An absolute majority of customers use the same department
-                      of Nova Poshta both for sending and receiving packages;
-                    </li>
-                    <li>
-                      Description of the package is important for determination
-                      of compensation for package loss or damaging.
-                    </li>
-                  </ul>
-                </div>
+              <CaseBlock gray fullWidth>
+                <Wrapper>
+                  <H3>Stakeholder interview</H3>
+                  <div>
+                    <P>
+                      A first step in gathering information about business and
+                      its needs. We interviewed Artem Volkhonskyi (Head of
+                      Digital Product Development), who shared with us company's
+                      long-term goals, business insights, user segments and
+                      their usage patterns. Some of them are following:
+                    </P>
+                    <ul>
+                      <li>
+                        Package size, not weight, is the most important
+                        parameter for transportation;
+                      </li>
+                      <li>
+                        An absolute majority of customers use the same
+                        department of Nova Poshta both for sending and receiving
+                        packages;
+                      </li>
+                      <li>
+                        Description of the package is important for
+                        determination of compensation for package loss or
+                        damaging.
+                      </li>
+                    </ul>
+                  </div>
+                </Wrapper>
               </CaseBlock>
               <CaseBlock>
                 <H3>Customer interviews</H3>

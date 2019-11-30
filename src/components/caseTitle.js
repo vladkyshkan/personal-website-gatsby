@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Image from "gatsby-image"
 import { theme } from "./designSystem/theme"
 import H2 from "./designSystem/H2"
+import Wrapper from "./designSystem/Wrapper"
 import CaseDetails from "./caseDetails"
 
 const CaseStyled = styled.div``
@@ -10,8 +11,7 @@ const CaseStyled = styled.div``
 const CaseHeroScreen = styled.div`
   background-color: ${props => props.color};
   color: ${props => (props.light ? theme.dark : theme.white)};
-  height: 80vh;
-  padding: 0 5%;
+  height: 535px;
 `
 
 const CaseHeroScreenTitle = styled.div`
@@ -44,13 +44,15 @@ const CaseTitle = ({
 }) => (
   <CaseStyled key={title}>
     <CaseHeroScreen color={color} light={light}>
-      <CaseHeroScreenTitle>
-        <H2>{description}</H2>
-        <CaseDetails client={title} year={year} company={company} />
-      </CaseHeroScreenTitle>
-      <CaseCover>
-        <Image fluid={imageData} alt={title} style={{ maxHeight: "100%" }} />
-      </CaseCover>
+      <Wrapper>
+        <CaseHeroScreenTitle>
+          <H2>{description}</H2>
+          <CaseDetails client={title} year={year} company={company} />
+        </CaseHeroScreenTitle>
+        <CaseCover>
+          <Image fluid={imageData} alt={title} style={{ maxHeight: "100%" }} />
+        </CaseCover>
+      </Wrapper>
     </CaseHeroScreen>
   </CaseStyled>
 )

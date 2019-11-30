@@ -2,6 +2,8 @@ import styled from "styled-components"
 import { theme } from "./designSystem/theme"
 
 const CaseBlock = styled.div`
+  max-width: ${props => (props.fullWidth ? "100%" : "1152px")};
+  margin: 0 auto;
   padding: 120px 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -11,14 +13,14 @@ const CaseBlock = styled.div`
     props.dark ? theme.dark : props.gray ? theme.gray : theme.bg};
 
   h3 {
-    grid-column-start: 3;
-    grid-column-end: span 2;
+    grid-column-start: 2;
+    grid-column-end: span 3;
   }
 
   div,
   p {
     grid-column-start: 6;
-    grid-column-end: span 5;
+    grid-column-end: span 6;
   }
 
   ul {
@@ -41,7 +43,7 @@ const CaseBlock = styled.div`
   }
 
   div {
-    p + h4 {
+    p + h5 {
       margin-top: 24px;
     }
   }

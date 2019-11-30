@@ -6,10 +6,12 @@ import H2 from "./designSystem/H2"
 import P from "./designSystem/P"
 import ExternalLink from "./designSystem/ExternalLink"
 import IconArrow from "./designSystem/IconArrow"
+import Wrapper from "./designSystem/Wrapper"
 
 const StyledFooter = styled.footer`
   background-color: ${theme.dark};
-  padding: 80px 5% 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
   transform: translateZ(0px);
 
   h2 {
@@ -110,25 +112,27 @@ const scrollToTop = () => {
 
 const Footer = () => (
   <StyledFooter id="contact">
-    <H2>Contact</H2>
-    <FooterLinks>
-      <ExternalLinks>
-        {SocialMediaLinks.map(link => (
-          <ExternalLink
-            key={link.name}
-            href={link.link}
-            target="_blank"
-            rel="noopener"
-          >
-            {link.name}
-          </ExternalLink>
-        ))}
-      </ExternalLinks>
-      <ButtonTop onClick={scrollToTop}>
-        <IconArrow />
-      </ButtonTop>
-    </FooterLinks>
-    <P>© {new Date().getFullYear()} Vlad Kyshkan</P>
+    <Wrapper>
+      <H2>Contact</H2>
+      <FooterLinks>
+        <ExternalLinks>
+          {SocialMediaLinks.map(link => (
+            <ExternalLink
+              key={link.name}
+              href={link.link}
+              target="_blank"
+              rel="noopener"
+            >
+              {link.name}
+            </ExternalLink>
+          ))}
+        </ExternalLinks>
+        <ButtonTop onClick={scrollToTop}>
+          <IconArrow />
+        </ButtonTop>
+      </FooterLinks>
+      <P>© {new Date().getFullYear()} Vlad Kyshkan</P>
+    </Wrapper>
   </StyledFooter>
 )
 

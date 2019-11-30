@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { theme } from "./designSystem/theme"
 
 const VideoContainer = styled.div`
-  margin: 0 5% 120px 5%;
+  margin: 0 auto 120px auto;
   max-width: 1152px;
   position: relative;
 `

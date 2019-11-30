@@ -12,6 +12,7 @@ import SEO from "../components/seo"
 import GlobalStyle from "../components/designSystem/globalStyle"
 import H3 from "../components/designSystem/H3"
 import H4 from "../components/designSystem/H4"
+import H5 from "../components/designSystem/H5"
 import P from "../components/designSystem/P"
 import Button from "../components/designSystem/Button"
 import IconArrow from "../components/designSystem/IconArrow"
@@ -175,7 +176,7 @@ const MdFashion = ({ data }) => {
                     website and deliver proper shopping experience to the fans
                     of world-known brands in Ukraine.
                   </P>
-                  <H4>50+ screens</H4>
+                  <H5>50+ screens</H5>
                 </div>
               </CaseBlock>
               <CaseImageWide>
@@ -184,9 +185,7 @@ const MdFashion = ({ data }) => {
               <CaseBlock>
                 <H3>Credits</H3>
                 <P>
-                  Art director and lead designer: Vlad Kyshkan 
-{' '}
-<br />
+                  Art director and lead designer: Vlad Kyshkan <br />
                   Designer: Serhii Dziadyk
                 </P>
               </CaseBlock>

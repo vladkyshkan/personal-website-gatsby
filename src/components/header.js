@@ -3,17 +3,21 @@ import React from "react"
 import styled from "styled-components"
 import { theme } from "./designSystem/theme"
 import StyledLink from "./designSystem/StyledLink"
+import Wrapper from "./designSystem/Wrapper"
 
 const StyledHeader = styled.header`
   width: 100%;
   height: 56px;
-  padding: 0 5%;
   position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: transparent;
   color: ${theme.accent};
+  z-index: 9;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 `
 
 const Logo = styled.p`
@@ -51,14 +55,16 @@ const NavigationLinks = styled.div`
 
 const Header = ({ siteTitle }) => (
   <StyledHeader>
-    <Logo>
-      <StyledLink to="/">{siteTitle}</StyledLink>
-    </Logo>
-    <NavigationLinks>
-      <StyledLink to="/#work">Work</StyledLink>
-      <StyledLink to="/#projects">Projects</StyledLink>
-      <StyledLink to="/#contact">Contact</StyledLink>
-    </NavigationLinks>
+    <Wrapper>
+      <Logo>
+        <StyledLink to="/">{siteTitle}</StyledLink>
+      </Logo>
+      <NavigationLinks>
+        <StyledLink to="/#work">Work</StyledLink>
+        <StyledLink to="/#projects">Projects</StyledLink>
+        <StyledLink to="/#contact">Contact</StyledLink>
+      </NavigationLinks>
+    </Wrapper>
   </StyledHeader>
 )
 

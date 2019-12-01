@@ -7,6 +7,7 @@ import Wrapper from "./designSystem/Wrapper"
 
 const StyledHeader = styled.header`
   width: 100%;
+  padding: 0 5%;
   height: 56px;
   position: absolute;
   background-color: transparent;
@@ -25,6 +26,10 @@ const Logo = styled.p`
   font-family: "Butler";
   font-weight: 500;
   line-height: 100%;
+
+  @media only screen and (max-width: 31.25rem) {
+    font-size: 1.6rem;
+  }
 `
 
 const NavigationLinks = styled.div`
@@ -49,6 +54,10 @@ const NavigationLinks = styled.div`
 
     &:hover::after {
       width: 100%;
+    }
+
+    @media only screen and (max-width: 31.25rem) {
+      margin-left: 24px;
     }
   }
 `

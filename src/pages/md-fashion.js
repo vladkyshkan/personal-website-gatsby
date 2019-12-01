@@ -19,6 +19,7 @@ import IconArrow from "../components/designSystem/IconArrow"
 import Captcha from "../components/designSystem/Captcha"
 import StyledLink from "../components/designSystem/StyledLink"
 import ExternalLink from "../components/designSystem/ExternalLink"
+import Wrapper from "../components/designSystem/Wrapper"
 
 const MdFashion = ({ data }) => {
   const cases = data.allCasesJson.edges
@@ -98,16 +99,20 @@ const MdFashion = ({ data }) => {
               </CaseImageWide>
               <CaseBlock>
                 <H3>Product list & filtering</H3>
-                <P>
-                  Well-designed product list is a foundation of great e-commerce
-                  experience. MD Fashion product list has left sidebar with
-                  categories that helps users easily understand their current
-                  scope and navigate within other product categories.
-                </P>
-                <P>
-                  When a user is hovering over product item thumbnail, she could
-                  see another photo of the item as well as available sizes.
-                </P>
+                <div>
+                  <P>
+                    Well-designed product list is a foundation of great
+                    e-commerce experience. MD Fashion product list has left
+                    sidebar with categories that helps users easily understand
+                    their current scope and navigate within other product
+                    categories.
+                  </P>
+                  <P>
+                    When a user is hovering over product item thumbnail, she
+                    could see another photo of the item as well as available
+                    sizes.
+                  </P>
+                </div>
               </CaseBlock>
               <CaseImageWide>
                 <Image fluid={data.Image3.childImageSharp.fluid} />
@@ -191,13 +196,16 @@ const MdFashion = ({ data }) => {
               </CaseBlock>
               <StyledLink to="/nova-poshta">
                 <CaseNext background="#EE3A2B">
-                  <Captcha>Next project</Captcha>
-                  <H4>
-                    Redesign of package creation flow through mobile application
-                  </H4>
-                  <div>
-                    <Image fluid={data.ImageNext.childImageSharp.fluid} />
-                  </div>
+                  <Wrapper>
+                    <Captcha>Next project</Captcha>
+                    <H4>
+                      Redesign of package creation flow through mobile
+                      application
+                    </H4>
+                    <div>
+                      <Image fluid={data.ImageNext.childImageSharp.fluid} />
+                    </div>
+                  </Wrapper>
                 </CaseNext>
               </StyledLink>
             </CaseContent>

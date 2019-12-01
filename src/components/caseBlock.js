@@ -2,9 +2,9 @@ import styled from "styled-components"
 import { theme } from "./designSystem/theme"
 
 const CaseBlock = styled.div`
-  max-width: ${props => (props.fullWidth ? "100%" : "1152px")};
+  max-width: 1152px;
   margin: 0 auto;
-  padding: 120px 0;
+  padding: 128px 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 32px;
@@ -45,6 +45,21 @@ const CaseBlock = styled.div`
   div {
     p + h5 {
       margin-top: 24px;
+    }
+  }
+
+  @media only screen and (max-width: 56.25rem) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 32px;
+    padding: 64px 5%;
+
+    h3 {
+      grid-column: 1 / -1;
+    }
+
+    div,
+    p {
+      grid-column: 1 / -1;
     }
   }
 `

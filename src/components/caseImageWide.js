@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { theme } from "./designSystem/theme"
 
 const CaseImageWide = styled.div`
   width: 100%;

@@ -36,11 +36,13 @@ const IndexPage = () => (
     </Bio>
 
     <Section id="work">
-      <H2>Selected work</H2>
-      <CaseGrid />
+      <Wrapper>
+        <H2>Selected work</H2>
+        <CaseGrid />
+      </Wrapper>
     </Section>
 
-    <Section dark fullWidth id="projects">
+    <Section dark id="projects">
       <Wrapper>
         <H2>Side projects</H2>
         <SideProjectsGrid />
@@ -48,8 +50,10 @@ const IndexPage = () => (
     </Section>
 
     <Section>
-      <H2>Favorite books</H2>
-      <BooksGrid />
+      <Wrapper>
+        <H2>Favorite books</H2>
+        <BooksGrid />
+      </Wrapper>
     </Section>
   </Layout>
 )

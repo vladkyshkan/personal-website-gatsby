@@ -6,6 +6,7 @@ import Image from "gatsby-image"
 import CaseTitle from "../components/caseTitle"
 import CaseContent from "../components/caseContent"
 import CaseBlock from "../components/caseBlock"
+import CaseBlockWide from "../components/caseBlockWide"
 import CaseImage from "../components/caseImage"
 import CaseImageWide from "../components/caseImageWide"
 import CaseQuote from "../components/caseQuote"
@@ -47,21 +48,23 @@ const NovaPoshta = ({ data }) => {
             <CaseContent>
               <CaseBlock>
                 <H3>Overview</H3>
-                <P>
-                  Nova Poshta is the largest express delivery service for
-                  documents and packages for businesses and individuals in
-                  Ukraine. One of the company's main goal is to increase % of
-                  people that use its digital services (and thereby spend less
-                  time at the departments) so the company could cut business
-                  costs and invest them in other projects.
-                </P>
-                <P bold>
-                  Our task was to redesign a package creation flow in mobile
-                  application and in such a way increase percentage of packages
-                  created online to reduce load on departments. This task was
-                  done during 5-day Product design course by Apollo Design
-                  Center.
-                </P>
+                <div>
+                  <P>
+                    Nova Poshta is the largest express delivery service for
+                    documents and packages for businesses and individuals in
+                    Ukraine. One of the company's main goal is to increase % of
+                    people that use its digital services (and thereby spend less
+                    time at the departments) so the company could cut business
+                    costs and invest them in other projects.
+                  </P>
+                  <P bold>
+                    Our task was to redesign a package creation flow in mobile
+                    application and in such a way increase percentage of
+                    packages created online to reduce load on departments. This
+                    task was done during 5-day Product design course by Apollo
+                    Design Center.
+                  </P>
+                </div>
               </CaseBlock>
               <CaseImageWide>
                 <Image fluid={data.Image1.childImageSharp.fluid} />
@@ -86,7 +89,7 @@ const NovaPoshta = ({ data }) => {
               <CaseImage>
                 <Image fluid={data.Image2.childImageSharp.fluid} />
               </CaseImage>
-              <CaseBlock gray fullWidth>
+              <CaseBlockWide gray>
                 <Wrapper>
                   <H3>Stakeholder interview</H3>
                   <div>
@@ -115,7 +118,7 @@ const NovaPoshta = ({ data }) => {
                     </ul>
                   </div>
                 </Wrapper>
-              </CaseBlock>
+              </CaseBlockWide>
               <CaseBlock>
                 <H3>Customer interviews</H3>
                 <div>
@@ -152,85 +155,93 @@ const NovaPoshta = ({ data }) => {
                   </CaseQuote>
                 </div>
               </CaseBlock>
-              <CaseBlock gray>
-                <H3>Customer Journey Mapping</H3>
-                <P>
-                  Based on the customer interviews, we have identified key
-                  actions users take in the package registration, what thoughts
-                  and emotions they have, and identified opportunities for
-                  improvement. To summarize collected information, we have
-                  created Customer Journey Maps for each of our personas. This
-                  helped our team to keep us on the same page, as well as
-                  enhanced understanding and buy-in from stakeholders and
-                  customers as we presented results of our work.
-                </P>
-              </CaseBlock>
+              <CaseBlockWide gray>
+                <Wrapper>
+                  <H3>Customer Journey Mapping</H3>
+                  <P>
+                    Based on the customer interviews, we have identified key
+                    actions users take in the package registration, what
+                    thoughts and emotions they have, and identified
+                    opportunities for improvement. To summarize collected
+                    information, we have created Customer Journey Maps for each
+                    of our personas. This helped our team to keep us on the same
+                    page, as well as enhanced understanding and buy-in from
+                    stakeholders and customers as we presented results of our
+                    work.
+                  </P>
+                </Wrapper>
+              </CaseBlockWide>
               <CaseImage gray shadow>
                 <Image fluid={data.Image4.childImageSharp.fluid} />
               </CaseImage>
-              <CaseBlock dark>
-                <H3>Insights</H3>
-                <div>
-                  <P>Key problems that our team has discovered included:</P>
-                  <ul>
-                    <li>Long and daunting flow of package registration;</li>
-                    <li>
-                      Poor discoverability of this feature within Nova Poshta
-                      services;
-                    </li>
-                    <li>
-                      Users don't know how to measure package size correctly;
-                    </li>
-                    <li>
-                      Little incentives to use mobile application versus onsite
-                      registration.
-                    </li>
-                  </ul>
-                </div>
-              </CaseBlock>
-              <CaseBlock gray>
-                <H3>Early concepts</H3>
-                <div>
-                  <P>
-                    In prototyping stage, we applied all of the gathered
-                    insights to build more user-friendly and simple experience.
-                    Initially, our team had too many ideas for improvement to
-                    focus on, so we drafted 4 quick paper prototypes and quickly
-                    tested several design hypothesis including following:
-                  </P>
-                  <ul>
-                    <li>
-                      Should we divide the whole process of package creation
-                      into small steps or vice versa combine similar fields into
-                      one logical part?;
-                    </li>
-                    <li>
-                      Should users explicitly select department to ship package
-                      (or city is enough)?;
-                    </li>
-                    <li>
-                      How could we assist users to measure package size by
-                      themselves? Should they indicate weight of package?
-                    </li>
-                  </ul>
-                  <P>
-                    On the second stage, we moved to a digital prototype,
-                    testing several variations of it. That allowed us to improve
-                    user experience and understanding even further. Main
-                    questions we wanted to get answer to:
-                  </P>
-                  <ul>
-                    <li>
-                      Does the whole flow feel smooth or there are any
-                      difficulties with contacts, package or payment?;
-                    </li>
-                    <li>
-                      Is it clear enought for the users what to do next after
-                      they have created new package in the mobile app?
-                    </li>
-                  </ul>
-                </div>
-              </CaseBlock>
+              <CaseBlockWide dark>
+                <Wrapper>
+                  <H3>Insights</H3>
+                  <div>
+                    <P>Key problems that our team has discovered included:</P>
+                    <ul>
+                      <li>Long and daunting flow of package registration;</li>
+                      <li>
+                        Poor discoverability of this feature within Nova Poshta
+                        services;
+                      </li>
+                      <li>
+                        Users don't know how to measure package size correctly;
+                      </li>
+                      <li>
+                        Little incentives to use mobile application versus
+                        onsite registration.
+                      </li>
+                    </ul>
+                  </div>
+                </Wrapper>
+              </CaseBlockWide>
+              <CaseBlockWide gray>
+                <Wrapper>
+                  <H3>Early concepts</H3>
+                  <div>
+                    <P>
+                      In prototyping stage, we applied all of the gathered
+                      insights to build more user-friendly and simple
+                      experience. Initially, our team had too many ideas for
+                      improvement to focus on, so we drafted 4 quick paper
+                      prototypes and quickly tested several design hypothesis
+                      including following:
+                    </P>
+                    <ul>
+                      <li>
+                        Should we divide the whole process of package creation
+                        into small steps or vice versa combine similar fields
+                        into one logical part?;
+                      </li>
+                      <li>
+                        Should users explicitly select department to ship
+                        package (or city is enough)?;
+                      </li>
+                      <li>
+                        How could we assist users to measure package size by
+                        themselves? Should they indicate weight of package?
+                      </li>
+                    </ul>
+                    <P>
+                      On the second stage, we moved to a digital prototype,
+                      testing several variations of it. That allowed us to
+                      improve user experience and understanding even further.
+                      Main questions we wanted to get answer to:
+                    </P>
+                    <ul>
+                      <li>
+                        Does the whole flow feel smooth or there are any
+                        difficulties with contacts, package or payment?;
+                      </li>
+                      <li>
+                        Is it clear enought for the users what to do next after
+                        they have created new package in the mobile app?
+                      </li>
+                    </ul>
+                  </div>
+                </Wrapper>
+              </CaseBlockWide>
               <CaseImage gray>
                 <Image fluid={data.Image5.childImageSharp.fluid} />
               </CaseImage>
@@ -251,20 +262,22 @@ const NovaPoshta = ({ data }) => {
               </CaseImageWide>
               <CaseBlock>
                 <H3>Package creation</H3>
-                <P>
-                  The whole process of package creation through app is divided
-                  into several parts and made in a form of conversation. To send
-                  a package the user should answer same questions as at the
-                  department: who is the recipient of the package? What do you
-                  want to send? Who and how will pay for the delivery?
-                </P>
-                <P>
-                  At the first stage, the user could enter recipient's name or
-                  phone number, and if there is match in the Nova Poshta user
-                  database, all contact information would fill in automatically.
-                  Usually person receives his packages from the same department,
-                  and app will show it.
-                </P>
+                <div>
+                  <P>
+                    The whole process of package creation through app is divided
+                    into several parts and made in a form of conversation. To
+                    send a package the user should answer same questions as at
+                    the department: who is the recipient of the package? What do
+                    you want to send? Who and how will pay for the delivery?
+                  </P>
+                  <P>
+                    At the first stage, the user could enter recipient's name or
+                    phone number, and if there is match in the Nova Poshta user
+                    database, all contact information would fill in
+                    automatically. Usually person receives his packages from the
+                    same department, and app will show it.
+                  </P>
+                </div>
               </CaseBlock>
               <CaseImageWide>
                 <Image fluid={data.Image7.childImageSharp.fluid} />
@@ -323,17 +336,19 @@ const NovaPoshta = ({ data }) => {
               <CaseImage>
                 <Image fluid={data.Image11.childImageSharp.fluid} />
               </CaseImage>
-              <CaseBlock dark>
-                <H3>Results</H3>
-                <P>
-                  Results of user research were presented to Nova Poshta and
-                  included clickable prototype and list of suggested
-                  improvements for the registration flow verified by user tests.
-                  Proposed changes were well-received by Nova Poshta management
-                  and is taken into account in the redesign of existing
-                  application.
-                </P>
-              </CaseBlock>
+              <CaseBlockWide dark>
+                <Wrapper>
+                  <H3>Results</H3>
+                  <P>
+                    Results of user research were presented to Nova Poshta and
+                    included clickable prototype and list of suggested
+                    improvements for the registration flow verified by user
+                    tests. Proposed changes were well-received by Nova Poshta
+                    management and is taken into account in the redesign of
+                    existing application.
+                  </P>
+                </Wrapper>
+              </CaseBlockWide>
               <CaseBlock>
                 <H3>Credits</H3>
                 <P>
@@ -343,13 +358,15 @@ const NovaPoshta = ({ data }) => {
               </CaseBlock>
               <StyledLink to="/noblesse">
                 <CaseNext background="#1B1F25">
-                  <Captcha>Next project</Captcha>
-                  <H4>
-                    E-commerce website design for the watches & jewelry store
-                  </H4>
-                  <div>
-                    <Image fluid={data.ImageNext.childImageSharp.fluid} />
-                  </div>
+                  <Wrapper>
+                    <Captcha>Next project</Captcha>
+                    <H4>
+                      E-commerce website design for the watches & jewelry store
+                    </H4>
+                    <div>
+                      <Image fluid={data.ImageNext.childImageSharp.fluid} />
+                    </div>
+                  </Wrapper>
                 </CaseNext>
               </StyledLink>
             </CaseContent>

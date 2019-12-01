@@ -12,15 +12,21 @@ const CaseHeroScreen = styled.div`
   background-color: ${props => props.color};
   color: ${props => (props.light ? theme.dark : theme.white)};
   height: 535px;
+  padding: 0 5%;
 `
 
 const CaseHeroScreenTitle = styled.div`
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 50px;
+  grid-gap: 48px;
   justify-content: space-between;
   align-items: flex-end;
   padding-top: 100px;
+
+  @media only screen and (max-width: 64rem) {
+    grid-auto-flow: row;
+    grid-gap: 16px;
+  }
 `
 
 const CaseCover = styled.div`

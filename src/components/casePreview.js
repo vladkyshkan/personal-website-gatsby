@@ -14,7 +14,7 @@ import CaseDetails from "./caseDetails"
 
 const CaseContainer = styled.div`
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 128px;
   display: flex;
 `
 
@@ -71,11 +71,7 @@ const CasePreview = ({
     </CaseCover>
     <CaseDescription color={color} right={right}>
       <CaseDescriptionWrapper light={light}>
-        <H3>
-0
-{index + 1}
-/
-</H3>
+        <H3>0{index + 1}/</H3>
         <H3>{description}</H3>
         <CaseDetails client={title} year={year} company={company} />
         {light ? (

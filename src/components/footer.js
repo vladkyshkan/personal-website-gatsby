@@ -10,8 +10,7 @@ import Wrapper from "./designSystem/Wrapper"
 
 const StyledFooter = styled.footer`
   background-color: ${theme.dark};
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding: 80px 5% 40px 5%;
   transform: translateZ(0px);
 
   h2 {
@@ -58,6 +57,10 @@ const ExternalLinks = styled.div`
   a:hover::after {
     width: 100%;
   }
+
+  @media only screen and (max-width: 31.25rem) {
+    flex-direction: column;
+  }
 `
 
 const ButtonTop = styled.div`
@@ -78,6 +81,10 @@ const ButtonTop = styled.div`
   &:hover {
     opacity: 1;
     cursor: pointer;
+  }
+
+  @media only screen and (max-width: 37.5rem) {
+    display: none;
   }
 `
 

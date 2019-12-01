@@ -3,9 +3,13 @@ import styled from "styled-components"
 import { theme } from "./designSystem/theme"
 
 const VideoContainer = styled.div`
-  margin: 0 auto 120px auto;
+  margin: 0 auto 128px auto;
   max-width: 1152px;
   position: relative;
+
+  @media only screen and (max-width: 56.25rem) {
+    margin-bottom: 64px;
+  }
 `
 
 const VideoStyled = styled.video`

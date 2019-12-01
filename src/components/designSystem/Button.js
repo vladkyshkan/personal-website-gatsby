@@ -24,6 +24,10 @@ const Button = styled.button`
     transform: translateX(24px);
     transition: 0.5s;
   }
+
+  @media only screen and (max-width: 31.25rem) {
+    width: 100%;
+  }
 `
 
 export default Button

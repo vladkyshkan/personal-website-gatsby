@@ -23,6 +23,10 @@ const CaseDetailsTitle = styled.div`
     margin: 0 0 8px 0;
     line-height: 100%;
   }
+
+  @media only screen and (max-width: 31.25rem) {
+    margin-right: 24px;
+  }
 `
 const CaseDetails = ({ client, year, company }) => (
   <CaseDetailsStyled>

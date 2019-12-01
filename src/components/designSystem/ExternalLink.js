@@ -11,6 +11,14 @@ const ExternalLink = styled.a`
   margin-right: 32px;
   text-decoration: none;
   color: ${theme.dark};
+
+  @media only screen and (max-width: 31.25rem) {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 `
 
 export default ExternalLink

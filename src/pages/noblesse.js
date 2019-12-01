@@ -18,6 +18,7 @@ import IconArrow from "../components/designSystem/IconArrow"
 import Captcha from "../components/designSystem/Captcha"
 import StyledLink from "../components/designSystem/StyledLink"
 import ExternalLink from "../components/designSystem/ExternalLink"
+import Wrapper from "../components/designSystem/Wrapper"
 
 const Noblesse = ({ data }) => {
   const cases = data.allCasesJson.edges
@@ -85,14 +86,16 @@ const Noblesse = ({ data }) => {
               </CaseImageWide>
               <CaseBlock>
                 <H3>Product page</H3>
-                <P>
-                  Noblesse product page has "classic" and well-known for users
-                  layout: photo on left side and product description on right
-                  side. Here customer can find all necessary information
-                  regarding product such as collection, material, stones or
-                  other specific details.
-                </P>
-                <P>Find online, buy offline...</P>
+                <div>
+                  <P>
+                    Noblesse product page has "classic" and well-known for users
+                    layout: photo on left side and product description on right
+                    side. Here customer can find all necessary information
+                    regarding product such as collection, material, stones or
+                    other specific details.
+                  </P>
+                  <P>Find online, buy offline...</P>
+                </div>
               </CaseBlock>
               <CaseImageWide>
                 <Image fluid={data.Image4.childImageSharp.fluid} />
@@ -113,14 +116,16 @@ const Noblesse = ({ data }) => {
               </CaseBlock>
               <StyledLink to="/wizard">
                 <CaseNext background="#008990">
-                  <Captcha>Next project</Captcha>
-                  <H4>
-                    Corporate website & b2b platform for the sanitary ware
-                    supplier
-                  </H4>
-                  <div>
-                    <Image fluid={data.ImageNext.childImageSharp.fluid} />
-                  </div>
+                  <Wrapper>
+                    <Captcha>Next project</Captcha>
+                    <H4>
+                      Corporate website & b2b platform for the sanitary ware
+                      supplier
+                    </H4>
+                    <div>
+                      <Image fluid={data.ImageNext.childImageSharp.fluid} />
+                    </div>
+                  </Wrapper>
                 </CaseNext>
               </StyledLink>
             </CaseContent>

@@ -4,7 +4,7 @@ import styled from "styled-components"
 import CasePreview from "./casePreview"
 
 const CaseGridStyled = styled.div`
-  margin-bottom: -120px;
+  margin-bottom: -128px;
 `
 
 const CaseGrid = () => {

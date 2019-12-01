@@ -20,6 +20,7 @@ import Captcha from "../components/designSystem/Captcha"
 import StyledLink from "../components/designSystem/StyledLink"
 import ExternalLink from "../components/designSystem/ExternalLink"
 import WizardVideo from "../data/images/cases/wizard/wizard-video.mp4"
+import Wrapper from "../components/designSystem/Wrapper"
 
 const Wizard = ({ data }) => {
   const cases = data.allCasesJson.edges
@@ -86,16 +87,19 @@ const Wizard = ({ data }) => {
               </CaseImageWide>
               <CaseBlock>
                 <H3>B2B platform</H3>
-                <P>
-                  One of the key objective Wizard wanted to solve was
-                  simplification of product ordering for wholesale customers and
-                  minimization of human factors during the ordering process.
-                </P>
-                <P>
-                  We created the b2b platform that automated purchase process
-                  and gave Wizard partners access to analytics and reporting
-                  system.
-                </P>
+                <div>
+                  <P>
+                    One of the key objective Wizard wanted to solve was
+                    simplification of product ordering for wholesale customers
+                    and minimization of human factors during the ordering
+                    process.
+                  </P>
+                  <P>
+                    We created the b2b platform that automated purchase process
+                    and gave Wizard partners access to analytics and reporting
+                    system.
+                  </P>
+                </div>
               </CaseBlock>
               <CaseImageWide>
                 <Image fluid={data.Image3.childImageSharp.fluid} />
@@ -126,19 +130,19 @@ const Wizard = ({ data }) => {
               <CaseBlock>
                 <H3>Credits</H3>
                 <P>
-                  Art director: Alexander Kim 
-{' '}
-<br />
+                  Art director: Alexander Kim <br />
                   Designer: Vlad Kyshkan
                 </P>
               </CaseBlock>
               <StyledLink to="/md-fashion">
                 <CaseNext dark background="#EAE2D8">
-                  <Captcha>Next project</Captcha>
-                  <H4>Apparel marketplace redesign & Android application</H4>
-                  <div>
-                    <Image fluid={data.ImageNext.childImageSharp.fluid} />
-                  </div>
+                  <Wrapper>
+                    <Captcha>Next project</Captcha>
+                    <H4>Apparel marketplace redesign & Android application</H4>
+                    <div>
+                      <Image fluid={data.ImageNext.childImageSharp.fluid} />
+                    </div>
+                  </Wrapper>
                 </CaseNext>
               </StyledLink>
             </CaseContent>

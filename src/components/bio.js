@@ -12,7 +12,8 @@ const Bio = styled.div`
 
   div {
     height: 100vh;
-    max-height: 700px;
+    min-height: 700px;
+    max-height: 900px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 32px;
@@ -20,7 +21,7 @@ const Bio = styled.div`
 
   h1 {
     color: ${theme.accent};
-    margin-top: 96px;
+    margin-top: 25%;
   }
 
   p {
@@ -50,11 +51,19 @@ const Bio = styled.div`
     background-position: 80% 100%;
   }
 
+  @media only screen and (min-width: 125rem) {
+    background-position: 70% 100%;
+  }
+
   @media only screen and (max-width: 64rem) {
-    grid-template-columns: repeat(1, 1fr);
+    div {
+      grid-template-columns: repeat(1, 1fr);
+      align-content: end;
+      grid-gap: 40px;
+    }
 
     h1 {
-      margin-bottom: 0;
+      margin-bottom: 24px;
     }
 
     p:nth-child(2) {

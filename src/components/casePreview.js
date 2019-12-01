@@ -16,6 +16,14 @@ const CaseContainer = styled.div`
   position: relative;
   margin-bottom: 128px;
   display: flex;
+
+  @media only screen and (max-width: 64rem) {
+    display: block;
+  }
+
+  @media only screen and (max-width: 56.25rem) {
+    margin-bottom: 64px;
+  }
 `
 
 const CaseCover = styled.div`
@@ -23,6 +31,10 @@ const CaseCover = styled.div`
   max-width: 832px;
   width: 100%;
   margin-left: ${props => (props.right ? undefined : "auto")};
+
+  @media only screen and (max-width: 64rem) {
+    max-width: 100%;
+  }
 `
 
 const CaseDescription = styled.div`
@@ -37,6 +49,21 @@ const CaseDescription = styled.div`
   align-items: center;
   justify-content: flex-start;
   background-color: ${props => props.color};
+
+  @media only screen and (max-width: 64rem) {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 48px 0;
+  }
+
+  @media only screen and (max-width: 37.5rem) {
+    padding: 32px 0;
+  }
+
+  @media only screen and (max-width: 31.25rem) {
+    padding: 24px 0;
+  }
 `
 
 const CaseDescriptionWrapper = styled.div`
@@ -50,6 +77,20 @@ const CaseDescriptionWrapper = styled.div`
 
   button {
     margin-top: 32px;
+  }
+
+  @media only screen and (max-width: 37.5rem) {
+    h3:nth-of-type(1) {
+      margin-bottom: 24px;
+    }
+
+    button {
+      margin-top: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 31.25rem) {
+    padding: 0 24px;
   }
 `
 

@@ -70,6 +70,40 @@ const Bio = styled.div`
       margin-bottom: 0;
     }
   }
+
+  @media only screen and (max-width: 56.25rem) {
+    background-position: 400% 100%;
+  }
+
+  @media only screen and (max-width: 48rem) {
+    background-position: -100% 100%;
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+
+  @media only screen and (max-width: 37.5rem) {
+    background-position: -20% 100%;
+
+    div {
+      grid-gap: 32px;
+    }
+  }
+
+  @media only screen and (max-width: 31.25rem) {
+    p {
+      margin-bottom: 64px;
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 25rem) {
+    background-position: 30% 100%;
+  }
 `
 
 export default Bio

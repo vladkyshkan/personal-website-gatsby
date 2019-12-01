@@ -8,6 +8,19 @@ const BooksGridStyled = styled.div`
   grid-template-columns: repeat(6, 1fr);
   gap: 16px 32px;
   margin-bottom: -16px;
+
+  @media only screen and (max-width: 56.25rem) {
+    gap: 8px 24px;
+  }
+
+  @media only screen and (max-width: 48rem) {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    width: 110%;
+    margin-left: -5%;
+    gap: 0;
+  }
 `
 
 const BooksGrid = () => {

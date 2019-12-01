@@ -11,13 +11,16 @@ import IconArrow from "./designSystem/IconArrow"
 const SideProjectsPreviewStyled = styled.div`
   margin-top: 80px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 32px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 64px;
+  align-items: center;
+
+  @media only screen and (max-width: 56.25rem) {
+    display: block;
+  }
 `
 
 const SideProjectsDescription = styled.div`
-  align-self: self-end;
-
   h3 {
     color: ${theme.accent};
     margin-bottom: 16px;
@@ -27,15 +30,44 @@ const SideProjectsDescription = styled.div`
     color: ${theme.accent};
     margin-bottom: 48px;
   }
+
+  h3:nth-of-type(1) {
+    opacity: 0.3;
+    margin-bottom: 40px;
+  }
+
+  a {
+    margin-right: 0;
+  }
+
+  @media only screen and (max-width: 37.5rem) {
+    h3:nth-of-type(1) {
+      margin-bottom: 24px;
+    }
+  }
 `
 
 const SideProjectsCover = styled.div`
-  padding-top: ${props => (props.down ? "40px" : null)};
+  @media only screen and (max-width: 56.25rem) {
+    margin: 0 auto;
+    max-width: 600px;
+  }
 `
 
-const SideProjectsPreview = ({ title, description, link, image1, image2 }) => (
+const SideProjectsPreview = ({
+  title,
+  description,
+  link,
+  image,
+  index,
+  right,
+}) => (
   <SideProjectsPreviewStyled>
+    <SideProjectsCover right={right}>
+      <Image fluid={image} alt={title} />
+    </SideProjectsCover>
     <SideProjectsDescription>
+      <H3>0{index + 1}/</H3>
       <H3>{title}</H3>
       <P>{description}</P>
       <ExternalLink key={title} href={link} target="_blank" rel="noopener">
@@ -45,12 +77,6 @@ const SideProjectsPreview = ({ title, description, link, image1, image2 }) => (
         </Button>
       </ExternalLink>
     </SideProjectsDescription>
-    <SideProjectsCover>
-      <Image fluid={image1} alt={title} />
-    </SideProjectsCover>
-    <SideProjectsCover down>
-      <Image fluid={image2} alt={title} />
-    </SideProjectsCover>
   </SideProjectsPreviewStyled>
 )
 

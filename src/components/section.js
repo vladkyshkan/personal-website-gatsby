@@ -10,6 +10,16 @@ const Section = styled.div`
     color: ${props => (props.dark ? theme.accent : theme.dark)};
     margin-bottom: 40px;
   }
+
+  @media only screen and (max-width: 56.25rem) {
+    padding: 64px 5%;
+  }
+
+  @media only screen and (max-width: 31.25rem) {
+    h2 {
+      margin-bottom: 24px;
+    }
+  }
 `
 
 export default Section

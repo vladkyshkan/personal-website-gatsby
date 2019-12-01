@@ -15,12 +15,15 @@ const HeaderBg = styled.div`
 `
 
 const ErrorStyled = styled.div`
-  margin: -60px 0 120px 0;
+  margin: -60px 5% 120px 5%;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-items: center;
   text-align: center;
+  height: 80vh;
+  min-height: 500px;
+  max-height: 700px;
 
   h3 {
     margin-bottom: 8px;

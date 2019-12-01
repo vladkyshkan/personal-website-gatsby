@@ -28,19 +28,10 @@ const SideProjectsGrid = () => {
             title
             description
             link
-            images {
-              image1 {
-                childImageSharp {
-                  fluid(quality: 100) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-              image2 {
-                childImageSharp {
-                  fluid(quality: 100) {
-                    ...GatsbyImageSharpFluid
-                  }
+            image {
+              childImageSharp {
+                fluid(quality: 100) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -54,17 +45,19 @@ const SideProjectsGrid = () => {
 
   return (
     <SideProjectsGridStyled>
-      {sideProjects.map(({ node: sideProject }) => {
-        const { title, description, link, images } = sideProject
+      {sideProjects.map(({ node: sideProject }, index) => {
+        const { title, description, link, image } = sideProject
+        const isEven = index % 2
 
         return (
           <SideProjectPreview
             title={title}
             description={description}
             link={link}
-            image1={images.image1.childImageSharp.fluid}
-            image2={images.image2.childImageSharp.fluid}
+            image={image.childImageSharp.fluid}
             key={title}
+            index={index}
+            right={isEven ? undefined : true}
           />
         )
       })}

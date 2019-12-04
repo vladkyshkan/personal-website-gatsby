@@ -21,10 +21,21 @@ const IndexPage = () => (
       <Wrapper>
         <H1>Digital product designer</H1>
         <P>
-          Currently I work as a Head of design at Omnicore where lead team of 5
-          designers. Our goal is to create the best e-commerce experience and
-          make online shopping for customers easier. You can check my résumé
-          following the link or contact me via mail.
+          Currently I work as a Head of design at{" "}
+          <a href="https://theomnicore.com" target="_blank" rel="noopener">
+            Omnicore
+          </a>{" "}
+          where lead team of 5 designers. Our goal is to create the best
+          e-commerce experience and make online shopping for customers easier.
+          You can take a look at{" "}
+          <a href="test" target="_blank" rel="noopener">
+            my résumé
+          </a>{" "}
+          or contact me via{" "}
+          <a href="mailto:vladkyshkan@gmail.com" target="_blank" rel="noopener">
+            mail
+          </a>
+          .
         </P>
         <P>
           I believe that all great things happen at the intersection of
@@ -35,16 +46,16 @@ const IndexPage = () => (
       </Wrapper>
     </Bio>
 
-    <Section id="work">
+    <Section>
       <Wrapper>
-        <H2>Selected work</H2>
+        <H2 id="work">Selected work</H2>
         <CaseGrid />
       </Wrapper>
     </Section>
 
-    <Section dark id="projects">
+    <Section dark>
       <Wrapper>
-        <H2>Side projects</H2>
+        <H2 id="projects">Side projects</H2>
         <SideProjectsGrid />
       </Wrapper>
     </Section>

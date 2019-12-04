@@ -10,6 +10,7 @@ const BookStyled = styled.div`
   &:hover {
     transform: scale(1.05);
     transition: 0.3s;
+    opacity: 0.8;
   }
 
   @media only screen and (max-width: 48rem) {
@@ -27,6 +28,7 @@ const BookStyled = styled.div`
     &:hover {
       transform: none;
       transition: none;
+      opacity: 1;
     }
 
     @media only screen and (max-width: 31.25rem) {

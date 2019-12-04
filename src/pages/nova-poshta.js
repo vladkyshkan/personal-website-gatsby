@@ -356,12 +356,13 @@ const NovaPoshta = ({ data }) => {
                   Kolesnik
                 </P>
               </CaseBlock>
-              <StyledLink to="/noblesse">
-                <CaseNext background="#1B1F25">
+              <StyledLink to="/wizard">
+                <CaseNext background="#008990">
                   <Wrapper>
                     <Captcha>Next project</Captcha>
                     <H4>
-                      E-commerce website design for the watches & jewelry store
+                      Corporate website & b2b platform for the sanitary ware
+                      supplier
                     </H4>
                     <div>
                       <Image fluid={data.ImageNext.childImageSharp.fluid} />

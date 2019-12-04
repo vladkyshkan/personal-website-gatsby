@@ -11,6 +11,27 @@
     "url": "https://www.md-fashion.com.ua"
   },
   {
+    "title": "LUN Misto",
+    "slug": "lun",
+    "image": "./images/cases/lun/lun-hero.jpg",
+    "description": "Kyiv city comfort interactive map design for\u00A0social project",
+    "year": "2019",
+    "company": "Individual",
+    "color": "#FF7A00",
+    "light": false
+  },
+  {
+    "title": "Noblesse",
+    "slug": "noblesse",
+    "image": "./images/cases/noblesse/noblesse-hero.jpg",
+    "description": "E-commerce website for\u00A0the luxury watches &\u00A0jewelry store",
+    "year": "2019",
+    "company": "Omnicore",
+    "color": "#1B1F25",
+    "light": false,
+    "url": "https://www.noblesse.com.ua"
+  },
+  {
     "title": "Nova Poshta",
     "slug": "nova-poshta",
     "image": "./images/cases/nova-poshta/nova-poshta-hero.jpg",
@@ -19,17 +40,6 @@
     "company": "Individual",
     "color": "#EE3A2B",
     "light": false
-  },
-  {
-    "title": "Noblesse",
-    "slug": "noblesse",
-    "image": "./images/cases/noblesse/noblesse-hero.jpg",
-    "description": "E-commerce website design for the watches &\u00A0jewelry store",
-    "year": "2019",
-    "company": "Omnicore",
-    "color": "#1B1F25",
-    "light": false,
-    "url": "https://www.noblesse.com.ua"
   },
   {
     "title": "Wizard",

@@ -56,10 +56,10 @@ const Noblesse = ({ data }) => {
                   </P>
                   <P bold>
                     Our task was to create a custom e-commerce website with
-                    functional and distinctive design that could encourage sales
-                    and made online shopping easier.
+                    functional and distinctive design that could be used as a
+                    digital showroom to drive offline sales.
                   </P>
-                  <ExternalLink href={url} target="_blank">
+                  <ExternalLink href={url} target="_blank" rel="noopener">
                     <Button dark>
                       View website
                       <IconArrow />
@@ -71,38 +71,59 @@ const Noblesse = ({ data }) => {
                 <Image fluid={data.Image1.childImageSharp.fluid} />
               </CaseImageWide>
               <CaseBlock>
-                <H3>Homepage</H3>
-                <P>...</P>
+                <H3>Challenge</H3>
+                <div>
+                  <P>
+                    Luxury brands historically didn't consider online retail as
+                    a distribution platform, but in recent years customers
+                    behaviour and market landscape have changed.
+                  </P>
+                  <P>
+                    Noblesse wanted the website to be a marketing channel that
+                    could potentially grow into separate sales platform. The
+                    biggest challenge during design was to create experience as
+                    if the customer was visiting premium offline retail space.
+                  </P>
+                </div>
               </CaseBlock>
               <CaseImageWide>
                 <Image fluid={data.Image2.childImageSharp.fluid} />
               </CaseImageWide>
               <CaseBlock>
-                <H3>Product list & filtering</H3>
-                <P>...</P>
+                <H3>Research online, buy offline</H3>
+                <P>
+                  According to latest shopping trends, majority of consumers
+                  start their journey with online research prior to visiting
+                  brick and mortar store. Noblesse catalog provides an overview
+                  of product breadth allowing customers to compare and evaluate
+                  different items.
+                </P>
               </CaseBlock>
               <CaseImageWide>
                 <Image fluid={data.Image3.childImageSharp.fluid} />
               </CaseImageWide>
               <CaseBlock>
                 <H3>Product page</H3>
-                <div>
-                  <P>
-                    Noblesse product page has "classic" and well-known for users
-                    layout: photo on left side and product description on right
-                    side. Here customer can find all necessary information
-                    regarding product such as collection, material, stones or
-                    other specific details.
-                  </P>
-                  <P>Find online, buy offline...</P>
-                </div>
+                <P>
+                  Noblesse product page has "classic" and well-known for users
+                  layout: photo on the left side and product description on the
+                  right side. Here customer can find all necessary information
+                  regarding product such as collection, material, stones or
+                  other specific details to make a decision about purchase
+                  without a personal customer assistance.
+                </P>
               </CaseBlock>
               <CaseImageWide>
                 <Image fluid={data.Image4.childImageSharp.fluid} />
               </CaseImageWide>
               <CaseBlock>
                 <H3>Mobile experience</H3>
-                <P>...</P>
+                <P>
+                  More than 60% of e-commerce traffic is coming from mobile and
+                  this number is growing year-over-year. We pay special
+                  attention to mobile version to help customers easily find
+                  products and create truly omnichannel experience.
+                </P>
               </CaseBlock>
               <CaseImageWide>
                 <Image fluid={data.Image5.childImageSharp.fluid} />
@@ -110,17 +131,19 @@ const Noblesse = ({ data }) => {
               <CaseBlock>
                 <H3>Credits</H3>
                 <P>
-                  Art director and lead designer: Vlad Kyshkan <br />
+                  Art director and lead designer: Vlad Kyshkan 
+{' '}
+<br />
                   Designer: Serhii Dziadyk
                 </P>
               </CaseBlock>
-              <StyledLink to="/wizard">
-                <CaseNext background="#008990">
+              <StyledLink to="/nova-poshta">
+                <CaseNext background="#EE3A2B">
                   <Wrapper>
                     <Captcha>Next project</Captcha>
                     <H4>
-                      Corporate website & b2b platform for the sanitary ware
-                      supplier
+                      Redesign of package creation flow through mobile
+                      application
                     </H4>
                     <div>
                       <Image fluid={data.ImageNext.childImageSharp.fluid} />

@@ -61,7 +61,7 @@ const Wizard = ({ data }) => {
                     partners.
                   </P>
                   <div>
-                    <ExternalLink href={url} target="_blank">
+                    <ExternalLink href={url} target="_blank" rel="noopener">
                       <Button dark>
                         View website
                         <IconArrow />
@@ -130,7 +130,9 @@ const Wizard = ({ data }) => {
               <CaseBlock>
                 <H3>Credits</H3>
                 <P>
-                  Art director: Alexander Kim <br />
+                  Art director: Alexander Kim 
+{' '}
+<br />
                   Designer: Vlad Kyshkan
                 </P>
               </CaseBlock>

@@ -66,6 +66,15 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+  
+  a {
+    color: ${theme.accent};
+    text-decoration: underline solid rgba(254, 247, 229, 0.6);
+
+    &:hover {
+      text-decoration: underline solid rgba(254, 247, 229, 1);
+    }
+  }
 `
 
 export default GlobalStyle

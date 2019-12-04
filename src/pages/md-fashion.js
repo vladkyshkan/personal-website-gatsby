@@ -61,7 +61,7 @@ const MdFashion = ({ data }) => {
                     redesign existing website and create an Android mobile
                     application to fulfill these goals.
                   </P>
-                  <ExternalLink href={url} target="_blank">
+                  <ExternalLink href={url} target="_blank" rel="noopener">
                     <Button dark>
                       View website
                       <IconArrow />
@@ -70,6 +70,7 @@ const MdFashion = ({ data }) => {
                   <ExternalLink
                     href="https://play.google.com/store/apps/details?id=com.omnicore.md_fashion"
                     target="_blank"
+                    rel="noopener"
                   >
                     <Button dark>
                       Download app
@@ -82,7 +83,7 @@ const MdFashion = ({ data }) => {
                 <Image fluid={data.Image1.childImageSharp.fluid} />
               </CaseImageWide>
               <CaseBlock>
-                <H3>Homepage</H3>
+                <H3>Initial experience</H3>
                 <P>
                   Although not all users start their shopping experience from
                   the homepage (they can get to specific category or product
@@ -105,12 +106,13 @@ const MdFashion = ({ data }) => {
                     e-commerce experience. MD Fashion product list has left
                     sidebar with categories that helps users easily understand
                     their current scope and navigate within other product
-                    categories.
+                    categories while all applied filters are displayed as
+                    summary at the top of the page.
                   </P>
                   <P>
-                    When a user is hovering over product item thumbnail, she
-                    could see another photo of the item as well as available
-                    sizes.
+                    MD Fashion is a marketplace so it is neccessary to provide
+                    options for brands promotion, such as banner ads and
+                    seperate landing pages.
                   </P>
                 </div>
               </CaseBlock>
@@ -133,7 +135,7 @@ const MdFashion = ({ data }) => {
                 <Image fluid={data.Image4.childImageSharp.fluid} />
               </CaseImageWide>
               <CaseBlock>
-                <H3>Cart & checkout</H3>
+                <H3>Order flow</H3>
                 <P>
                   Cart page is vital in the product order flow because on this
                   page the customer makes a decision about purchase. What if
@@ -150,10 +152,10 @@ const MdFashion = ({ data }) => {
                   For the checkout we opted for an accordion-style flow where
                   the just-completed step collapses into summary and the new one
                   expands. Such a structure divides all fields into logical
-                  chunks such as "Contact information", "Delivery", "Payment",
-                  thus decreases user's mental workload. Moreover, this type of
-                  checkout allows customers to review previously typed
-                  information and spot errors earlier on.
+                  chunks such as "Contact information", "Delivery", "Loyalty"
+                  and "Payment", thus decreases user's mental workload.
+                  Moreover, this type of checkout allows customers to review
+                  previously typed information and spot errors earlier on.
                 </P>
               </CaseBlock>
               <CaseImageWide>
@@ -194,13 +196,13 @@ const MdFashion = ({ data }) => {
                   Designer: Serhii Dziadyk
                 </P>
               </CaseBlock>
-              <StyledLink to="/nova-poshta">
-                <CaseNext background="#EE3A2B">
+              <StyledLink to="/lun">
+                <CaseNext background="#FF7A00">
                   <Wrapper>
                     <Captcha>Next project</Captcha>
                     <H4>
-                      Redesign of package creation flow through mobile
-                      application
+                      Kyiv city comfort interactive map design for social
+                      project
                     </H4>
                     <div>
                       <Image fluid={data.ImageNext.childImageSharp.fluid} />

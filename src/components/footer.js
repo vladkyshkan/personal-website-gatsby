@@ -118,9 +118,9 @@ const scrollToTop = () => {
 }
 
 const Footer = () => (
-  <StyledFooter id="contact">
+  <StyledFooter>
     <Wrapper>
-      <H2>Contact</H2>
+      <H2 id="contact">Contact</H2>
       <FooterLinks>
         <ExternalLinks>
           {SocialMediaLinks.map(link => (

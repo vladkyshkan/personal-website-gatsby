@@ -3,15 +3,15 @@ import styled from "styled-components"
 const CaseContent = styled.div`
   margin-top: 320px;
 
-  @media only screen and (max-width: 56.25rem) {
+  @media only screen and (max-width: 900px) {
     margin-top: 320px;
   }
 
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 600px) {
     margin-top: 200px;
   }
 
-  @media only screen and (max-width: 25rem) {
+  @media only screen and (max-width: 400px) {
     margin-top: 80px;
   }
 `

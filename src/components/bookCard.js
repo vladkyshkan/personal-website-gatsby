@@ -13,16 +13,12 @@ const BookStyled = styled.div`
     opacity: 0.8;
   }
 
-  @media only screen and (max-width: 48rem) {
+  @media only screen and (max-width: 768px) {
     min-width: 140px;
     margin-left: 24px;
 
     &:nth-child(1) {
       margin-left: 5%;
-    }
-
-    &:nth-last-child(1) {
-      margin-right: -5%;
     }
 
     &:hover {
@@ -31,7 +27,7 @@ const BookStyled = styled.div`
       opacity: 1;
     }
 
-    @media only screen and (max-width: 31.25rem) {
+    @media only screen and (max-width: 500px) {
       min-width: 96px;
       margin-left: 16px;
     }

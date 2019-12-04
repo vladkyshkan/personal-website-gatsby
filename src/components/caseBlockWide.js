@@ -18,7 +18,7 @@ const CaseBlockWide = styled(CaseBlock)`
     }
   }
 
-  @media only screen and (max-width: 56.25rem) {
+  @media only screen and (max-width: 900px) {
     div {
       grid-template-columns: repeat(1, 1fr);
       grid-row-gap: 32px;

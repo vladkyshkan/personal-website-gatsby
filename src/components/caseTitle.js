@@ -23,7 +23,7 @@ const CaseHeroScreenTitle = styled.div`
   align-items: flex-end;
   padding-top: 100px;
 
-  @media only screen and (max-width: 64rem) {
+  @media only screen and (max-width: 1024px) {
     grid-auto-flow: row;
     grid-gap: 16px;
   }

@@ -11,11 +11,11 @@ const Section = styled.div`
     margin-bottom: 40px;
   }
 
-  @media only screen and (max-width: 56.25rem) {
+  @media only screen and (max-width: 900px) {
     padding: 64px 5%;
   }
 
-  @media only screen and (max-width: 31.25rem) {
+  @media only screen and (max-width: 500px) {
     h2 {
       margin-bottom: 24px;
     }

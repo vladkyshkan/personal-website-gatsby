@@ -17,11 +17,11 @@ const CaseContainer = styled.div`
   margin-bottom: 128px;
   display: flex;
 
-  @media only screen and (max-width: 64rem) {
+  @media only screen and (max-width: 1024px) {
     display: block;
   }
 
-  @media only screen and (max-width: 56.25rem) {
+  @media only screen and (max-width: 900px) {
     margin-bottom: 64px;
   }
 `
@@ -32,7 +32,7 @@ const CaseCover = styled.div`
   width: 100%;
   margin-left: ${props => (props.right ? undefined : "auto")};
 
-  @media only screen and (max-width: 64rem) {
+  @media only screen and (max-width: 1024px) {
     max-width: 100%;
   }
 `
@@ -50,14 +50,14 @@ const CaseDescription = styled.div`
   justify-content: flex-start;
   background-color: ${props => props.color};
 
-  @media only screen and (max-width: 64rem) {
+  @media only screen and (max-width: 1024px) {
     position: static;
     width: 100%;
     height: auto;
     padding: 48px 0;
   }
 
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 600px) {
     padding: 32px 0;
   }
 
@@ -112,7 +112,11 @@ const CasePreview = ({
     </CaseCover>
     <CaseDescription color={color} right={right}>
       <CaseDescriptionWrapper light={light}>
-        <H3>0{index + 1}/</H3>
+        <H3>
+0
+{index + 1}
+/
+</H3>
         <H3>{description}</H3>
         <CaseDetails client={title} year={year} company={company} />
         {light ? (

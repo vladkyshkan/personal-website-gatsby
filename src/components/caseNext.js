@@ -35,7 +35,7 @@ const CaseNext = styled.div.attrs(props => ({
     transition: 0.3s ease-in-out;
   }
 
-  @media only screen and (max-width: 56.25rem) {
+  @media only screen and (max-width: 900px) {
     div {
       padding: 32px 10% 0 10%;
     }

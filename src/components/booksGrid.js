@@ -9,17 +9,16 @@ const BooksGridStyled = styled.div`
   gap: 16px 32px;
   margin-bottom: -16px;
 
-  @media only screen and (max-width: 56.25rem) {
+  @media only screen and (max-width: 900px) {
     gap: 8px 24px;
   }
 
-  @media only screen and (max-width: 48rem) {
+  @media only screen and (max-width: 768px) {
     display: flex;
     overflow-x: scroll;
     scrollbar-width: none;
     width: 110%;
     margin-left: -5%;
-    gap: 0;
   }
 `
 

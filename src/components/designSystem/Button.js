@@ -25,7 +25,7 @@ const Button = styled.button`
     transition: 0.5s;
   }
 
-  @media only screen and (max-width: 31.25rem) {
+  @media only screen and (max-width: 500px) {
     width: 100%;
   }
 `

@@ -6,7 +6,7 @@ import CasePreview from "./casePreview"
 const CaseGridStyled = styled.div`
   margin-bottom: -128px;
 
-  @media only screen and (max-width: 56.25rem) {
+  @media only screen and (max-width: 900px) {
     margin-bottom: -64px;
   }
 `

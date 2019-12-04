@@ -11,7 +11,7 @@ const StyledHeader = styled.header`
   height: 56px;
   position: absolute;
   background-color: transparent;
-  color: ${theme.accent};
+  color: ${props => (props.dark ? theme.dark : theme.accent)};
   z-index: 9;
 
   div {
@@ -27,7 +27,7 @@ const Logo = styled.p`
   font-weight: 500;
   line-height: 100%;
 
-  @media only screen and (max-width: 31.25rem) {
+  @media only screen and (max-width: 500px) {
     font-size: 1.6rem;
   }
 `
@@ -48,7 +48,7 @@ const NavigationLinks = styled.div`
       display: block;
       width: 0;
       height: 1px;
-      background-color: ${theme.accent};
+      background-color: ${props => (props.dark ? theme.dark : theme.accent)};
       transition: width 0.4s;
     }
 
@@ -56,19 +56,19 @@ const NavigationLinks = styled.div`
       width: 100%;
     }
 
-    @media only screen and (max-width: 31.25rem) {
+    @media only screen and (max-width: 500px) {
       margin-left: 24px;
     }
   }
 `
 
-const Header = ({ siteTitle }) => (
-  <StyledHeader>
+const Header = ({ siteTitle, dark }) => (
+  <StyledHeader dark={dark}>
     <Wrapper>
       <Logo>
         <StyledLink to="/">{siteTitle}</StyledLink>
       </Logo>
-      <NavigationLinks>
+      <NavigationLinks dark={dark}>
         <StyledLink to="/#work">Work</StyledLink>
         <StyledLink to="/#projects">Projects</StyledLink>
         <StyledLink to="/#contact">Contact</StyledLink>

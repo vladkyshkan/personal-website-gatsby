@@ -15,7 +15,7 @@ const SideProjectsPreviewStyled = styled.div`
   grid-column-gap: 64px;
   align-items: center;
 
-  @media only screen and (max-width: 56.25rem) {
+  @media only screen and (max-width: 900px) {
     display: block;
   }
 `
@@ -40,7 +40,7 @@ const SideProjectsDescription = styled.div`
     margin-right: 0;
   }
 
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 600px) {
     h3:nth-of-type(1) {
       margin-bottom: 24px;
     }
@@ -48,7 +48,7 @@ const SideProjectsDescription = styled.div`
 `
 
 const SideProjectsCover = styled.div`
-  @media only screen and (max-width: 56.25rem) {
+  @media only screen and (max-width: 900px) {
     margin: 0 auto;
     max-width: 600px;
   }
@@ -67,7 +67,11 @@ const SideProjectsPreview = ({
       <Image fluid={image} alt={title} />
     </SideProjectsCover>
     <SideProjectsDescription>
-      <H3>0{index + 1}/</H3>
+      <H3>
+0
+{index + 1}
+/
+</H3>
       <H3>{title}</H3>
       <P>{description}</P>
       <ExternalLink key={title} href={link} target="_blank" rel="noopener">

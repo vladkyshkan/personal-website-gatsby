@@ -14,7 +14,7 @@ const CaseImage = styled.div`
       props.shadow ? "0px 6px 30px rgba(0, 0, 0, 0.1)" : null};
   }
 
-  @media only screen and (max-width: 56.25rem) {
+  @media only screen and (max-width: 900px) {
     margin-top: -32px;
     padding-bottom: 64px;
   }

@@ -58,7 +58,7 @@ const ExternalLinks = styled.div`
     width: 100%;
   }
 
-  @media only screen and (max-width: 31.25rem) {
+  @media only screen and (max-width: 500px) {
     flex-direction: column;
   }
 `
@@ -83,7 +83,7 @@ const ButtonTop = styled.div`
     cursor: pointer;
   }
 
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 600px) {
     display: none;
   }
 `

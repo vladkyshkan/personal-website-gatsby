@@ -6,15 +6,15 @@ const H2 = styled.h2`
   font-weight: 300;
   line-height: 110%;
 
-  @media only screen and (max-width: 70rem) {
+  @media only screen and (max-width: 1120px) {
     font-size: 6rem;
   }
 
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 600px) {
     font-size: 4.8rem;
   }
 
-  @media only screen and (max-width: 25rem) {
+  @media only screen and (max-width: 400px) {
     font-size: 4rem;
   }
 `

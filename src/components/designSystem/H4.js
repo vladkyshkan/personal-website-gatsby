@@ -6,7 +6,7 @@ const H4 = styled.h4`
   font-weight: 500;
   line-height: 130%;
 
-  @media only screen and (max-width: 25rem) {
+  @media only screen and (max-width: 400px) {
     font-size: 1.8rem;
   }
 `

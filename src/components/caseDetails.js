@@ -24,7 +24,7 @@ const CaseDetailsTitle = styled.div`
     line-height: 100%;
   }
 
-  @media only screen and (max-width: 31.25rem) {
+  @media only screen and (max-width: 500px) {
     margin-right: 24px;
   }
 `

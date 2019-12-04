@@ -31,7 +31,7 @@ const MdFashion = ({ data }) => {
         const imageData = cases.image.childImageSharp.fluid
 
         return (
-          <Layout>
+          <Layout dark="true">
             <SEO title={title} description={description} />
             <GlobalStyle />
             <CaseTitle
@@ -192,12 +192,14 @@ const MdFashion = ({ data }) => {
               <CaseBlock>
                 <H3>Credits</H3>
                 <P>
-                  Art director and lead designer: Vlad Kyshkan <br />
+                  Art director and lead designer: Vlad Kyshkan 
+{' '}
+<br />
                   Designer: Serhii Dziadyk
                 </P>
               </CaseBlock>
               <StyledLink to="/lun">
-                <CaseNext background="#FF7A00">
+                <CaseNext background="#FA9219">
                   <Wrapper>
                     <Captcha>Next project</Captcha>
                     <H4>

@@ -43,19 +43,19 @@ const Bio = styled.div`
     opacity: 0.5;
   }
 
-  @media only screen and (min-width: 90rem) {
+  @media only screen and (min-width: 1440px) {
     background-position: 120% 100%;
   }
 
-  @media only screen and (min-width: 112.5rem) {
+  @media only screen and (min-width: 1800px) {
     background-position: 80% 100%;
   }
 
-  @media only screen and (min-width: 125rem) {
+  @media only screen and (min-width: 2000px) {
     background-position: 70% 100%;
   }
 
-  @media only screen and (max-width: 64rem) {
+  @media only screen and (max-width: 1024px) {
     div {
       grid-template-columns: repeat(1, 1fr);
       align-content: end;
@@ -71,11 +71,11 @@ const Bio = styled.div`
     }
   }
 
-  @media only screen and (max-width: 56.25rem) {
+  @media only screen and (max-width: 900px) {
     background-position: 400% 100%;
   }
 
-  @media only screen and (max-width: 48rem) {
+  @media only screen and (max-width: 768px) {
     background-position: -100% 100%;
 
     h1 {
@@ -83,7 +83,7 @@ const Bio = styled.div`
     }
   }
 
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 600px) {
     background-position: -20% 100%;
 
     div {
@@ -91,7 +91,7 @@ const Bio = styled.div`
     }
   }
 
-  @media only screen and (max-width: 31.25rem) {
+  @media only screen and (max-width: 500px) {
     p {
       margin-bottom: 64px;
     }
@@ -101,7 +101,7 @@ const Bio = styled.div`
     }
   }
 
-  @media only screen and (max-width: 25rem) {
+  @media only screen and (max-width: 400px) {
     background-position: 30% 100%;
   }
 `

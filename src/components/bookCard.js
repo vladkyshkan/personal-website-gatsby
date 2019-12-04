@@ -15,7 +15,7 @@ const BookStyled = styled.div`
 
   @media only screen and (max-width: 768px) {
     min-width: 140px;
-    margin-left: 24px;
+    margin-left: 16px;
 
     &:nth-child(1) {
       margin-left: 5%;
@@ -25,11 +25,6 @@ const BookStyled = styled.div`
       transform: none;
       transition: none;
       opacity: 1;
-    }
-
-    @media only screen and (max-width: 500px) {
-      min-width: 96px;
-      margin-left: 16px;
     }
   }
 `

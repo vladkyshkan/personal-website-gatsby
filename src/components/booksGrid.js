@@ -19,6 +19,7 @@ const BooksGridStyled = styled.div`
     scrollbar-width: none;
     width: 110%;
     margin-left: -5%;
+    gap: 0;
   }
 `
 

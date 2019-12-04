@@ -61,7 +61,7 @@ const CaseDescription = styled.div`
     padding: 32px 0;
   }
 
-  @media only screen and (max-width: 31.25rem) {
+  @media only screen and (max-width: 500px) {
     padding: 24px 0;
   }
 `
@@ -79,7 +79,7 @@ const CaseDescriptionWrapper = styled.div`
     margin-top: 32px;
   }
 
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 600px) {
     h3:nth-of-type(1) {
       margin-bottom: 24px;
     }
@@ -89,7 +89,7 @@ const CaseDescriptionWrapper = styled.div`
     }
   }
 
-  @media only screen and (max-width: 31.25rem) {
+  @media only screen and (max-width: 500px) {
     padding: 0 24px;
   }
 `
@@ -112,11 +112,7 @@ const CasePreview = ({
     </CaseCover>
     <CaseDescription color={color} right={right}>
       <CaseDescriptionWrapper light={light}>
-        <H3>
-0
-{index + 1}
-/
-</H3>
+        <H3>0{index + 1}/</H3>
         <H3>{description}</H3>
         <CaseDetails client={title} year={year} company={company} />
         {light ? (

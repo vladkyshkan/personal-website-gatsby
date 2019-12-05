@@ -6,6 +6,7 @@ const VideoContainer = styled.div`
   margin: 0 auto 128px auto;
   max-width: 1152px;
   position: relative;
+  object-fit: cover;
 
   @media only screen and (max-width: 900px) {
     margin-bottom: 64px;

@@ -16,6 +16,7 @@ const BooksGridStyled = styled.div`
   @media only screen and (max-width: 768px) {
     display: flex;
     overflow-x: scroll;
+    overflow-y: hidden;
     scrollbar-width: none;
     width: 110%;
     margin-left: -5%;

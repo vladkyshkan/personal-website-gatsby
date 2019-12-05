@@ -31,7 +31,7 @@ const MdFashion = ({ data }) => {
         const imageData = cases.image.childImageSharp.fluid
 
         return (
-          <Layout dark="true">
+          <Layout key={title} dark="true">
             <SEO title={title} description={description} />
             <GlobalStyle />
             <CaseTitle
@@ -199,7 +199,7 @@ const MdFashion = ({ data }) => {
                 </P>
               </CaseBlock>
               <StyledLink to="/lun">
-                <CaseNext background="#FA9219">
+                <CaseNext background="#FD7C23">
                   <Wrapper>
                     <Captcha>Next project</Captcha>
                     <H4>

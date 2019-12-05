@@ -29,7 +29,7 @@ const Lun = ({ data }) => {
         const imageData = cases.image.childImageSharp.fluid
 
         return (
-          <Layout>
+          <Layout key={title}>
             <SEO title={title} description={description} />
             <GlobalStyle />
             <CaseTitle

@@ -30,7 +30,7 @@ const Noblesse = ({ data }) => {
         const imageData = cases.image.childImageSharp.fluid
 
         return (
-          <Layout>
+          <Layout key={title}>
             <SEO title={title} description={description} />
             <GlobalStyle />
             <CaseTitle
@@ -131,9 +131,7 @@ const Noblesse = ({ data }) => {
               <CaseBlock>
                 <H3>Credits</H3>
                 <P>
-                  Art director and lead designer: Vlad Kyshkan 
-{' '}
-<br />
+                  Art director and lead designer: Vlad Kyshkan <br />
                   Designer: Serhii Dziadyk
                 </P>
               </CaseBlock>

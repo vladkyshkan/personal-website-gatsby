@@ -32,7 +32,7 @@ const NovaPoshta = ({ data }) => {
         const imageData = cases.image.childImageSharp.fluid
 
         return (
-          <Layout>
+          <Layout key={title}>
             <SEO title={title} description={description} />
             <GlobalStyle />
             <CaseTitle
@@ -145,12 +145,11 @@ const NovaPoshta = ({ data }) => {
                       <Image fixed={data.Image3.childImageSharp.fixed} />
                     </div>
                     <div>
-                      <H5>Nataliia, 43 y.o., business coach</H5>
                       <P bold>
-                        “I’m not sure that I could create a package throught the
-                        app correctly, so I shouldn't do this once again in the
-                        department.”
+                        “I’m not sure what I should do next after I have created
+                        a package through the application.”
                       </P>
+                      <H5>— Nataliia, 43 y.o., business coach</H5>
                     </div>
                   </CaseQuote>
                 </div>

@@ -42,12 +42,6 @@ const CaseBlock = styled.div`
     margin-top: 32px;
   }
 
-  div {
-    p + h5 {
-      margin-top: 24px;
-    }
-  }
-
   @media only screen and (max-width: 900px) {
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 32px;

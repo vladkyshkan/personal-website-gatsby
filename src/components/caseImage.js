@@ -17,6 +17,10 @@ const CaseImage = styled.div`
   @media only screen and (max-width: 900px) {
     margin-top: -32px;
     padding-bottom: 64px;
+
+    div {
+      margin: 0 5%;
+    }
   }
 `
 

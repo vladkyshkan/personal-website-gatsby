@@ -32,7 +32,7 @@ const Wizard = ({ data }) => {
         const imageData = cases.image.childImageSharp.fluid
 
         return (
-          <Layout>
+          <Layout key={title}>
             <SEO title={title} description={description} />
             <GlobalStyle />
             <CaseTitle
@@ -130,9 +130,7 @@ const Wizard = ({ data }) => {
               <CaseBlock>
                 <H3>Credits</H3>
                 <P>
-                  Art director: Alexander Kim 
-{' '}
-<br />
+                  Art director: Alexander Kim <br />
                   Designer: Vlad Kyshkan
                 </P>
               </CaseBlock>

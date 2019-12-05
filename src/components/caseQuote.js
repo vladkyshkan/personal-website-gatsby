@@ -5,8 +5,8 @@ const CaseQuote = styled.div`
   align-items: flex-start;
   margin-top: 48px;
 
-  h4 {
-    margin-bottom: 16px;
+  h5 {
+    margin-top: 16px;
   }
 
   div {

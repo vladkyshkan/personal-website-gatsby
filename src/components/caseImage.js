@@ -5,7 +5,8 @@ const CaseImage = styled.div`
   width: 100%;
   margin-top: -64px;
   padding-bottom: 128px;
-  background-color: ${props => (props.gray ? theme.gray : theme.bg)};
+  background-color: ${props =>
+    props.dark ? theme.dark : props.gray ? theme.gray : theme.bg};
 
   div {
     margin: 0 auto;

@@ -1,16 +1,16 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import { theme } from "./designSystem/theme"
-// import cover from "../data/images/cases/wizard/wizard-cover.jpg"
+import cover from "../data/images/cases/wizard/wizard-cover.jpg"
 
 const VideoContainer = styled.div`
   margin: 0 auto 128px auto;
   max-width: 1152px;
   position: relative;
-  /* background-image: url(${cover});
+  background-image: url(${cover});
   background-position: 100% 100%;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
 
   @media only screen and (max-width: 900px) {
     margin-bottom: 64px;

@@ -149,14 +149,14 @@ const NovaPoshta = ({ data }) => {
                         “I’m not sure what I should do next after I have created
                         a package through the application.”
                       </P>
-                      <H5>— Nataliia, 43 y.o., business coach</H5>
+                      <H5>— Nataliia</H5>
                     </div>
                   </CaseQuote>
                 </div>
               </CaseBlock>
               <CaseBlockWide gray>
                 <Wrapper>
-                  <H3>Customer Journey Mapping</H3>
+                  <H3>Customer journey mapping</H3>
                   <P>
                     Based on the customer interviews, we have identified key
                     actions users take in the package registration, what
@@ -417,7 +417,7 @@ export const query = graphql`
       }
     }
     Image3: file(
-      relativePath: { eq: "images/cases/nova-poshta/nova-poshta-3.jpg" }
+      relativePath: { eq: "images/cases/nova-poshta/nova-poshta-3.png" }
     ) {
       childImageSharp {
         fixed(width: 96, quality: 100) {

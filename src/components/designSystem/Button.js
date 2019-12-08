@@ -14,6 +14,7 @@ const Button = styled.button`
   border: 1px solid
     ${props => (props.dark ? theme.borderDark : theme.borderWhite)};
   outline: none;
+  margin-right: 24px;
 
   &:hover {
     border: 1px solid ${props => (props.dark ? theme.Dark : theme.White)};
@@ -27,6 +28,7 @@ const Button = styled.button`
 
   @media only screen and (max-width: 500px) {
     width: 100%;
+    margin-right: 0;
   }
 `
 

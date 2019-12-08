@@ -21,27 +21,16 @@ const IndexPage = () => (
       <Wrapper>
         <H1>Digital product designer</H1>
         <P>
-          Currently I work as a Head of design at{" "}
-          <a href="https://theomnicore.com" target="_blank" rel="noopener">
-            Omnicore
-          </a>{" "}
-          where lead team of 5 designers. Our goal is to create the best
-          e-commerce experience and make online shopping for customers easier.
-          You can take a look at{" "}
-          <a href="test" target="_blank" rel="noopener">
-            my résumé
-          </a>{" "}
-          or contact me via{" "}
-          <a href="mailto:vladkyshkan@gmail.com" target="_blank" rel="noopener">
-            mail
-          </a>
-          .
+          I'm currently working as a Head of design at Omnicore where lead team
+          of 5 designers. Our goal is to create the best e-commerce experience
+          and make online shopping for customers easier. Before that I worked as
+          a&nbsp;marketer at Microsoft. Based in Kyiv.
         </P>
         <P>
           I believe that all great things happen at the intersection of
           disciplines so try to broaden my skills in various fields. Apart from
-          doing design, I like to tinker with code, learn more about AI/ML,
-          enjoy art & music. Based in Kyiv, Ukraine.
+          doing design, I like to tinker with code and learn more about AI/ML.
+          Feel free to contact me with any questions.
         </P>
       </Wrapper>
     </Bio>

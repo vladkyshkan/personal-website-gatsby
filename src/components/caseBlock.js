@@ -23,6 +23,10 @@ const CaseBlock = styled.div`
     grid-column-end: span 6;
   }
 
+  p + h5 {
+    margin-top: 16px;
+  }
+
   ul {
     font-size: 14px;
     line-height: 25px;

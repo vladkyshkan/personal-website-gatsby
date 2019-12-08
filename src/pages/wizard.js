@@ -19,8 +19,8 @@ import IconArrow from "../components/designSystem/IconArrow"
 import Captcha from "../components/designSystem/Captcha"
 import StyledLink from "../components/designSystem/StyledLink"
 import ExternalLink from "../components/designSystem/ExternalLink"
-import WizardVideo from "../data/images/cases/wizard/wizard-video.mp4"
 import Wrapper from "../components/designSystem/Wrapper"
+import WizardVideo from "../data/images/cases/wizard/wizard-video.mp4"
 
 const Wizard = ({ data }) => {
   const cases = data.allCasesJson.edges

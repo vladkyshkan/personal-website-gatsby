@@ -186,23 +186,26 @@ const Lun = ({ data }) => {
                 <Image fluid={data.Image7.childImageSharp.fluid} />
               </CaseImageWide>
               <CaseBlock>
-                <P>
-                  We figured out a system that allows showing many layers of
-                  information simultaneously. According to it, all territory of
-                  Kyiv should be divided into small hexagons. Each hex has color
-                  from spectrum between green and red depending on indicators in
-                  the area (from 0 to 10, where 0 is red, 10 is green). For
-                  example, if a neighborhood has many parks within walking
-                  distance, then the hex of this part of Kyiv will be green. If
-                  any, then its color will be red. If the user adds several
-                  filters to the comfort map, the cells will be painted in the
-                  color of the arithmetic mean number of all criteria.
-                </P>
-                <P>
-                  When the user hovers over a hex, a tooltip with detailed
-                  information will appear telling the customer if this
-                  neighborhood is comfortable based on applied filters.
-                </P>
+                <div>
+                  <P>
+                    We figured out a system that allows showing many layers of
+                    information simultaneously. According to it, all territory
+                    of Kyiv should be divided into small hexagons. Each hex has
+                    color from spectrum between green and red depending on
+                    indicators in the area (from 0 to 10, where 0 is red, 10 is
+                    green). For example, if a neighborhood has many parks within
+                    walking distance, then the hex of this part of Kyiv will be
+                    green. If any, then its color will be red. If the user adds
+                    several filters to the comfort map, the cells will be
+                    painted in the color of the arithmetic mean number of all
+                    criteria.
+                  </P>
+                  <P>
+                    When the user hovers over a hex, a tooltip with detailed
+                    information will appear telling the customer if this
+                    neighborhood is comfortable based on applied filters.
+                  </P>
+                </div>
               </CaseBlock>
               <CaseImageWide>
                 <Image fluid={data.Image8.childImageSharp.fluid} />

@@ -29,8 +29,8 @@ const IndexPage = () => (
         <P>
           I believe that all great things happen at the intersection of
           disciplines so try to broaden my skills in various fields. Apart from
-          doing design, I like to tinker with code and learn more about AI/ML.
-          Feel free to contact me with any questions.
+          doing design, I like to tinker with code and learn more about business
+          models. Feel free to contact me with any questions.
         </P>
       </Wrapper>
     </Bio>

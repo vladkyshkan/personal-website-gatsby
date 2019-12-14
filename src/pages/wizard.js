@@ -20,7 +20,6 @@ import Captcha from "../components/designSystem/Captcha"
 import StyledLink from "../components/designSystem/StyledLink"
 import ExternalLink from "../components/designSystem/ExternalLink"
 import Wrapper from "../components/designSystem/Wrapper"
-import WizardVideo from "../data/images/cases/wizard/wizard-video.mp4"
 
 const Wizard = ({ data }) => {
   const cases = data.allCasesJson.edges
@@ -28,7 +27,16 @@ const Wizard = ({ data }) => {
   return (
     <div>
       {cases.map(({ node: cases }) => {
-        const { title, description, year, company, color, light, url } = cases
+        const {
+          title,
+          description,
+          year,
+          company,
+          color,
+          light,
+          video,
+          url,
+        } = cases
         const imageData = cases.image.childImageSharp.fluid
 
         return (
@@ -81,7 +89,7 @@ const Wizard = ({ data }) => {
                   competitor's resources.
                 </P>
               </CaseBlock>
-              <Video src={WizardVideo} />
+              <Video video={video} title={title} />
               <CaseImageWide>
                 <Image fluid={data.Image2.childImageSharp.fluid} />
               </CaseImageWide>
@@ -165,6 +173,7 @@ export const query = graphql`
           color
           light
           url
+          video
           image {
             childImageSharp {
               fluid(quality: 100) {

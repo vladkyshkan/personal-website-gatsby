@@ -139,10 +139,7 @@ const Noblesse = ({ data }) => {
                 <CaseNext background="#EE3A2B">
                   <Wrapper>
                     <Captcha>Next project</Captcha>
-                    <H4>
-                      Redesign of package creation flow through mobile
-                      application
-                    </H4>
+                    <H4>Package creation flow redesign</H4>
                     <div>
                       <Image fluid={data.ImageNext.childImageSharp.fluid} />
                     </div>

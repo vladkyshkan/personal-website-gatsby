@@ -192,9 +192,7 @@ const MdFashion = ({ data }) => {
               <CaseBlock>
                 <H3>Credits</H3>
                 <P>
-                  Art director and lead designer: Vlad Kyshkan 
-{' '}
-<br />
+                  Art director and lead designer: Vlad Kyshkan <br />
                   Designer: Serhii Dziadyk
                 </P>
               </CaseBlock>
@@ -202,10 +200,7 @@ const MdFashion = ({ data }) => {
                 <CaseNext background="#FD7C23">
                   <Wrapper>
                     <Captcha>Next project</Captcha>
-                    <H4>
-                      Kyiv city comfort interactive map design for social
-                      project
-                    </H4>
+                    <H4>City comfort map design for social project</H4>
                     <div>
                       <Image fluid={data.ImageNext.childImageSharp.fluid} />
                     </div>

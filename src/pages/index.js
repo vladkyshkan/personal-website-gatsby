@@ -21,16 +21,17 @@ const IndexPage = () => (
       <Wrapper>
         <H1>Digital product designer</H1>
         <P>
-          I'm currently working as a Head of design at Omnicore where lead team
-          of 5 designers. Our goal is to create the best e-commerce experience
-          and make online shopping for customers easier. Before that I worked as
-          a&nbsp;marketer at Microsoft. Based in Kyiv.
+          Currently working as a Head of design at Omnicore where lead team of 5
+          designers. Our goal is to create the best e-commerce experience and
+          make online shopping for customers easier. I have 4+ years of
+          experience working with digital products both in design and marketing.
         </P>
         <P>
           I believe that all great things happen at the intersection of
           disciplines so try to broaden my skills in various fields. Apart from
           doing design, I like to tinker with code and learn more about business
-          models. Feel free to contact me with any questions.
+          models. Based in Kyiv, Ukraine. Feel free to contact me with any
+          questions.
         </P>
       </Wrapper>
     </Bio>

@@ -46,7 +46,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-hotjar`,
       options: {
-        id: 1659613,
+        id: "1659613",
         sv: "<script>
         (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};

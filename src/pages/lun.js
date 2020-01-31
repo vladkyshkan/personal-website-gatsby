@@ -95,8 +95,21 @@ const Lun = ({ data }) => {
               <CaseImage gray shadow>
                 <Image fluid={data.Image2.childImageSharp.fluid} />
               </CaseImage>
+              <CaseBlockWide dark>
+                <Wrapper>
+                  <H3>Process</H3>
+                  <P>
+                    The whole process of design during this project was divided
+                    into four stages according to the Double Diamond
+                    methodology.
+                  </P>
+                </Wrapper>
+              </CaseBlockWide>
+              <CaseImage dark>
+                <Image fluid={data.Image3.childImageSharp.fluid} />
+              </CaseImage>
               <CaseBlock>
-                <H3>Research</H3>
+                <H3>Discover</H3>
                 <div>
                   <P>
                     The main user of the city comfort map is a person who plans
@@ -112,7 +125,7 @@ const Lun = ({ data }) => {
                   </P>
                   <CaseQuote>
                     <div>
-                      <Image fixed={data.Image3.childImageSharp.fixed} />
+                      <Image fixed={data.Image4.childImageSharp.fixed} />
                     </div>
                     <div>
                       <P bold>
@@ -125,7 +138,7 @@ const Lun = ({ data }) => {
                   </CaseQuote>
                   <CaseQuote>
                     <div>
-                      <Image fixed={data.Image4.childImageSharp.fixed} />
+                      <Image fixed={data.Image5.childImageSharp.fixed} />
                     </div>
                     <div>
                       <P bold>
@@ -143,7 +156,7 @@ const Lun = ({ data }) => {
                   <H3>Value proposition canvas</H3>
                   <P>
                     Based on information collected during interviews we mapped
-                    customers' pains, gains, and jobs on Value proposition
+                    customers' pains, gains, and jobs on the Value proposition
                     canvas and started to brainstorm ideas. After that, we
                     prioritized a list of ideas based on usefulness for
                     customers and technical feasibility.
@@ -151,7 +164,7 @@ const Lun = ({ data }) => {
                 </Wrapper>
               </CaseBlockWide>
               <CaseImage dark shadow>
-                <Image fluid={data.Image5.childImageSharp.fluid} />
+                <Image fluid={data.Image6.childImageSharp.fluid} />
               </CaseImage>
               <CaseBlockWide gray>
                 <Wrapper>
@@ -167,7 +180,7 @@ const Lun = ({ data }) => {
                 </Wrapper>
               </CaseBlockWide>
               <CaseImage gray>
-                <Image fluid={data.Image6.childImageSharp.fluid} />
+                <Image fluid={data.Image7.childImageSharp.fluid} />
               </CaseImage>
               <CaseBlock>
                 <H3>The solution</H3>
@@ -183,7 +196,7 @@ const Lun = ({ data }) => {
                 </P>
               </CaseBlock>
               <CaseImageWide>
-                <Image fluid={data.Image7.childImageSharp.fluid} />
+                <Image fluid={data.Image8.childImageSharp.fluid} />
               </CaseImageWide>
               <CaseBlock>
                 <div>
@@ -208,7 +221,7 @@ const Lun = ({ data }) => {
                 </div>
               </CaseBlock>
               <CaseImageWide>
-                <Image fluid={data.Image8.childImageSharp.fluid} />
+                <Image fluid={data.Image9.childImageSharp.fluid} />
               </CaseImageWide>
               <CaseBlock>
                 <P>
@@ -217,7 +230,7 @@ const Lun = ({ data }) => {
                 </P>
               </CaseBlock>
               <CaseImageWide>
-                <Image fluid={data.Image9.childImageSharp.fluid} />
+                <Image fluid={data.Image10.childImageSharp.fluid} />
               </CaseImageWide>
               <CaseBlockWide dark>
                 <Wrapper>
@@ -296,10 +309,10 @@ export const query = graphql`
         }
       }
     }
-    Image3: file(relativePath: { eq: "images/cases/lun/lun-3.png" }) {
+    Image3: file(relativePath: { eq: "images/cases/lun/lun-3.jpg" }) {
       childImageSharp {
-        fixed(width: 96, quality: 100) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 928, quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -310,10 +323,10 @@ export const query = graphql`
         }
       }
     }
-    Image5: file(relativePath: { eq: "images/cases/lun/lun-5.jpg" }) {
+    Image5: file(relativePath: { eq: "images/cases/lun/lun-5.png" }) {
       childImageSharp {
-        fluid(maxWidth: 928, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 96, quality: 100) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
@@ -326,7 +339,7 @@ export const query = graphql`
     }
     Image7: file(relativePath: { eq: "images/cases/lun/lun-7.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1152, quality: 100) {
+        fluid(maxWidth: 928, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -339,6 +352,13 @@ export const query = graphql`
       }
     }
     Image9: file(relativePath: { eq: "images/cases/lun/lun-9.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1152, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    Image10: file(relativePath: { eq: "images/cases/lun/lun-10.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1152, quality: 100) {
           ...GatsbyImageSharpFluid

@@ -196,7 +196,7 @@ const MdFashion = ({ data }) => {
                   Designer: Serhii Dziadyk
                 </P>
               </CaseBlock>
-              <StyledLink to="/lun">
+              <StyledLink to="/lun/">
                 <CaseNext background="#FD7C23">
                   <Wrapper>
                     <Captcha>Next project</Captcha>

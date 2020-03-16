@@ -252,7 +252,7 @@ const Lun = ({ data }) => {
                   Kaita, Taisia Shkovyra and Tanya Mytrovska
                 </P>
               </CaseBlock>
-              <StyledLink to="/noblesse">
+              <StyledLink to="/noblesse/">
                 <CaseNext background="#1B1F25">
                   <Wrapper>
                     <Captcha>Next project</Captcha>

@@ -131,13 +131,11 @@ const Noblesse = ({ data }) => {
               <CaseBlock>
                 <H3>Credits</H3>
                 <P>
-                  Art director and lead designer: Vlad Kyshkan 
-{' '}
-<br />
+                  Art director and lead designer: Vlad Kyshkan <br />
                   Designer: Serhii Dziadyk
                 </P>
               </CaseBlock>
-              <StyledLink to="/nova-poshta">
+              <StyledLink to="/nova-poshta/">
                 <CaseNext background="#EE3A2B">
                   <Wrapper>
                     <Captcha>Next project</Captcha>

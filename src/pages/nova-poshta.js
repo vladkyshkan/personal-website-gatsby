@@ -355,7 +355,7 @@ const NovaPoshta = ({ data }) => {
                   Kolesnik
                 </P>
               </CaseBlock>
-              <StyledLink to="/wizard">
+              <StyledLink to="/wizard/">
                 <CaseNext background="#008990">
                   <Wrapper>
                     <Captcha>Next project</Captcha>

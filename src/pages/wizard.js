@@ -142,7 +142,7 @@ const Wizard = ({ data }) => {
                   Designer: Vlad Kyshkan
                 </P>
               </CaseBlock>
-              <StyledLink to="/md-fashion">
+              <StyledLink to="/md-fashion/">
                 <CaseNext dark background="#EAE2D8">
                   <Wrapper>
                     <Captcha>Next project</Captcha>

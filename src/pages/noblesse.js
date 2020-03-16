@@ -59,12 +59,12 @@ const Noblesse = ({ data }) => {
                     functional and distinctive design that could be used as a
                     digital showroom to drive offline sales.
                   </P>
-                  {/* <ExternalLink href={url} target="_blank" rel="noopener">
+                  <ExternalLink href={url} target="_blank" rel="noopener">
                     <Button dark>
                       View website
                       <IconArrow />
                     </Button>
-                  </ExternalLink> */}
+                  </ExternalLink>
                 </div>
               </CaseBlock>
               <CaseImageWide>
@@ -131,7 +131,9 @@ const Noblesse = ({ data }) => {
               <CaseBlock>
                 <H3>Credits</H3>
                 <P>
-                  Art director and lead designer: Vlad Kyshkan <br />
+                  Art director and lead designer: Vlad Kyshkan 
+{' '}
+<br />
                   Designer: Serhii Dziadyk
                 </P>
               </CaseBlock>

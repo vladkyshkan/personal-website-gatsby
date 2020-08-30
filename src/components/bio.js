@@ -13,34 +13,37 @@ const Bio = styled.div`
   div {
     height: 100vh;
     min-height: 700px;
-    max-height: 900px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 32px;
+    max-height: 1024px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
   h1 {
     color: ${theme.accent};
-    margin-top: 25%;
+    max-width: 700px;
+    margin-bottom: 40px;
   }
 
-  p {
+  h4 {
     color: ${theme.accent};
-    margin-bottom: 128px;
-    align-self: end;
-  }
+    max-width: 650px;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 1.5;
+    transition: 0.3;
 
-  &:before {
-    content: "";
-    margin: 0 auto;
-    width: 90%;
-    max-width: 1152px;
-    position: absolute;
-    left: 1px;
-    right: 1px;
-    bottom: 64px;
-    border-bottom: 1px solid ${theme.accent};
-    opacity: 0.5;
+    a {
+      color: #1FB762;
+    }
+
+    a:nth-child(2) {
+      color: #FF875F;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
 
   @media only screen and (min-width: 1440px) {
@@ -56,16 +59,6 @@ const Bio = styled.div`
   }
 
   @media only screen and (max-width: 1024px) {
-    div {
-      grid-template-columns: repeat(1, 1fr);
-      align-content: end;
-      grid-gap: 40px;
-    }
-
-    h1 {
-      margin-bottom: 24px;
-    }
-
     p:nth-child(2) {
       margin-bottom: 0;
     }
@@ -79,25 +72,17 @@ const Bio = styled.div`
     background-position: -100% 100%;
 
     h1 {
-      margin-bottom: 0;
+      margin-bottom: 24px;
     }
   }
 
   @media only screen and (max-width: 600px) {
     background-position: -20% 100%;
-
-    div {
-      grid-gap: 32px;
-    }
   }
 
   @media only screen and (max-width: 500px) {
-    p {
-      margin-bottom: 64px;
-    }
-
-    &:before {
-      display: none;
+    h1 {
+      margin-bottom: 16px;
     }
   }
 

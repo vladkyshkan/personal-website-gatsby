@@ -6,11 +6,11 @@ import BookCard from "./bookCard"
 const BooksGridStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 16px 32px;
+  gap: 32px 32px;
   margin-bottom: -16px;
 
   @media only screen and (max-width: 900px) {
-    gap: 8px 24px;
+    gap: 24px 24px;
   }
 
   @media only screen and (max-width: 768px) {

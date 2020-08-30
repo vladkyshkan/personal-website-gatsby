@@ -1,24 +1,9 @@
 import styled from "styled-components"
-import { theme } from "./theme"
 
 const ExternalLink = styled.a`
-  font-family: "IBM Plex Mono";
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 16px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-right: 32px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Helvetica Neue", Arial, sans-serif;
   text-decoration: none;
-  color: ${theme.dark};
-
-  @media only screen and (max-width: 500px) {
-    margin-bottom: 24px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
 `
 
 export default ExternalLink

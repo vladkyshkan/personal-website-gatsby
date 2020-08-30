@@ -13,7 +13,7 @@ const CaseBlockWide = styled(CaseBlock)`
 
     h3 + div {
       display: block;
-      grid-column-start: 6;
+      grid-column-start: 7;
       grid-column-end: span 6;
     }
   }

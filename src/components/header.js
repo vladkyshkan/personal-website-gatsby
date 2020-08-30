@@ -7,8 +7,7 @@ import Wrapper from "./designSystem/Wrapper"
 
 const StyledHeader = styled.header`
   width: 100%;
-  padding: 0 5%;
-  height: 56px;
+  padding: 25px 5%;
   position: absolute;
   background-color: transparent;
   color: ${props => (props.dark ? theme.dark : theme.accent)};
@@ -23,8 +22,9 @@ const StyledHeader = styled.header`
 
 const Logo = styled.p`
   font-size: 1.8rem;
-  font-family: "Butler";
-  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
   line-height: 100%;
 
   @media only screen and (max-width: 500px) {
@@ -35,11 +35,12 @@ const Logo = styled.p`
 const NavigationLinks = styled.div`
   * {
     display: inline-block;
-    font-family: "IBM Plex Mono";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
     font-weight: 600;
     font-size: 1.2rem;
     line-height: 16px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     margin-left: 32px;
 
@@ -69,9 +70,9 @@ const Header = ({ siteTitle, dark }) => (
         <StyledLink to="/">{siteTitle}</StyledLink>
       </Logo>
       <NavigationLinks dark={dark}>
+        <StyledLink to="/about">About</StyledLink>
         <StyledLink to="/#work">Work</StyledLink>
         <StyledLink to="/#projects">Projects</StyledLink>
-        <StyledLink to="/#contact">Contact</StyledLink>
       </NavigationLinks>
     </Wrapper>
   </StyledHeader>

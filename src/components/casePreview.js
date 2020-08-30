@@ -13,12 +13,20 @@ import IconArrow from "./designSystem/IconArrow"
 import CaseDetails from "./caseDetails"
 
 const CaseContainer = styled.div`
-  position: relative;
-  margin-bottom: 128px;
   display: flex;
+  align-items: center;
+  max-width: 1152px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: ${props => props.color};
+  margin-bottom: 80px;
 
-  @media only screen and (max-width: 1024px) {
-    display: block;
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    height: 450px;
   }
 
   @media only screen and (max-width: 900px) {
@@ -28,29 +36,26 @@ const CaseContainer = styled.div`
 
 const CaseCover = styled.div`
   display: block;
-  max-width: 832px;
+  max-width: 662px;
   width: 100%;
-  margin-left: ${props => (props.right ? undefined : "auto")};
+  margin-left: auto;
 
-  @media only screen and (max-width: 1024px) {
-    max-width: 100%;
+  @media only screen and (max-width: 1200px) {
+    max-width: 550px;
+  }
+
+  @media only screen and (max-width: 950px) {
+    display: none;
   }
 `
 
 const CaseDescription = styled.div`
-  position: absolute;
-  right: ${props => (props.right ? "0px" : undefined)};
-  left: ${props => (props.right ? undefined : "0px")};
-  top: ${props => (props.right ? "40px" : undefined)};
-  bottom: ${props => (props.right ? undefined : "40px")};
   width: 448px;
-  height: 480px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: ${props => props.color};
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1070px) {
     position: static;
     width: 100%;
     height: auto;
@@ -83,10 +88,6 @@ const CaseDescriptionWrapper = styled.div`
     h3:nth-of-type(1) {
       margin-bottom: 24px;
     }
-
-    button {
-      margin-top: 16px;
-    }
   }
 
   @media only screen and (max-width: 500px) {
@@ -99,39 +100,35 @@ const CasePreview = ({
   title,
   description,
   year,
-  company,
+  role,
   color,
   light,
   imageData,
   index,
-  right,
 }) => (
-  <CaseContainer>
-    <CaseCover right={right}>
-      <Image fluid={imageData} alt={title} />
-    </CaseCover>
-    <CaseDescription color={color} right={right}>
+  <CaseContainer color={color}>
+    <CaseDescription>
       <CaseDescriptionWrapper light={light}>
-        <H3>0{index + 1}/</H3>
+        <H3>
+0
+{index + 1}
+/
+</H3>
         <H3>{description}</H3>
-        <CaseDetails client={title} year={year} company={company} />
-        {light ? (
-          <StyledLink to={`/${slug}/`}>
-            <Button dark>
-              See more
-              <IconArrow />
-            </Button>
-          </StyledLink>
-        ) : (
-          <StyledLink to={`/${slug}/`}>
-            <Button>
-              See more
-              <IconArrow />
-            </Button>
-          </StyledLink>
-        )}
+        <CaseDetails project={title} year={year} role={role} />
+        <StyledLink to={slug ? `/${slug}/` : "https://zakaz.ua"}>
+          <Button light={light}>
+            See more
+            <IconArrow />
+          </Button>
+        </StyledLink>
       </CaseDescriptionWrapper>
     </CaseDescription>
+    <CaseCover>
+      <StyledLink to={slug ? `/${slug}/` : "https://zakaz.ua"}>
+        <Image fluid={imageData} alt={title} />
+      </StyledLink>
+    </CaseCover>
   </CaseContainer>
 )
 

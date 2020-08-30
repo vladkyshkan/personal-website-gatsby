@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Vlad Kyshkan",
     description:
-      "Digital designer, currently create the best e-commerce experience and make online shopping for customers easier and more comfortable at Omnicore",
+      "Product designer, currently responsible for user experience at food delivery service Zakaz.ua",
     author: "Vlad Kyshkan",
   },
   plugins: [

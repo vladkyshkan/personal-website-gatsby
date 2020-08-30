@@ -11,7 +11,7 @@ import StyledLink from "../components/designSystem/StyledLink"
 
 const HeaderBg = styled.div`
   background-color: ${theme.dark};
-  height: 56px;
+  height: 104px;
 `
 
 const ErrorStyled = styled.div`
@@ -23,7 +23,7 @@ const ErrorStyled = styled.div`
   text-align: center;
   height: 80vh;
   min-height: 500px;
-  max-height: 700px;
+  max-height: 600px;
 
   h3 {
     margin-bottom: 8px;
@@ -36,8 +36,9 @@ const ErrorStyled = styled.div`
 
 const ErrorTitle = styled.p`
   font-size: 16rem;
-  font-family: "Butler";
-  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
   line-height: 100%;
   color: ${theme.dark};
   opacity: 0.2;

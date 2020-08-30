@@ -10,7 +10,7 @@ const CaseImage = styled.div`
 
   div {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1152px;
     box-shadow: ${props =>
       props.shadow ? "0px 6px 30px rgba(0, 0, 0, 0.1)" : null};
   }

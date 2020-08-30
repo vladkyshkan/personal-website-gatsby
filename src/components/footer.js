@@ -41,8 +41,20 @@ const ExternalLinks = styled.div`
   a:active,
   a:visited,
   a:focus {
-    text-decoration: none;
     color: ${theme.accent};
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-right: 32px;
+
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   a:after {
@@ -58,7 +70,7 @@ const ExternalLinks = styled.div`
     width: 100%;
   }
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 767px) {
     flex-direction: column;
   }
 `
@@ -69,9 +81,9 @@ const ButtonTop = styled.div`
   justify-content: center;
   width: 40px;
   height: 40px;
-  opacity: 0.5;
   border: 1px solid ${theme.white};
   border-radius: 100px;
+  transition: 0.3s;
 
   svg {
     transform: rotate(-90deg);
@@ -79,11 +91,16 @@ const ButtonTop = styled.div`
   }
 
   &:hover {
-    opacity: 1;
     cursor: pointer;
+    background-color: ${theme.white};
+    transition: 0.3s;
+
+    svg {
+      fill: ${theme.dark};
+    }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 767px) {
     display: none;
   }
 `
@@ -94,6 +111,10 @@ const SocialMediaLinks = [
     link: "mailto:vladkyshkan@gmail.com",
   },
   {
+    name: "Telegram",
+    link: "https://t.me/vladkyshkan",
+  },
+  {
     name: "Facebook",
     link: "https://www.facebook.com/vlad.kyshkan",
   },
@@ -102,12 +123,16 @@ const SocialMediaLinks = [
     link: "https://twitter.com/vladkyshkan",
   },
   {
-    name: "Github",
-    link: "https://github.com/vladkyshkan",
-  },
-  {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/vlad-kyshkan",
+  },
+  {
+    name: "Dribbble",
+    link: "https://dribbble.com/vladkyshkan",
+  },
+  {
+    name: "Github",
+    link: "https://github.com/vladkyshkan",
   },
 ]
 
@@ -120,7 +145,7 @@ const scrollToTop = () => {
 const Footer = () => (
   <StyledFooter>
     <Wrapper>
-      <H2 id="contact">Contact</H2>
+      <H2 id="contact">Say hi</H2>
       <FooterLinks>
         <ExternalLinks>
           {SocialMediaLinks.map(link => (

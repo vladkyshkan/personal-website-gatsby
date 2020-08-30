@@ -1,15 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import styled from "styled-components"
 import CasePreview from "./casePreview"
-
-const CaseGridStyled = styled.div`
-  margin-bottom: -128px;
-
-  @media only screen and (max-width: 900px) {
-    margin-bottom: -64px;
-  }
-`
 
 const CaseGrid = () => {
   const data = useStaticQuery(graphql`
@@ -21,7 +12,7 @@ const CaseGrid = () => {
             slug
             description
             year
-            company
+            role
             color
             light
             image {
@@ -40,11 +31,10 @@ const CaseGrid = () => {
   const cases = data.allCasesJson.edges
 
   return (
-    <CaseGridStyled>
+    <div>
       {cases.map(({ node: cases }, index) => {
-        const { title, description, slug, year, company, color, light } = cases
+        const { title, description, slug, year, role, color, light } = cases
         const imageData = cases.image.childImageSharp.fluid
-        const isEven = index % 2
 
         return (
           <CasePreview
@@ -52,17 +42,16 @@ const CaseGrid = () => {
             description={description}
             slug={slug}
             year={year}
-            company={company}
+            role={role}
             imageData={imageData}
             color={color}
             light={light}
             key={title}
             index={index}
-            right={isEven ? undefined : true}
           />
         )
       })}
-    </CaseGridStyled>
+    </div>
   )
 }
 

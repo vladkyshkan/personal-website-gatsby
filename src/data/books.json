@@ -1,62 +1,62 @@
 [
   {
     "title": "Skin in the game",
-    "image": "./images/books/taleb.jpg",
+    "image": "./images/books/taleb.png",
     "url": "https://www.amazon.com/Skin-Game-Hidden-Asymmetries-Daily/dp/042528462X"
   },
   {
     "title": "Principles",
-    "image": "./images/books/dalio.jpg",
+    "image": "./images/books/dalio.png",
     "url": "https://www.amazon.com/Principles-Life-Work-Ray-Dalio/dp/1501124021"
   },
   {
     "title": "Zero to one",
-    "image": "./images/books/thiel.jpg",
+    "image": "./images/books/thiel.png",
     "url": "https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296"
   },
   {
     "title": "Lean Startup",
-    "image": "./images/books/lean.jpg",
+    "image": "./images/books/lean.png",
     "url": "https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898"
   },
   {
     "title": "Essentialism",
-    "image": "./images/books/essentialism.jpg",
+    "image": "./images/books/essentialism.png",
     "url": "https://www.amazon.com/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0804137382"
   },
   {
     "title": "Universal design principles",
-    "image": "./images/books/design-principles.jpg",
+    "image": "./images/books/design-principles.png",
     "url": "https://www.amazon.com/Universal-Principles-Design-William-Lidwell/dp/1592530079"
   },
   {
     "title": "Innovators",
-    "image": "./images/books/innovators.jpg",
+    "image": "./images/books/innovators.png",
     "url": "https://www.amazon.com/Innovators-Hackers-Geniuses-Created-Revolution-ebook/dp/B00JGAS65Q/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr="
   },
   {
     "title": "Atomic Habits",
-    "image": "./images/books/clear.jpg",
+    "image": "./images/books/clear.png",
     "url": "https://www.amazon.com/Atomic-Habits-Proven-Build-Break-ebook/dp/B01N5AX61W/ref=sr_1_1?crid=33DGUHIWY1O2M&keywords=atomic+habits&qid=1571345454&s=digital-text&sprefix=atomic%2Cdigital-text%2C250&sr=1-1"
   },
   {
     "title": "The Mom Test",
-    "image": "./images/books/fitzpatrick.jpg",
+    "image": "./images/books/fitzpatrick.png",
     "url": "https://www.amazon.com/Mom-Test-customers-business-everyone-ebook-dp-B01H4G2J1U/dp/B01H4G2J1U/ref=mt_kindle?_encoding=UTF8&me=&qid="
   },
   {
     "title": "Seeking Wisdom",
-    "image": "./images/books/bevelin.jpg",
+    "image": "./images/books/bevelin.png",
     "url": "https://www.amazon.com/Seeking-Wisdom-Darwin-Peter-Bevelin/dp/B000M4UYSM/ref=sr_1_4?crid=34NICKWIWEIZQ&keywords=seeking+wisdom+from+darwin+to+munger&qid=1571345625&s=digital-text&sprefix=seeking+wisdom+f%2Cdigital-text%2C352&sr=1-4-catcorr"
   },
   {
     "title": "The Master Algorithm",
-    "image": "./images/books/domingos.jpg",
+    "image": "./images/books/domingos.png",
     "url": "https://www.amazon.com/Master-Algorithm-Ultimate-Learning-Machine-ebook/dp/B06XK8D37J/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1571345659&sr=1-1"
   },
   {
     "title": "What are you looking at?",
-    "image": "./images/books/gompertz.jpg",
+    "image": "./images/books/gompertz.png",
     "url": "https://www.amazon.com/What-Are-You-Looking-At-ebook/dp/B008LUVN3O/ref=sr_1_1?crid=35ACBPIUG7RW&keywords=what+are+you+looking+at+will+gompertz&qid=1571345691&s=digital-text&sprefix=what+are+you+loo%2Cdigital-text%2C244&sr=1-1"
   }
 ]

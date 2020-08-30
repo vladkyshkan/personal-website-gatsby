@@ -1,11 +1,30 @@
 [
   {
+    "title": "Zakaz.ua",
+    "image": "./images/cases/zakaz/zakaz-hero.png",
+    "description": "Food delivery service from the supermarkets",
+    "year": "2020",
+    "role": "Product Designer",
+    "color": "#1FB762",
+    "light": false
+  },
+  {
+    "title": "Preply",
+    "slug": "preply",
+    "image": "./images/cases/preply/preply-hero.png",
+    "description": "Improve messenger for\u00A0the language learning marketplace",
+    "year": "2020",
+    "role": "Product Designer",
+    "color": "#42B3BC",
+    "light": false
+  },
+  {
     "title": "MD Fashion",
     "slug": "md-fashion",
-    "image": "./images/cases/md-fashion/md-fashion-hero.jpg",
-    "description": "Apparel marketplace redesign & Android application",
+    "image": "./images/cases/md-fashion/md-fashion-hero.png",
+    "description": "Apparel marketplace redesign and Android application",
     "year": "2019",
-    "company": "Omnicore",
+    "role": "Head of Design",
     "color": "#EAE2D8",
     "light": true,
     "url": "https://www.md-fashion.com.ua"
@@ -13,44 +32,32 @@
   {
     "title": "LUN Misto",
     "slug": "lun",
-    "image": "./images/cases/lun/lun-hero.jpg",
-    "description": "City comfort map design for\u00A0social project",
+    "image": "./images/cases/lun/lun-hero.png",
+    "description": "City comfort map design for\u00A0the social project",
     "year": "2019",
-    "company": "Individual",
-    "color": "#FD7C23",
+    "role": "Product Designer",
+    "color": "#EF8E35",
+    "light": false
+  },
+  {
+    "title": "Nova Poshta",
+    "slug": "nova-poshta",
+    "image": "./images/cases/nova-poshta/nova-poshta-hero.png",
+    "description": "Package creation flow redesign for the delivery service",
+    "year": "2019",
+    "role": "Product Designer",
+    "color": "#EB5757",
     "light": false
   },
   {
     "title": "Noblesse",
     "slug": "noblesse",
-    "image": "./images/cases/noblesse/noblesse-hero.jpg",
-    "description": "E-commerce website for\u00A0the luxury watches &\u00A0jewelry store",
+    "image": "./images/cases/noblesse/noblesse-hero.png",
+    "description": "E\u2011commerce website for\u00A0the luxury watches and jewelry store",
     "year": "2019",
-    "company": "Omnicore",
+    "role": "Head of Design",
     "color": "#1B1F25",
     "light": false,
     "url": "https://www.noblesse.ua"
-  },
-  {
-    "title": "Nova Poshta",
-    "slug": "nova-poshta",
-    "image": "./images/cases/nova-poshta/nova-poshta-hero.jpg",
-    "description": "Package creation flow redesign",
-    "year": "2019",
-    "company": "Individual",
-    "color": "#EE3A2B",
-    "light": false
-  },
-  {
-    "title": "Wizard",
-    "slug": "wizard",
-    "image": "./images/cases/wizard/wizard-hero.jpg",
-    "description": "Corporate website & b2b platform for the sanitary ware supplier",
-    "year": "2018",
-    "company": "404 Digital Agency",
-    "color": "#008990",
-    "light": false,
-    "video": "https://player.vimeo.com/video/379331568",
-    "url": "https://www.wizard.ua"
   }
 ]

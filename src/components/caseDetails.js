@@ -8,8 +8,8 @@ const CaseDetailsStyled = styled.div`
 `
 
 const CaseDetailsTitle = styled.div`
-  font-size: 14px;
-  line-height: 100%;
+  font-size: 16px;
+  line-height: 125%;
   display: flex;
   flex-direction: column;
   margin-right: 40px;
@@ -27,20 +27,24 @@ const CaseDetailsTitle = styled.div`
   @media only screen and (max-width: 500px) {
     margin-right: 24px;
   }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 1.4rem;
+  }
 `
-const CaseDetails = ({ client, year, company }) => (
+const CaseDetails = ({ project, year, role }) => (
   <CaseDetailsStyled>
     <CaseDetailsTitle>
-      <P>Client</P>
-      {client}
+      <P>Project</P>
+      {project}
     </CaseDetailsTitle>
     <CaseDetailsTitle>
       <P>Year</P>
       {year}
     </CaseDetailsTitle>
     <CaseDetailsTitle>
-      <P>Company</P>
-      {company}
+      <P>Role</P>
+      {role}
     </CaseDetailsTitle>
   </CaseDetailsStyled>
 )

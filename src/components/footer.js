@@ -127,8 +127,8 @@ const SocialMediaLinks = [
     link: "https://www.linkedin.com/in/vlad-kyshkan",
   },
   {
-    name: "Dribbble",
-    link: "https://dribbble.com/vladkyshkan",
+    name: "Medium",
+    link: "https://medium.com/@vladkyshkan",
   },
   {
     name: "Github",

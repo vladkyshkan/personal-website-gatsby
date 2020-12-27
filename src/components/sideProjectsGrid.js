@@ -10,7 +10,7 @@ const SideProjectsGrid = () => {
           node {
             title
             description
-            link
+            url
             image {
               childImageSharp {
                 fluid(quality: 100) {
@@ -29,13 +29,13 @@ const SideProjectsGrid = () => {
   return (
     <div>
       {sideProjects.map(({ node: sideProject }, index) => {
-        const { title, description, link, image } = sideProject
+        const { title, description, url, image } = sideProject
 
         return (
           <SideProjectPreview
             title={title}
             description={description}
-            link={link}
+            url={url}
             image={image.childImageSharp.fluid}
             key={title}
             index={index}

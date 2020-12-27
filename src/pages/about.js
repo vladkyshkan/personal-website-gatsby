@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { graphql } from "gatsby"
 import Image from "gatsby-image"
 import { theme } from "../components/designSystem/theme"
 import Layout from "../components/layout"

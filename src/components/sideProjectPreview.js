@@ -54,7 +54,7 @@ const SideProjectsCover = styled.div`
   }
 `
 
-const SideProjectsPreview = ({ title, description, link, image}) => (
+const SideProjectsPreview = ({ title, description, url, image}) => (
   <SideProjectsPreviewStyled>
     <SideProjectsCover>
       <Image fluid={image} alt={title} />
@@ -62,7 +62,7 @@ const SideProjectsPreview = ({ title, description, link, image}) => (
     <SideProjectsDescription>
       <H3>{title}</H3>
       <P>{description}</P>
-      <ExternalLink key={title} href={link} target="_blank" rel="noopener">
+      <ExternalLink key={title} href={url} target="_blank" rel="noopener">
         <Button>
           Visit website
           <IconArrow />

@@ -2,13 +2,13 @@
   {
     "title": "Machine Learning + Design",
     "description": "A collection of 90+ resources for the intersection of design, user experience, machine learning and artificial intelligence including articles, books, guidelines and tools to experiment.",
-    "link": "https://machinelearning.design/",
+    "url": "https://machinelearning.design/",
     "image": "./images/sideProjects/ml-design.png"
   },
   {
     "title": "E-commerce project UX checklist",
     "description": "The checklist of UX best practices for e-commerce projects. Overall 55 guidelines divided into 9 sections, including homepage, product list, checkout, and mobile. Each guideline has an example of successful implementation and a link to the corresponding article.",
-    "link": "https://ecommerce-checklist.com/",
+    "url": "https://ecommerce-checklist.com/",
     "image": "./images/sideProjects/ecom-checklist.png"
   }
 ]

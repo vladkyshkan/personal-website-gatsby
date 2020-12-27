@@ -5,6 +5,7 @@ import GlobalStyle from "../components/designSystem/globalStyle"
 import Bio from "../components/bio"
 import Section from "../components/section"
 import CaseGrid from "../components/caseGrid"
+import PostsGrid from "../components/postsGrid"
 import BooksGrid from "../components/booksGrid"
 import SideProjectsGrid from "../components/sideProjectsGrid"
 import Wrapper from "../components/designSystem/Wrapper"
@@ -45,6 +46,13 @@ const IndexPage = () => (
       </Wrapper>
     </Bio>
 
+    <Section id="writing">
+      <Wrapper>
+        <H2>Writing</H2>
+        <PostsGrid />
+      </Wrapper>
+    </Section>
+
     <Section id="work">
       <Wrapper>
         <H2>Selected work</H2>
@@ -52,7 +60,7 @@ const IndexPage = () => (
       </Wrapper>
     </Section>
 
-    <Section id="projects" dark>
+    <Section dark>
       <Wrapper>
         <H2>Side projects</H2>
         <SideProjectsGrid />

@@ -71,8 +71,8 @@ const Header = ({ siteTitle, dark }) => (
       </Logo>
       <NavigationLinks dark={dark}>
         <StyledLink to="/about">About</StyledLink>
+        <StyledLink to="/#writing">Writing</StyledLink>
         <StyledLink to="/#work">Work</StyledLink>
-        <StyledLink to="/#projects">Projects</StyledLink>
       </NavigationLinks>
     </Wrapper>
   </StyledHeader>

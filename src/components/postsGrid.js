@@ -2,15 +2,38 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 import PostPreview from "./postPreview"
+import Button from "./designSystem/Button"
+import ExternalLink from "./designSystem/ExternalLink"
+import IconArrow from "./designSystem/IconArrow"
 
 const PostsGridStyled = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: -128px;
 
   @media only screen and (max-width: 900px) {
     margin-bottom: -64px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    align-items: flex-start;
+  }
+
+  @media only screen and (max-width: 500px) {
+    a {
+      width: 100%;
+    }
+  }
+`
+
+const PostsPreviewGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 32px;
+
+  @media only screen and (max-width: 900px) {
     gap: 24px;
   }
 
@@ -45,14 +68,22 @@ const PostsGrid = () => {
 
   return (
     <PostsGridStyled>
-      {posts.map(({ node: post }) => {
-        const { title, date, url } = post
-        const imageData = post.image.childImageSharp.fluid
+      <PostsPreviewGrid>
+        {posts.map(({ node: post }) => {
+          const { title, date, url } = post
+          const imageData = post.image.childImageSharp.fluid
 
-        return (
-          <PostPreview title={title} date={date} url={url} imageData={imageData} key={title} />
-        )
-      })}
+          return (
+            <PostPreview title={title} date={date} url={url} imageData={imageData} key={title} />
+          )
+        })}
+      </PostsPreviewGrid>
+      <ExternalLink href="https://vladkyshkan.medium.com" target="_blank" rel="noopener">
+        <Button light>
+          See all posts
+          <IconArrow />
+        </Button>
+      </ExternalLink>
     </PostsGridStyled>
   )
 }

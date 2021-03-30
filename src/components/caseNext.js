@@ -103,7 +103,7 @@ const CaseNext = ({ title, description, slug, background, image, light }) => (
           <H3>
             {title}
 {' '}
-—{description}
+— {description}
           </H3>
           <StyledLink to={`/${slug}/`}>
             <Button light={light}>

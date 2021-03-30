@@ -12,6 +12,10 @@ const PostsGridStyled = styled.div`
   align-items: center;
   margin-bottom: -128px;
 
+  button {
+    margin: 0;
+  }
+
   @media only screen and (max-width: 900px) {
     margin-bottom: -64px;
   }

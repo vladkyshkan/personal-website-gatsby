@@ -76,7 +76,7 @@ const About = ({ data }) => (
     <SEO title="About" />
     <AboutBlock>
       <Wrapper>
-        <H1>Hey, I am Vlad.</H1>
+        <H1>Hey, I am Vlad</H1>
         <AboutContent>
           <div>
             <P>

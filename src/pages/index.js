@@ -21,15 +21,18 @@ const IndexPage = () => (
 
     <Bio>
       <Wrapper>
-        <H1>Vlad Kyshkan, product designer</H1>
+        <H1>I design software, code & write</H1>
         <H4>
           Currently working as a Product Designer at
 {" "}
-          <ExternalLink href="https://www.zakaz.ua" target="_blank" rel="noopener">
+          <ExternalLink
+            href="https://www.zakaz.ua"
+            target="_blank"
+            rel="noopener"
+          >
             Zakaz.ua
           </ExternalLink>
-          . Previously, Head of Design at
-{" "}
+          . Previously, Head of Design at{" "}
           <ExternalLink
             href="https://www.theomnicore.com/"
             target="_blank"
@@ -41,7 +44,7 @@ const IndexPage = () => (
         </H4>
         <H4>
           Like to think in systems, solve broadly defined problems, take full
-          ownership of the product and collaborate with engineers.
+          ownership of the product and collaborate with engineers
         </H4>
       </Wrapper>
     </Bio>

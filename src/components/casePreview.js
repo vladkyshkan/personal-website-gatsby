@@ -116,7 +116,7 @@ const CasePreview = ({
 </H3>
         <H3>{description}</H3>
         <CaseDetails project={title} year={year} role={role} />
-        <StyledLink to={slug ? `/${slug}/` : "https://zakaz.ua"}>
+        <StyledLink to={slug}>
           <Button light={light}>
             See more
             <IconArrow />
@@ -125,7 +125,7 @@ const CasePreview = ({
       </CaseDescriptionWrapper>
     </CaseDescription>
     <CaseCover>
-      <StyledLink to={slug ? `/${slug}/` : "https://zakaz.ua"}>
+      <StyledLink to={slug}>
         <Image fluid={imageData} alt={title} />
       </StyledLink>
     </CaseCover>

@@ -47,6 +47,7 @@ const ExternalLinks = styled.div`
     letter-spacing: 0.05em;
     text-transform: uppercase;
     margin-right: 32px;
+    text-decoration: none;
 
     @media only screen and (max-width: 767px) {
       margin-bottom: 24px;

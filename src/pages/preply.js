@@ -117,7 +117,7 @@ const Preply = ({ data }) => {
                   <P>
                     And finally we identified the main problem to solve — how
                     might we make communication between tutors and students fast,
-                    timely and effective. So that every tutor's request ends with
+                    timely and effective? So that every tutor's request ends with
                     student's action.
                   </P>
                 </div>

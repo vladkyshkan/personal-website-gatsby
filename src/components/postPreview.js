@@ -23,6 +23,10 @@ const PostStyled = styled.div`
     color: ${theme.dark};
   }
 
+  a:hover {
+    text-decoration: none;
+  }
+
   @media only screen and (max-width: 768px) {
     &:nth-child(1) {
       margin-top: -24px;

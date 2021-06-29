@@ -35,7 +35,7 @@ const CaseDetailsTitle = styled.div`
 const CaseDetails = ({ project, year, role }) => (
   <CaseDetailsStyled>
     <CaseDetailsTitle>
-      <P>Project</P>
+      <P>Product</P>
       {project}
     </CaseDetailsTitle>
     <CaseDetailsTitle>

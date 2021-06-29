@@ -21,9 +21,9 @@ const IndexPage = () => (
 
     <Bio>
       <Wrapper>
-        <H1>I design software, code & write</H1>
+        <H1>Designing products & experiences</H1>
         <H4>
-          Currently working as a Product Designer at
+          Currently working as a Product Manager at
 {" "}
           <ExternalLink
             href="https://www.zakaz.ua"

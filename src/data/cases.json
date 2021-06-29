@@ -1,12 +1,14 @@
 [
   {
     "title": "Zakaz.ua",
+    "slug": "zakaz",
     "image": "./images/cases/zakaz/zakaz-hero.png",
-    "description": "Food delivery service from the supermarkets",
-    "year": "2020",
+    "description": "Grocery delivery service from the supermarkets",
+    "year": "2021",
     "role": "Product Designer",
     "color": "#1EB763",
-    "light": false
+    "light": false,
+    "url": "https://www.zakaz.ua/en"
   },
   {
     "title": "Preply",

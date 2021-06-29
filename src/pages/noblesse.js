@@ -127,10 +127,10 @@ const Noblesse = ({ data }) => {
               </P>
             </CaseBlock>
             <CaseNext
-              background="#42B3BC"
-              title="Preply"
-              slug="preply"
-              description="Improve messenger for the language learning marketplace"
+              background="#1EB763"
+              title="Zakaz.ua"
+              slug="zakaz"
+              description="Grocery delivery service from the supermarkets"
               image={data.ImageNext.childImageSharp.fluid}
             />
           </Layout>

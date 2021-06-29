@@ -41,10 +41,6 @@ const AboutBlock = styled.div`
     color: #FFB900;
   }
 
-  a:hover {
-    text-decoration: underline;
-  }
-
   @media only screen and (max-width: 500px) {
     padding-bottom: 0;
   }

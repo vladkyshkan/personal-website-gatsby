@@ -115,7 +115,7 @@ const Zakaz = ({ data }) => {
                   Initially, we wanted to reuse familiar flow when a customer added items to the cart and later moved them to the active order. But this approach had several limitations and confused our users. Moreover, during interviews we identified that customers didn't need full-fledged catalogue to find and add one or two items.
                 </P>
                 <P>
-                  That's why we decided to move forward with the concept of a search and keep all logic of order editing at the order details page. Here a customer could see current stage of the order, add new items, edit existing ones, or cancel order at all. Everything could be done through the interface without help from customer service.
+                  That's why we decided to move forward with the concept of a search and keep all logic of order editing at the order details page. Here a customer could see current stage of the order, add new items, edit existing ones, or cancel order at all. Everything could be done through the interface without help from the customer service.
                 </P>
               </div>
             </CaseBlock>
@@ -196,10 +196,11 @@ const Zakaz = ({ data }) => {
             </CaseImageWide>
             <CaseBlock>
                 <P bold>
-                  The above represents only a part of what I have accomplished as a Product designer at Zakaz.ua. I joined the company not long after the outbreak of COVID-19, when our services were very demanded. During that time <ExternalLink
+                  The above represents only a part of what I have accomplished as a Product Designer at Zakaz.ua. I joined the company not long after the outbreak of COVID-19, when our services were very demanded. During that time <ExternalLink
                 href="https://retailers.ua/news/menedjment/11974-forbes-oborot-zakazua-v-2020-godu-dostig-85-mln"
                 target="_blank"
                 rel="noopener"
+                color={color}
               >Zakaz.ua grew for 200%</ExternalLink> and my professional experience grew along with it.
                 </P>
             </CaseBlock>
@@ -218,7 +219,7 @@ const Zakaz = ({ data }) => {
             </CaseImage>
             <CaseBlockWide dark>
               <Wrapper>
-                <H3>Switch into product management</H3>
+                <H3>Switch into Product Management</H3>
                 <div>
                   <P>
                     Later I got a chance to try myself in a product management role. I was responsible for iOS and Android mobile apps and my tasks included creating short- and long-term roadmap, sprints planning, tracking metrics, managing stakeholders as well as working with the team on designing and releasing new features.

@@ -336,6 +336,7 @@ const NovaPoshta = ({ data }) => {
                   and is taken into account in the redesign of existing
                   application.
                 </P>
+                
               </Wrapper>
             </CaseBlockWide>
             <CaseBlock>

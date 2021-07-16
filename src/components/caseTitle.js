@@ -31,7 +31,7 @@ const CaseTitle = ({ title, description, year, role, color, light }) => (
 {' '}
 — {description}
         </H1>
-        <CaseDetails project={title} year={year} role={role} />
+        <CaseDetails product={title} year={year} role={role} />
       </Wrapper>
     </CaseHeroScreen>
   </CaseStyled>

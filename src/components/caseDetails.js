@@ -32,11 +32,11 @@ const CaseDetailsTitle = styled.div`
     font-size: 1.4rem;
   }
 `
-const CaseDetails = ({ project, year, role }) => (
+const CaseDetails = ({ product, year, role }) => (
   <CaseDetailsStyled>
     <CaseDetailsTitle>
       <P>Product</P>
-      {project}
+      {product}
     </CaseDetailsTitle>
     <CaseDetailsTitle>
       <P>Year</P>

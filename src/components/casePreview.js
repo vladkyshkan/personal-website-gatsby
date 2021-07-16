@@ -115,7 +115,7 @@ const CasePreview = ({
 /
 </H3>
         <H3>{description}</H3>
-        <CaseDetails project={title} year={year} role={role} />
+        <CaseDetails product={title} year={year} role={role} />
         <StyledLink to={slug}>
           <Button light={light}>
             See more
